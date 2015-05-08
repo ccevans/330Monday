@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+
+.logo-head2 {
+    float: left;
+    max-width: 375px;
+    min-width: 275px;
+    width: 40%;
+    margin: 25px 0 0 25px;
+}
+
+.navbar-brand {
+    float: left;
+    font-size: 18px;
+    height: auto !important;
+    line-height: 20px;
+    padding: 0 !important;
+}
+
+#330header {background-color: none !important;}
+
+.navbar-default {
+    background-color: #fff !important;
+    border-color: #fff !important;
+}

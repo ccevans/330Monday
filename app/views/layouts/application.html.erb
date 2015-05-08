@@ -5,10 +5,35 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+    <meta name="viewport" content="width=device-width" />
+
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" media="all" rel="stylesheet" type="text/css" />
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css" />
+
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
 </head>
 <body>
+
+
+     <%= render 'layouts/header' %>
+
+
+<div class="notice flash-message"> <span style="background-color: #f1c40f"><%= notice %></span> </div>
+<div class="alert flash-message"> <span style="background-color: #c0392b"><%= alert %></span> </div> 
 
 <%= yield %>
 
 </body>
 </html>
+
+<script>
+  $(function() {
+     $('.flash-message').delay(500).fadeIn('normal', function() {
+        $(this).delay(2500).fadeOut();
+     });
+  });
+  </script>
