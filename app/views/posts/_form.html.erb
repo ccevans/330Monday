@@ -1,0 +1,108 @@
+<%= simple_form_for @post do |f| %>
+  
+	<%= f.collection_select :posttype, Post::POSTTYPES, :to_s, :humanize, {}, {:onchange => 'displayQuestion(this.value)'} %>
+
+  <%= f.input :title, autofocus: true %>
+
+  <%= f.input :description %>
+
+  <%= f.input :link %>
+
+  <%= f.input :image, label: "Featured Image" %>
+
+  <div id="newsQuestion" style="display:none;"><br/>
+  <h1>NEWS</h1>
+
+
+ 
+  </div>
+
+  <div id="workQuestion" style="display:block;"><br/>
+  <h1>WORK</h1>
+
+
+  </div>
+
+  <div id="factQuestion" style="display:none;"><br/>
+    <h1>FACT</h1>
+
+  </div>
+
+  <div id="imageQuestion" style="display:none;"><br/>
+  <h1>IMAGE</h1>
+
+  </div>
+
+  <div id="videoQuestion" style="display:none;"><br/>
+  <h1>VIDEO</h1>
+
+  </div>
+
+  <div id="blogQuestion" style="display:none;"><br/>
+  <h1>BLOG</h1>
+
+  </div>
+
+
+	<%= f.button :submit, "Submit", class: "post-button" %>
+
+<% end %>
+
+
+<script>
+function displayQuestion(answer) {
+
+  if (answer == "work") { 
+  	document.getElementById('workQuestion').style.display = "block";
+    document.getElementById('newsQuestion').style.display = "none";
+    document.getElementById('factQuestion').style.display = "none";
+    document.getElementById('imageQuestion').style.display = "none";
+    document.getElementById('videoQuestion').style.display = "none";
+    document.getElementById('blogQuestion').style.display = "none";
+
+  } else if (answer == "news") {
+
+    document.getElementById('newsQuestion').style.display = "block";
+    document.getElementById('workQuestion').style.display = "none";
+    document.getElementById('factQuestion').style.display = "none";
+    document.getElementById('imageQuestion').style.display = "none";
+    document.getElementById('videoQuestion').style.display = "none";
+    document.getElementById('blogQuestion').style.display = "none";
+
+  } else if (answer == "fact") {
+    document.getElementById('factQuestion').style.display = "block";
+    document.getElementById('newsQuestion').style.display = "none";
+    document.getElementById('workQuestion').style.display = "none";
+    document.getElementById('imageQuestion').style.display = "none";
+    document.getElementById('videoQuestion').style.display = "none";
+    document.getElementById('blogQuestion').style.display = "none";
+
+  } else if (answer == "image") {
+    document.getElementById('imageQuestion').style.display = "block";
+    document.getElementById('newsQuestion').style.display = "none";
+    document.getElementById('factQuestion').style.display = "none";
+    document.getElementById('workQuestion').style.display = "none";
+    document.getElementById('videoQuestion').style.display = "none";
+    document.getElementById('blogQuestion').style.display = "none";
+
+  } else if (answer == "video") {
+    document.getElementById('videoQuestion').style.display = "block";
+    document.getElementById('newsQuestion').style.display = "none";
+    document.getElementById('factQuestion').style.display = "none";
+    document.getElementById('imageQuestion').style.display = "none";
+    document.getElementById('workQuestion').style.display = "none";
+    document.getElementById('blogQuestion').style.display = "none";
+
+  } else if (answer == "blog") {
+    document.getElementById('blogQuestion').style.display = "block";
+    document.getElementById('newsQuestion').style.display = "none";
+    document.getElementById('factQuestion').style.display = "none";
+    document.getElementById('imageQuestion').style.display = "none";
+    document.getElementById('videoQuestion').style.display = "none";
+    document.getElementById('workQuestion').style.display = "none";
+
+  }
+
+}
+
+</script>

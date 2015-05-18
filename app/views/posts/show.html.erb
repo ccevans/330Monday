@@ -1,0 +1,44 @@
+<section class="post-section">
+    <div class="stepbackward">
+    			<%= link_to post_path(@previous_post) do %>
+    				<span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>
+    			<% end %>
+    		</div>
+    		<div class="stepforward">
+    			<%= link_to post_path(@next_post) do %>
+    				<span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span>
+    			<% end %>
+    			</div>
+    <div class="container-show">
+    	
+    	<div class="container-post">
+
+        <% if @post.title.present? %>
+    		<h1><%= @post.title %></h1>
+        <% end %>
+    
+    				<%= image_tag @post.image.url(:small) %>
+    
+
+
+
+    	</div>
+    
+
+
+
+       <% unless @post.description.nil? || @post.description.empty? %>
+    	<div class="container-post-desc">
+    		 
+    		<%= simple_format(@post.description) %>
+    	</div>
+    	<% end %>
+
+    	<% if user_signed_in? %>
+    		<%= link_to 'Edit', edit_post_path(@post) %> | 
+    		
+    		<%= link_to 'Destroy', [@post], method: :delete, data: {confirm: "Are you sure?" } %>
+    		<% end %>
+    		
+    </div>
+ </section>

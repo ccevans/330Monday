@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
       </button>
           <%= link_to root_path, class: "navbar-brand" do %>
-            <%= image_tag '330monday-trans2.png', :class => "logo-head2" %>
+            <%= image_tag '330monday-logo.png', :class => "logo-head2" %>
         
       <% end %>
       
@@ -20,9 +20,10 @@
 
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
+        <li><a href="#">blog</a></li>
+        <li><%= link_to 'about', 'pages/about_us' %></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">work<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -31,6 +32,7 @@
             <li><a href="#">Separated link</a></li>
           </ul>
         </li>
+        <li><a href="#">contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

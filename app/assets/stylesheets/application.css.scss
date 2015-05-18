@@ -19,13 +19,14 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+.clear {float: left; clear: both;}
 
 .logo-head2 {
     float: left;
     max-width: 375px;
     min-width: 275px;
     width: 40%;
-    margin: 25px 0 0 25px;
+    margin: 0 0 0 25px;
 }
 
 .navbar-brand {
@@ -42,3 +43,20 @@
     background-color: #fff !important;
     border-color: #fff !important;
 }
+
+.navbar-default .navbar-nav > li > a {
+    color: #e74c3c !important;
+    font-size: 28px !important;
+    padding-bottom: 15px;
+    padding-top: 50px;
+    font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #000 !important;
+    font-size: 28px !important;
+    padding-bottom: 15px;
+    padding-top: 50px;
+    font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif !important;
+}
+

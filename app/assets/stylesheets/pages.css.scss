@@ -1,3 +1,30 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.about1 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background: url('oktoberfest7.JPG'); background-size: 100% auto; background-repeat: no-repeat;}
+.about2 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background-color: #e74c3c;}
+.about3 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background: url('drumstrong1.jpg'); background-size: 100% auto; background-repeat: no-repeat;}
+.about4 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background-color: #f1c40f;}
+
+
+.about-title {width: auto; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; font-size: 52px; line-height: 52px; color: #f1c40f; text-align: center; float: left;}
+
+.big-font {font-size: 120px; line-height: 100px;}
+.big-font2 {font-size: 150px; line-height: 110px;}
+
+.about-title2 {display: none; font-family: Arial,Helvetica,Arial,sans-serif; font-size: 40px; line-height: 42px; color: #fff; border-radius: 10px; text-align: center; float: right; margin: 50px 25px; background-color: #e74c3c; padding: 20px;}
+.about-title2:hover {font-family: Arial,Helvetica,Arial,sans-serif; font-size: 40px; line-height: 42px; color: #fff; border-radius: 10px; text-align: center; float: right; margin: 50px 25px; background-color: #000; padding: 20px;}
+
+.about-description { width: 40%; text-shadow: .2px .2px #000; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; font-size: 20px; line-height: 24px; color: #fff; border-radius: 10px; text-align: center; float: right; margin: 50px 0px;}
+
+.puzzle-image {float: left; width: 40%; height: auto;}
+.about-gurantee {float: left; width: 50%; margin: 40px 25%; height: auto; font-size: 50px; color: #000;}
+.about-gurantee h1 {float: left; width: 60%; font-size: 50px; color: #fff; padding: 0 5%; font-family: "hwt-republic-gothic-outline";}
+
+.services1 {float: left; width: 90%; margin: 10px 5%; color: #fff; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
+
+.headline-service {float: left; text-align: left; font-family: "hwt-republic-gothic-outline"; font-size: 50px; color: #fff;}
+
+.title-service {float: left; text-align: center;}
+.description-service {float: left; text-align: left;}
