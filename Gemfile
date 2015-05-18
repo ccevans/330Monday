@@ -17,6 +17,7 @@ gem 'cancan', '~> 1.6.10'
 gem 'font-awesome-sass'
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'jquery-turbolinks'
+gem 'aws-sdk'
 
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
