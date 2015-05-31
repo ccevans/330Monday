@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 .about1 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background: url('/assets/oktoberfest7.JPG'); background-size: 100% auto; background-repeat: no-repeat;}
 .about2 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background-color: #e74c3c;}
 .about3 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background: url('/assets/drumstrong1.jpg'); background-size: 100% auto; background-repeat: no-repeat;}
@@ -60,14 +61,15 @@ div.description-service ul {float: left; width: 50%; padding: 10px 5%; list-styl
 .interact-section1 {float: left; background-color: #e74c3c; margin: 0; padding: 0; width: 100%; height: auto;}
 .interact-section2 {float: left; background-color: #e74c3c; margin: 0; padding: 0; width: 100%; height: auto;}
 .interact-section3 {float: left; background-color: #e74c3c; margin: 0; padding: 0; width: 100%; height: auto; min-height: 500px;}
+.interact-section4 {float: left; background-color: #f7dc6f; margin: 0; padding: 0; width: 100%; height: auto; min-height: 500px;}
 
-.boxlines-1 {position: absolute; width: 100%; margin: 0; padding: 0 20px 0 0; height: auto;}
+.boxlines-1 {position: absolute; width: 100%; margin: 0; padding: 0 0 0 0; height: auto;}
 .boxlines-1a {float: left; width: 42%; margin: 0 0 0 8%; padding: 0; border-right: 15px solid #16a085; height: 250px; border-bottom: 30px solid #16a085;}
 .boxlines-1b {float: left; width: 42%; margin: 0 8% 0 0; padding: 0; border-left: 15px solid #16a085; height: 250px; border-bottom: 30px solid #16a085; }
 .boxlines-2 {float: left; width: 84%; margin: 0 8%; padding: 0; height: auto;}
-.boxlines-2a {float: left; width: 30%; margin: 0; padding: 0; height: 225px; border-left: 30px solid #16a085;}
-.boxlines-2b {float: left; width: 40%; margin: 0; padding: 0; height: 225px; border-left: 30px solid #16a085; border-right: 30px solid #16a085;}
-.boxlines-2c {float: left; width: 30%; margin: 0; padding: 0; height: 225px; border-right: 30px solid #16a085;}
+.boxlines-2a {float: left; width: 30%; margin: 0; padding: 0; height: 175px; border-left: 30px solid #16a085;}
+.boxlines-2b {float: left; width: 40%; margin: 0; padding: 0; height: 175px; border-left: 30px solid #16a085; border-right: 30px solid #16a085;}
+.boxlines-2c {float: left; width: 30%; margin: 0; padding: 0; height: 175px; border-right: 30px solid #16a085;}
 
 .boxlines-3 {float: left; width: 96%; margin: 0 0 0 4%; padding: 0; height: auto; font-size: 40px; line-height: 40px; color: #fff; text-align:center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
 .boxoutlines-3{float: left; width: 20%; margin: 0 2.5%; padding: 0; height: auto;}
@@ -75,10 +77,32 @@ div.description-service ul {float: left; width: 50%; padding: 10px 5%; list-styl
 .boxlines-3b {float: left; width: 92%; margin: 0 4%; padding: 25px 2%; height: auto; background-color: #16a085; border-radius: 10px;}
 .boxlines-3c {float: left; width: 90%; margin: 0 4% 0 6%; padding: 25px 2%; height: auto; background-color: #16a085; border-radius: 10px;}
 .boxlines-3d {float: left; width: 90%; margin: 0 2% 0 8%; padding: 25px 2%; height: auto; background-color: #16a085; border-radius: 10px;}
-.boxlines-3b2 {float: left; width: 40%; margin: 0 0 0 14.5%; padding: 0; height: 225px; border-top: 30px solid #16a085; border-right: 30px solid #16a085;}
-.boxlines-3d2 {float: left; width: 50%; margin: 0 0 0 21%; padding: 0; height: 250px; border-top: 30px solid #16a085; border-left: 30px solid #16a085;}
+.boxlines-3b2 {float: left; width: 40%; margin: 0 0 0 14.5%; padding: 0; height: 175px; border-top: 30px solid #16a085; border-right: 30px solid #16a085;}
+.boxlines-3d2 {float: left; width: 50%; margin: 0 0 0 21%; padding: 0; height: 200px; border-top: 30px solid #16a085; border-left: 30px solid #16a085;}
 
 .boxlines-3 a {color: #fff; text-decoration: none;}
 .boxhover:hover {background-color: #000; color: #fff; text-decoration: none;}
 
+.boxlinesbottom-3 {float: left; width: 30%; height: 100%; border-left: 30px solid #16a085;}
+
+.red-background {float: left; width: 90%; margin: 10px 5% 20px 5%; padding: 0; background-color: #c0392b; border-radius: 10px; height: auto; min-height: 400px;}
+.yellow-background {float: left; width: 90%; margin: 10px 5% 0 5%; padding: 0; background-color: #f7dc6f; border-radius: 10px; height: auto; min-height: 150px;}
+
+.question-goal {float: left; font-size: 44px; line-height: 46px; padding: 25px 10%; width: 100%; color: #c0392b; text-align: center;  }
+
+.question-box1 {float: left; width: 50%; padding: 0; margin: 0;}
+.question-box2 {float: left; width: 50%; padding: 0; margin: 0;}
+.boxline-question1 {float: left; width: 30%; margin: 0 0 0 40%; padding: 0; height: 100px; border-left: 30px solid #16a085;}
+.yesno-circle {float: left; width: 150px; height: 150px; padding: 50px 0; border-radius: 75px; margin: -10px 0 0 30%; background-color: #16a085; color: #fff; font-size: 40px; line-height: 40px; text-align: center;}
+.boxline-diagonal {float: left; width: 5%; height: 200px; border-left: 30px solid #16a085; margin: -50px 20% 0 55%;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);}
+.play-circle {float: right; width: 400px; height: 400px; padding: 50px 0; border-radius: 200px; margin: -50px 0 0 0; background-color: #16a085; color: #fff; font-size: 40px; line-height: 40px; text-align: center;}
+.play-circle2 {float: right; width: 300px; height: 300px; padding: 50px 0; border-radius: 150px; margin: -50px 5% 0 0; background-color: #16a085; color: #fff; font-size: 40px; line-height: 40px; text-align: center;}
+.boxline-question2 {float: left; width: 30%; margin: -50px 0 -20px 60%; padding: 0; height: 100px; border-left: 30px solid #16a085;}
+.boxline-question3 {float: left; width: 30%; margin: -50px 0 -20px 60%; padding: 0; height: 200px; border-left: 30px solid #16a085;}
+
+.boxlines-33 {float: left; background-color: #e74c3c; width: 100%; margin: 0 0 0 0; padding: 0; height: auto; font-size: 40px; line-height: 40px; color: #fff; text-align:center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
+.boxlines-5a {float: left; width: 80%; margin: -5px 10% 0 10%; padding: 0; border-right: 30px solid #e74c3c; height: 200px; border-bottom: 30px solid #e74c3c;}
 
