@@ -21,9 +21,11 @@
 			
 		</div>
 
+
+
 		<div class="boxlines-3">
 			<div class="boxoutlines-3">
-				<%= link_to '#', id: "goalbox1" do %>
+				<%= link_to '#', id: "goalbox1", onclick: "showstuff('lottery1'); hidestuff('band1'); hidestuff('recycle1'); hidestuff('bake1'); return false;" do %>
 					<div class="boxlines-3a boxhover">GET</br>MONEY!</div>
 				<% end %>
 
@@ -32,18 +34,18 @@
 			</div>
 			<div class="boxoutlines-3">
 				<div class="boxlines-3b2"></div>
-				<%= link_to '#', id: "goalbox2" do %>
+				<%= link_to '#', id: "goalbox2", onclick: "hidestuff('lottery1'); showstuff('band1'); hidestuff('recycle1'); hidestuff('bake1'); return false;" do %>
 					<div class="boxlines-3b boxhover">GET</br>FAME!</div>
 				<% end %>
 			</div>
 			<div class="boxoutlines-3">
-				<%= link_to '#', id: "goalbox3" do %>
+				<%= link_to '#', id: "goalbox3", onclick: "hidestuff('lottery1'); hidestuff('band1'); showstuff('recycle1'); hidestuff('bake1'); return false;" do %>
 					<div class="boxlines-3c boxhover">CHANGE</br>THE</br>WORLD!</div>
 				<% end %>
 			</div>
 			<div class="boxoutlines-3">
 				<div class="boxlines-3d2"></div>
-				<%= link_to '#', id: "goalbox4" do %>
+				<%= link_to '#', id: "goalbox4", onclick: "hidestuff('lottery1'); hidestuff('band1'); hidestuff('recycle1'); showstuff('bake1'); return false;" do %>
 					<div class="boxlines-3d boxhover">BAKE</br>COOKIES!</div>
 				<% end %>
 			</div>
@@ -61,7 +63,24 @@
 			<div class="yellow-background">		
 
 				<div id="lottery1" class="question-goal">
+					
 					Would you like to play our lottery?
+
+				</div>
+
+				<div id="band1" class="question-goal">
+					
+					Are you part of a band?
+
+				</div>
+				<div id="recycle1" class="question-goal">
+					
+					Do you have a recycling program?
+
+				</div>
+				<div id="bake1" class="question-goal">
+					
+					Let's bake some cookies.
 
 				</div>
 
@@ -109,12 +128,119 @@
 	</div>
 			<section class="interact-section4">
 
-				<%= image_tag 'research-interact.jpg', :class => "title-image" %>
+				<%= image_tag 'research-interact2.jpg', :class => "title-image" %>
 
 				<div class="boxlines-5a"></div>
+				<div class="boxlines-5b"></div>
+
+
+
+				<div class="play-circle3">
+					Want To Bid On Our Brainwashing Machine?
+				</div>
+
+				<div class="box-research-over">
+
+					<div class="boxlines-5c"></div>
+
+					<div class="play-circle4">
+						No
+					</div>
+					<div class="clear"></div>
+
+					<div class="boxlines-5e"></div>
+
+				</div>
+
+				<div class="boxlines-5b"></div>
+
+				<div class="play-circle5">
+					Yes
+				</div>
+
+				<div class="boxlines-5d"></div>
+
+				<div class="box-research">
+
+				</div>
+
+				<div class="boxlines-5a"></div>
+				<div class="boxlines-5b"></div>
+
 
 
 			
+	</section>
+
+	<section class="interact-section5">
+
+			<%= image_tag 'solutions-interact.jpg', :class => "title-image" %>
+
+			<div class="boxlines-6a"></div>
+				<div class="boxlines-6b"></div>
+
+				<div class="box-solution">
+
+					Interactive Exhibits
+
+				</div>
+
+				<div class="boxlines-6c"></div>
+
+
+				<div class="box-solution">
+
+					Interactive Social Media
+
+				</div>
+
+				<div class="boxlines-6d"></div>
+
+
+				<div class="box-solution">
+
+					Interactive Microsites
+
+				</div>
+
+				<div class="boxlines-6e"></div>
+
+				<div class="play-circle6">
+						Why</br>Us?
+				</div>
+
+				<div class="boxlines-6b"></div>
+
+
+	</section>
+
+	<section class="interact-section6">
+
+		<%= image_tag 'invest-interact.jpg', :class => "title-image" %>
+
+		<div class="boxlines-6f"></div>
+		<div class="boxlines-6g"></div>
+		<div class="question-box1">
+
+		<div class="play-circle7">
+			Yes
+		</div>
+
+		</div>
+
+		<div class="question-box2">
+		<div class="play-circle8">
+			No
+		</div>
+		</div>
+
+		<div class="boxlines-6g"></div>
+
+		<div class="box-invest">
+
+		</div>
+
+
 	</section>
 
 
@@ -127,6 +253,27 @@
 
 	<section class="interact-section3">
 
+				
 
 
 	</section>
+
+
+<script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'inline')
+          e.style.display = 'none';
+       else
+          e.style.display = 'inline';
+    }
+function showstuff(id){
+   document.getElementById(id).style.display = 'inline';
+}
+ 
+function hidestuff(id){
+   document.getElementById(id).style.display = 'none';
+}
+//-->
+</script>

@@ -62,14 +62,17 @@ div.description-service ul {float: left; width: 50%; padding: 10px 5%; list-styl
 .interact-section2 {float: left; background-color: #e74c3c; margin: 0; padding: 0; width: 100%; height: auto;}
 .interact-section3 {float: left; background-color: #e74c3c; margin: 0; padding: 0; width: 100%; height: auto; min-height: 500px;}
 .interact-section4 {float: left; background-color: #f7dc6f; margin: 0; padding: 0; width: 100%; height: auto; min-height: 500px;}
+.interact-section5 {float: left; background-color: #1bc5a4; margin: 0; padding: 0; width: 100%; height: auto; min-height: 500px;}
+.interact-section6 {float: left; background-color: #c0392b; margin: 0; padding: 0; width: 100%; height: auto; min-height: 500px;}
+
 
 .boxlines-1 {position: absolute; width: 100%; margin: 0; padding: 0 0 0 0; height: auto;}
-.boxlines-1a {float: left; width: 42%; margin: 0 0 0 8%; padding: 0; border-right: 15px solid #16a085; height: 250px; border-bottom: 30px solid #16a085;}
-.boxlines-1b {float: left; width: 42%; margin: 0 8% 0 0; padding: 0; border-left: 15px solid #16a085; height: 250px; border-bottom: 30px solid #16a085; }
+.boxlines-1a {float: left; width: 42%; margin: 0 0 0 8%; padding: 0; border-right: 15px solid #16a085; height: 150px; border-bottom: 30px solid #16a085;}
+.boxlines-1b {float: left; width: 42%; margin: 0 8% 0 0; padding: 0; border-left: 15px solid #16a085; height: 150px; border-bottom: 30px solid #16a085; }
 .boxlines-2 {float: left; width: 84%; margin: 0 8%; padding: 0; height: auto;}
-.boxlines-2a {float: left; width: 30%; margin: 0; padding: 0; height: 175px; border-left: 30px solid #16a085;}
-.boxlines-2b {float: left; width: 40%; margin: 0; padding: 0; height: 175px; border-left: 30px solid #16a085; border-right: 30px solid #16a085;}
-.boxlines-2c {float: left; width: 30%; margin: 0; padding: 0; height: 175px; border-right: 30px solid #16a085;}
+.boxlines-2a {float: left; width: 30%; margin: 0; padding: 0; height: 100px; border-left: 30px solid #16a085;}
+.boxlines-2b {float: left; width: 40%; margin: 0; padding: 0; height: 100px; border-left: 30px solid #16a085; border-right: 30px solid #16a085;}
+.boxlines-2c {float: left; width: 30%; margin: 0; padding: 0; height: 100px; border-right: 30px solid #16a085;}
 
 .boxlines-3 {float: left; width: 96%; margin: 0 0 0 4%; padding: 0; height: auto; font-size: 40px; line-height: 40px; color: #fff; text-align:center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
 .boxoutlines-3{float: left; width: 20%; margin: 0 2.5%; padding: 0; height: auto;}
@@ -104,5 +107,40 @@ div.description-service ul {float: left; width: 50%; padding: 10px 5%; list-styl
 .boxline-question3 {float: left; width: 30%; margin: -50px 0 -20px 60%; padding: 0; height: 200px; border-left: 30px solid #16a085;}
 
 .boxlines-33 {float: left; background-color: #e74c3c; width: 100%; margin: 0 0 0 0; padding: 0; height: auto; font-size: 40px; line-height: 40px; color: #fff; text-align:center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
-.boxlines-5a {float: left; width: 80%; margin: -5px 10% 0 10%; padding: 0; border-right: 30px solid #e74c3c; height: 200px; border-bottom: 30px solid #e74c3c;}
+.boxlines-5a {float: left; width: 40%; margin: -5px 40% 0 20%; padding: 0; border-right: 30px solid #e74c3c; height: 150px; border-bottom: 30px solid #e74c3c;}
+.boxlines-5b {float: left; width: 60%; margin: -5px 20% 0 20%; padding: 0; border-left: 30px solid #e74c3c; height: 150px;}
+.boxlines-5c {float: left; width: 15%; margin: 0px -5px 0 -5px; padding: 0; border-bottom: 30px solid #e74c3c; height: 150px;}
+.boxlines-5d {float: left; width: 15%; margin: 0px -5px 0 -5px; padding: 0; border-bottom: 30px solid #e74c3c; height: 75px;}
+.boxlines-5e {float: left; width: 20%; margin: -5px 0 0 25%; padding: 0; border-left: 30px solid #e74c3c; height: 150px;}
 
+
+.play-circle3 {float: left; width: 400px; height: 400px; padding: 75px 50px; border-radius: 200px; margin: -50px 0 0 5%; background-color: #e74c3c;; color: #fff; font-size: 40px; line-height: 40px; text-align: center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
+.play-circle4 {float: left; width: 150px; height: 150px; padding: 50px 0; border-radius: 75px; margin: 50px 0 0 0; background-color: #e74c3c; color: #fff; font-size: 40px; line-height: 40px; text-align: center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
+.play-circle5 {float: left; width: 150px; height: 150px; padding: 50px 0; border-radius: 75px; margin: -5px 0 0 15%; background-color: #e74c3c; color: #fff; font-size: 40px; line-height: 40px; text-align: center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
+.play-circle6 {float: left; width: 150px; height: 150px; padding: 50px 0; border-radius: 75px; margin: -10px 0 0 0; background-color: #000; color: #fff; font-size: 30px; line-height: 30px; text-align: center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
+.play-circle7 {float: left; width: 150px; height: 150px; padding: 50px 0; border-radius: 75px; margin: -10px 0 0 30%; background-color: #000; color: #fff; font-size: 30px; line-height: 30px; text-align: center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
+.play-circle8 {float: left; width: 150px; height: 150px; padding: 50px 0; border-radius: 75px; margin: -10px 0 0 45%; background-color: #000; color: #fff; font-size: 30px; line-height: 30px; text-align: center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
+
+
+.box-research {float: left; width: auto; max-width: 55%; min-width: 40%; height: auto; min-height: 400px; border-radius: 25px; background-color: #e74c3c; margin: -200px 0 0 0; padding: 25px; font-size: 40px; line-height: 40px; text-align: center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
+
+.box-research-over {float: left; margin: 0; padding: 0; width: 40%; height: 300px;}
+
+
+.boxlines-6a {float: left; width: 40%; margin: -5px 40% 0 20%; padding: 0; border-right: 30px solid #000; height: 150px; border-bottom: 30px solid #000;}
+.boxlines-6b {float: left; width: 60%; margin: -5px 20% 0 20%; padding: 0; border-left: 30px solid #000; height: 150px;}
+.boxlines-6c {float: left; width: 60%; margin: -5px 10% 0 30%; padding: 0; border-left: 30px solid #000; height: 150px;}
+.boxlines-6d {float: left; width: 60%; margin: -5px 15% 0 25%; padding: 0; border-left: 30px solid #000; height: 150px;}
+.boxlines-6e {float: left; width: 15%; margin: 0px -5px 0 -5px; padding: 0; border-bottom: 30px solid #000; height: 75px;}
+.boxlines-6f {float: left; width: 60%; margin: -40px 20% 0 20%; padding: 0; border-right: 30px solid #000; height: 150px; border-bottom: 30px solid #000;}
+.boxlines-6g {float: left; width: 60%; margin: -5px 20% 0 20%; padding: 0; border-left: 30px solid #000; border-right: 30px solid #000; height: 150px;}
+
+
+.box-solution {float: left; color: #fff; width: auto; max-width: 55%; min-width: 40%; height: auto; min-height: 400px; border-radius: 25px; background-color: #000; margin: 0 0 0 10%; padding: 25px; font-size: 40px; line-height: 40px; text-align: center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
+
+.box-invest {float: left; color: #fff; width: 80%; margin: 0 10%; padding: 25px; height: auto; min-height: 300px; border-radius: 25px; background-color: #000; font-size: 20px; line-height: 20px; text-align: center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
+
+div#lottery1 {display: none;}
+div#band1 {display: none;}
+div#recycle1 {display: none;}
+div#bake1 {display: none;}
