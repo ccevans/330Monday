@@ -84,23 +84,27 @@ div.description-service ul {float: left; width: 50%; padding: 10px 5%; list-styl
 .boxlines-3d2 {float: left; width: 50%; margin: 0 0 0 21%; padding: 0; height: 200px; border-top: 30px solid #16a085; border-left: 30px solid #16a085;}
 
 .boxlines-3 a {color: #fff; text-decoration: none;}
-.boxhover:hover {background-color: #000; color: #fff; text-decoration: none;}
+.boxhover:hover {color: #000; text-decoration: none;}
 
 .boxlinesbottom-3 {float: left; width: 30%; height: 100%; border-left: 30px solid #16a085;}
 
 .red-background {float: left; width: 90%; margin: 10px 5% 20px 5%; padding: 0; background-color: #c0392b; border-radius: 10px; height: auto; min-height: 400px;}
-.yellow-background {float: left; width: 90%; margin: 10px 5% 0 5%; padding: 0; background-color: #f7dc6f; border-radius: 10px; height: auto; min-height: 150px;}
+.yellow-background {float: left; width: 90%; margin: 10px 5% 0 5%; padding: 0; background-color: #f7dc6f; border-radius: 10px; height: auto; min-height: 200px;}
 
 .question-goal {float: left; font-size: 44px; line-height: 46px; padding: 25px 10%; width: 100%; color: #c0392b; text-align: center;  }
 
-.question-box1 {float: left; width: 50%; padding: 0; margin: 0;}
-.question-box2 {float: left; width: 50%; padding: 0; margin: 0;}
+.question-box1 {float: left; width: 50%; padding: 0; margin: 0; height: auto; min-height: 150px;}
+.question-box2 {float: left; width: 50%; padding: 0; margin: 0; height: auto; min-height: 150px;}
 .boxline-question1 {float: left; width: 30%; margin: 0 0 0 40%; padding: 0; height: 100px; border-left: 30px solid #16a085;}
 .yesno-circle {float: left; width: 150px; height: 150px; padding: 50px 0; border-radius: 75px; margin: -10px 0 0 30%; background-color: #16a085; color: #fff; font-size: 40px; line-height: 40px; text-align: center;}
 .boxline-diagonal {float: left; width: 5%; height: 200px; border-left: 30px solid #16a085; margin: -50px 20% 0 55%;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);}
+ .boxline-diagonal2 {float: left; width: 5%; height: 200px; border-left: 30px solid #16a085; margin: -50px 45% 0 30%;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);}
 .play-circle {float: right; width: 400px; height: 400px; padding: 50px 0; border-radius: 200px; margin: -50px 0 0 0; background-color: #16a085; color: #fff; font-size: 40px; line-height: 40px; text-align: center;}
 .play-circle2 {float: right; width: 300px; height: 300px; padding: 50px 0; border-radius: 150px; margin: -50px 5% 0 0; background-color: #16a085; color: #fff; font-size: 40px; line-height: 40px; text-align: center;}
 .boxline-question2 {float: left; width: 30%; margin: -50px 0 -20px 60%; padding: 0; height: 100px; border-left: 30px solid #16a085;}
@@ -140,7 +144,28 @@ div.description-service ul {float: left; width: 50%; padding: 10px 5%; list-styl
 
 .box-invest {float: left; color: #fff; width: 80%; margin: 0 10%; padding: 25px; height: auto; min-height: 300px; border-radius: 25px; background-color: #000; font-size: 20px; line-height: 20px; text-align: center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
 
-div#lottery1 {display: none;}
-div#band1 {display: none;}
-div#recycle1 {display: none;}
-div#bake1 {display: none;}
+div#blank1 {float: left; font-size: 44px; line-height: 46px; width: 100%; color: #c0392b; text-align: center;}
+div#lottery1 {float: left; font-size: 44px; line-height: 46px; width: 100%; color: #c0392b; text-align: center; display: none;}
+div#band1 {float: left; font-size: 44px; line-height: 46px; width: 100%; color: #c0392b; text-align: center; display: none;}
+div#recycle1 {float: left; font-size: 44px; line-height: 46px; width: 100%; color: #c0392b; text-align: center; display: none;}
+div#bake1 {float: left; font-size: 44px; line-height: 46px; width: 100%; color: #c0392b; text-align: center; display: none;}
+div#yes-goals {display: none;}
+div#no-goals {display: none;}
+div#yes-goals-band {display: none;}
+div#no-goals-band {display: none;}
+div#yes-goals-recycle {display: none;}
+div#no-goals-recycle {display: none;}
+div#yes-goals-bake {display: none;}
+div#no-goals-bake {display: none;}
+.play-circle-new {float: left; width: 80%; min-height: 400px; height: auto; padding: 50px 25px; border-radius: 50px; margin: -50px 10% 0 10%; background-color: #16a085; color: #fff; font-size: 40px; line-height: 40px; text-align: center;}
+
+.yellow-background div.question-goal p {text-align: left; font-size: 16px; line-height: 18px;}
+.yellow-background div.question-goal h4 {text-align: left; font-size: 24px; line-height: 24px;}
+.yellow-background div.question-goal ul {text-align: left; font-size: 16px; line-height: 18px; list-style-type: none; font-family: Arial, Helvetica,Arial,sans-serif; text-transform: none;}
+.yellow-background div.question-goal ol {text-align: left; font-size: 16px; line-height: 18px; font-family: Arial, Helvetica,Arial,sans-serif; text-transform: none;}
+
+.cookie-box {float: left; margin: 10px 5%; width: 60%;}
+
+.random-box {float: left; margin: 5px; padding: 5px; border-radius: 10px; width: 100px; height: 100px; font-size: 50px; line-height: 50px; color: #fff; background-color: #000;}
+div.play-circle-new p {text-align: left; font-size: 16px; line-height: 18px;}
+

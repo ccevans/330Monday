@@ -25,7 +25,7 @@
 
 		<div class="boxlines-3">
 			<div class="boxoutlines-3">
-				<%= link_to '#', id: "goalbox1", onclick: "showstuff('lottery1'); hidestuff('band1'); hidestuff('recycle1'); hidestuff('bake1'); return false;" do %>
+				<%= link_to '#lottery1', id: "goalbox1", onclick: "showstuff('lottery1'); hidestuff('band1'); hidestuff('recycle1'); hidestuff('bake1'); hidestuff('blank1');" do %>
 					<div class="boxlines-3a boxhover">GET</br>MONEY!</div>
 				<% end %>
 
@@ -34,18 +34,18 @@
 			</div>
 			<div class="boxoutlines-3">
 				<div class="boxlines-3b2"></div>
-				<%= link_to '#', id: "goalbox2", onclick: "hidestuff('lottery1'); showstuff('band1'); hidestuff('recycle1'); hidestuff('bake1'); return false;" do %>
+				<%= link_to '#band1', id: "goalbox2", onclick: "hidestuff('lottery1'); showstuff('band1'); hidestuff('recycle1'); hidestuff('bake1'); hidestuff('blank1'); hidestuff('no-goals'); hidestuff('yes-goals'); return false;" do %>
 					<div class="boxlines-3b boxhover">GET</br>FAME!</div>
 				<% end %>
 			</div>
 			<div class="boxoutlines-3">
-				<%= link_to '#', id: "goalbox3", onclick: "hidestuff('lottery1'); hidestuff('band1'); showstuff('recycle1'); hidestuff('bake1'); return false;" do %>
+				<%= link_to '#recycle1', id: "goalbox3", onclick: "hidestuff('lottery1'); hidestuff('band1'); showstuff('recycle1'); hidestuff('bake1'); hidestuff('blank1'); return false;" do %>
 					<div class="boxlines-3c boxhover">CHANGE</br>THE</br>WORLD!</div>
 				<% end %>
 			</div>
 			<div class="boxoutlines-3">
 				<div class="boxlines-3d2"></div>
-				<%= link_to '#', id: "goalbox4", onclick: "hidestuff('lottery1'); hidestuff('band1'); hidestuff('recycle1'); showstuff('bake1'); return false;" do %>
+				<%= link_to '#bake1', id: "goalbox4", onclick: "hidestuff('lottery1'); hidestuff('band1'); hidestuff('recycle1'); showstuff('bake1'); hidestuff('blank1'); return false;" do %>
 					<div class="boxlines-3d boxhover">BAKE</br>COOKIES!</div>
 				<% end %>
 			</div>
@@ -60,69 +60,359 @@
 
 
 		<div class="red-background">
-			<div class="yellow-background">		
+			
 
-				<div id="lottery1" class="question-goal">
-					
-					Would you like to play our lottery?
+				<div id="blank1">
+					<div class="yellow-background">	
+						<div class="question-goal">
+							Choose A Goal To Get Started.
+						</div>
 
-				</div>
+					</div>
 
-				<div id="band1" class="question-goal">
-					
-					Are you part of a band?
+				</div>	
 
-				</div>
-				<div id="recycle1" class="question-goal">
-					
-					Do you have a recycling program?
+				<div id="lottery1">
+					<div class="yellow-background">	
+						<div class="question-goal">
+							Do you want to play our lottery?
+						</div>
 
-				</div>
-				<div id="bake1" class="question-goal">
-					
-					Let's bake some cookies.
-
-				</div>
-
-
-			</div>
+					</div>
 
 			<div class="question-box1">
 				<div class="boxline-question1"></div>
 
-				<div class="yesno-circle">
-					YES
-				</div>
-
-				<div class="boxline-diagonal"></div>
-
-				<div class="play-circle">
-					Play
-				</div>
-
-				<div class="boxline-question2"></div>
+			<%= link_to '#', id: "goalbox4", onclick: "showstuff('yes-goals'); hidestuff('no-goals'); return false;" do %>
+			
+				<div class="yesno-circle boxhover">YES</div>
+				<% end %>
 
 			</div>
 
 			<div class="question-box2">
 				<div class="boxline-question1"></div>
-				<div class="yesno-circle">
-					NO
-				</div>
+				<%= link_to '#', id: "goalbox4", onclick: "hidestuff('yes-goals'); showstuff('no-goals'); return false;" do %>
+				<div class="yesno-circle boxhover">NO</div>
+				<% end %>
 
+
+			</div>
+
+			<div id="yes-goals">
+
+			<div class="question-box1">
 				<div class="boxline-diagonal"></div>
 
-				<div class="play-circle2">
-					Play
-				</div>
+			</div>
 
-				<div class="boxline-question3"></div>
-
+			<div class="question-box2">
+				
 
 			</div>
 
 
 
+				<div class="play-circle-new">
+					Play - yes option
+			
+			<button onclick="myFunction()">Play</button>
+
+					<div id="number" class="random-box"></div>
+
+					<div id="number2" class="random-box"></div>
+
+					<div id="number3" class="random-box"></div>
+
+					<p id="demo"></p>
+					<p id="demo2"></p>
+				</div>
+
+				<div class="boxline-question2"></div>
+
+				</div>	
+
+			<div id="no-goals">
+
+			<div class="question-box1">
+				
+
+			</div>
+
+			<div class="question-box2">
+				<div class="boxline-diagonal2"></div>
+
+			</div>
+
+
+
+				<div class="play-circle-new">
+					Play - no option
+				</div>
+
+				<div class="boxline-question2"></div>
+
+				</div>	
+			</div>
+
+
+				<div id="band1">
+					<div class="yellow-background">	
+						<div class="question-goal">
+							Are you part of a band?
+						</div>
+
+					</div>
+
+				<div class="question-box1">
+				<div class="boxline-question1"></div>
+
+			<%= link_to '#', id: "goalbox4", onclick: "showstuff('yes-goals-band'); hidestuff('no-goals-band'); return false;" do %>
+			
+				<div class="yesno-circle boxhover">YES</div>
+				<% end %>
+
+			</div>
+
+			<div class="question-box2">
+				<div class="boxline-question1"></div>
+				<%= link_to '#', id: "goalbox4", onclick: "hidestuff('yes-goals-band'); showstuff('no-goals-band'); return false;" do %>
+				<div class="yesno-circle boxhover">NO</div>
+				<% end %>
+
+
+			</div>
+
+			<div id="yes-goals-band">
+
+			<div class="question-box1">
+				<div class="boxline-diagonal"></div>
+
+			</div>
+
+			<div class="question-box2">
+				
+
+			</div>
+
+
+
+				<div class="play-circle-new">
+					
+
+					<div class="cookie-box">
+
+						<h4>Let's Go Viral.</h4>
+
+						<p>Great, grab a camera and submit it to Youtube.  If you all got the skills, I’m sure you will go viral in no time.  Send us a link to the video and we will send you some feedback.</p>
+					</div>
+
+				</div>
+
+				<div class="boxline-question2"></div>
+
+				</div>	
+
+			<div id="no-goals-band">
+
+			<div class="question-box1">
+				
+
+			</div>
+
+			<div class="question-box2">
+				<div class="boxline-diagonal2"></div>
+
+			</div>
+
+
+
+				<div class="play-circle-new">
+					<div class="cookie-box">
+					
+					<p>We don’t have too much musical talent either.  But we know how to create cool experiences that get people to love your brand.  Let's head to Research.</p>
+
+				</div>
+				</div>
+
+				<div class="boxline-question2"></div>
+
+				</div>	
+
+				</div>
+				<div id="recycle1">
+					<div class="yellow-background">	
+						<div class="question-goal">
+							Do you have a recycling program?
+						</div>
+
+					</div>
+
+				<div class="question-box1">
+				<div class="boxline-question1"></div>
+
+			<%= link_to '#', id: "goalbox4", onclick: "showstuff('yes-goals-recycle'); hidestuff('no-goals-recycle'); return false;" do %>
+			
+				<div class="yesno-circle boxhover">YES</div>
+				<% end %>
+
+			</div>
+
+			<div class="question-box2">
+				<div class="boxline-question1"></div>
+				<%= link_to '#', id: "goalbox4", onclick: "hidestuff('yes-goals-recycle'); showstuff('no-goals-recycle'); return false;" do %>
+				<div class="yesno-circle boxhover">NO</div>
+				<% end %>
+
+
+			</div>
+
+			<div id="yes-goals-recycle">
+
+			<div class="question-box1">
+				<div class="boxline-diagonal"></div>
+
+			</div>
+
+			<div class="question-box2">
+				
+
+			</div>
+
+
+
+				<div class="play-circle-new">
+					<div class="cookie-box">
+
+						
+
+						<p>Great, tag us on Instagram with picture or video and hashtag showing your program. You are already on your way to change the world and we are ready to help you along the way.  - Go to Research.</p>
+					</div>
+				</div>
+
+				<div class="boxline-question2"></div>
+
+				</div>	
+
+			<div id="no-goals-recycle">
+
+			<div class="question-box1">
+				
+
+			</div>
+
+			<div class="question-box2">
+				<div class="boxline-diagonal2"></div>
+
+			</div>
+
+
+
+				<div class="play-circle-new">
+					<div class="cookie-box">
+
+						<p>Here are some tips.  Here are some Charlotte recycling plants.  Use these tips to initiate your program.</p>
+					</div>
+				</div>
+
+				<div class="boxline-question2"></div>
+
+				</div>	
+
+				</div>											
+				<div id="bake1">
+					<div class="yellow-background">	
+						<div class="question-goal">
+							Let's bake some cookies.
+
+							<div class="cookie-box">
+							<h4>Exclusive Browcookies Recipe</h4>
+
+							<p>Brookies, where cookie dough is baked on top of brownie batter, are taken to a new level with the introduction of a praline layer.</p>
+
+							<h4>Ingredients</h4>
+							<ul>
+							<li>1box (19.5 oz) fudge brownie mix</li>
+							<li>1roll (16.5 oz) refrigerated mini-chocolate chip cookies</li>
+							<li>Vanilla ice cream, if desired</li>
+							</ul>
+
+							<h4>Steps</h4>
+							<ol>
+							<li>Pre-Heat oven to 350°F (325°F for dark pan). Lightly spray pan with cooking spray. set aside. Make brownie mix as directed on box using oil, water and eggs. Spread batter evenly fill 2/3 full. Bake 20-25 minutes.</li>
+							<li>Carefully place cookie dough on top of each brownie. (Spaces between cookie dough pieces will spread during baking to cover top.)</li>
+							<li>Bake 23 to 28 minutes longer or until cookie topping is deep golden brown. If serving as bars, cool 2 hours; cut into 6 rows by 4 rows. If serving with ice cream as dessert, cool 20 to 30 minutes.</li>
+							</ol>
+						</div>
+
+						</div>
+
+					</div>
+
+				<div class="question-box1">
+				<div class="boxline-question1"></div>
+
+			<%= link_to '#', id: "goalbox4", onclick: "showstuff('yes-goals-bake'); hidestuff('no-goals-bake'); return false;" do %>
+			
+				<div class="yesno-circle boxhover">YES</div>
+				<% end %>
+
+			</div>
+
+			<div class="question-box2">
+				<div class="boxline-question1"></div>
+				<%= link_to '#', id: "goalbox4", onclick: "hidestuff('yes-goals-bake'); showstuff('no-goals-bake'); return false;" do %>
+				<div class="yesno-circle boxhover">NO</div>
+				<% end %>
+
+
+			</div>
+
+			<div id="yes-goals-bake">
+
+			<div class="question-box1">
+				<div class="boxline-diagonal"></div>
+
+			</div>
+
+			<div class="question-box2">
+				
+
+			</div>
+
+
+
+				<div class="play-circle-new">
+					Play - yes option
+				</div>
+
+				<div class="boxline-question2"></div>
+
+				</div>	
+
+			<div id="no-goals-bake">
+
+			<div class="question-box1">
+				
+
+			</div>
+
+			<div class="question-box2">
+				<div class="boxline-diagonal2"></div>
+
+			</div>
+
+
+
+				<div class="play-circle-new">
+					Play - no option
+				</div>
+
+				<div class="boxline-question2"></div>
+
+				</div>	
+
+				</div>
 
 		</div>
 	</div>
@@ -276,4 +566,97 @@ function hidestuff(id){
    document.getElementById(id).style.display = 'none';
 }
 //-->
+</script>
+
+<script>
+(function($){
+    $.fn.extend({
+        numAnim: function(options) {
+            if ( ! this.length)
+                return false;
+
+            this.defaults = {
+                endAt: 2560,
+                numClass: 'autogen-num',
+                duration: 500,   // seconds
+                interval: 90  // ms
+            };
+            var settings = $.extend({}, this.defaults, options);
+
+            var $num = $('<span/>', {
+                'class': settings.numClass 
+            });
+
+            return this.each(function() {
+                var $this = $(this);
+
+                // Wrap each number in a tag.
+                var frag = document.createDocumentFragment(),
+                    numLen = settings.endAt.toString().length;
+                for (x = 0; x < numLen; x++) {
+                    var rand_num = Math.floor( Math.random() * 10 );
+                    frag.appendChild( $num.clone().text(rand_num)[0] )
+                }
+                $this.empty().append(frag);
+
+                var get_next_num = function(num) {
+                    ++num;
+                    if (num > 9) return 0;
+                    return num;
+                };
+
+                // Iterate each number.
+                $this.find('.' + settings.numClass).each(function() {
+                    var $num = $(this),
+                        num = parseInt( $num.text() );
+
+                    var interval = setInterval( function() {
+                        num = get_next_num(num);
+                        $num.text(num);
+                    }, settings.interval);
+
+                    setTimeout( function() {
+                        clearInterval(interval);
+                    }, settings.duration * 1000 - settings.interval);
+                });
+                
+                setTimeout( function() {
+                    $this.text( settings.endAt.toString() );
+                }, settings.duration * 1000);
+            });
+        }
+    });
+})(jQuery);
+
+
+
+</script>
+
+<script>
+function myFunction() {
+    $("#number").numAnim({
+    endAt: Math.floor( (Math.random() * 100)  ),
+    duration: 3
+});
+    $("#number2").numAnim({
+    endAt: Math.floor( (Math.random() * 100)  ),
+    duration: 4
+});
+    $("#number3").numAnim({
+    endAt: Math.floor( (Math.random() * 100)  ),
+    duration: 5
+});
+}
+</script>
+
+<script>
+function myFunction() {
+    var x = Math.floor((Math.random() * 10) + 1);
+    document.getElementById("demo").innerHTML = x;
+
+    if x = 1 {
+    	var y = "hey, x is 1";
+    	document.getElementById("demo2").innerHTML = y;
+    }
+}
 </script>
