@@ -25,7 +25,7 @@
 
 		<div class="boxlines-3">
 			<div class="boxoutlines-3">
-				<%= link_to '#lottery1', id: "goalbox1", onclick: "showstuff('lottery1'); hidestuff('band1'); hidestuff('recycle1'); hidestuff('bake1'); hidestuff('blank1');" do %>
+				<%= link_to '#lottery1', id: "goalbox1", onclick: "showstuff('lottery1'); hidestuff('band1'); hidestuff('recycle1'); hidestuff('bake1'); hidestuff('blank1'); hidestuff('no-goals-band'); hidestuff('yes-goals-band'); hidestuff('yes-goals-recycle'); hidestuff('no-goals-recycle'); hidestuff('yes-goals-bake'); hidestuff('no-goals-bake');" do %>
 					<div class="boxlines-3a boxhover">GET</br>MONEY!</div>
 				<% end %>
 
@@ -34,18 +34,18 @@
 			</div>
 			<div class="boxoutlines-3">
 				<div class="boxlines-3b2"></div>
-				<%= link_to '#band1', id: "goalbox2", onclick: "hidestuff('lottery1'); showstuff('band1'); hidestuff('recycle1'); hidestuff('bake1'); hidestuff('blank1'); hidestuff('no-goals'); hidestuff('yes-goals'); return false;" do %>
+				<%= link_to '#band1', id: "goalbox2", onclick: "hidestuff('lottery1'); showstuff('band1'); hidestuff('recycle1'); hidestuff('bake1'); hidestuff('blank1'); hidestuff('no-goals'); hidestuff('yes-goals'); hidestuff('yes-goals-recycle'); hidestuff('no-goals-recycle'); hidestuff('yes-goals-bake'); hidestuff('no-goals-bake');" do %>
 					<div class="boxlines-3b boxhover">GET</br>FAME!</div>
 				<% end %>
 			</div>
 			<div class="boxoutlines-3">
-				<%= link_to '#recycle1', id: "goalbox3", onclick: "hidestuff('lottery1'); hidestuff('band1'); showstuff('recycle1'); hidestuff('bake1'); hidestuff('blank1'); return false;" do %>
+				<%= link_to '#recycle1', id: "goalbox3", onclick: "hidestuff('lottery1'); hidestuff('band1'); showstuff('recycle1'); hidestuff('bake1'); hidestuff('blank1'); hidestuff('no-goals'); hidestuff('yes-goals'); hidestuff('no-goals-band'); hidestuff('yes-goals-band'); hidestuff('yes-goals-bake'); hidestuff('no-goals-bake');" do %>
 					<div class="boxlines-3c boxhover">CHANGE</br>THE</br>WORLD!</div>
 				<% end %>
 			</div>
 			<div class="boxoutlines-3">
 				<div class="boxlines-3d2"></div>
-				<%= link_to '#bake1', id: "goalbox4", onclick: "hidestuff('lottery1'); hidestuff('band1'); hidestuff('recycle1'); showstuff('bake1'); hidestuff('blank1'); return false;" do %>
+				<%= link_to '#bake1', id: "goalbox4", onclick: "hidestuff('lottery1'); hidestuff('band1'); hidestuff('recycle1'); showstuff('bake1'); hidestuff('blank1'); hidestuff('no-goals'); hidestuff('yes-goals'); hidestuff('no-goals-band'); hidestuff('yes-goals-band'); hidestuff('yes-goals-recycle'); hidestuff('no-goals-recycle');" do %>
 					<div class="boxlines-3d boxhover">BAKE</br>COOKIES!</div>
 				<% end %>
 			</div>
@@ -83,7 +83,7 @@
 			<div class="question-box1">
 				<div class="boxline-question1"></div>
 
-			<%= link_to '#', id: "goalbox4", onclick: "showstuff('yes-goals'); hidestuff('no-goals'); return false;" do %>
+			<%= link_to '#yes-goals2', id: "goalbox4", onclick: "showstuff('yes-goals'); hidestuff('no-goals');" do %>
 			
 				<div class="yesno-circle boxhover">YES</div>
 				<% end %>
@@ -92,7 +92,7 @@
 
 			<div class="question-box2">
 				<div class="boxline-question1"></div>
-				<%= link_to '#', id: "goalbox4", onclick: "hidestuff('yes-goals'); showstuff('no-goals'); return false;" do %>
+				<%= link_to '#no-goals2', id: "goalbox4", onclick: "hidestuff('yes-goals'); showstuff('no-goals');" do %>
 				<div class="yesno-circle boxhover">NO</div>
 				<% end %>
 
@@ -117,7 +117,7 @@
 
 				<div class="play-circle-new">
 
-					<div class="cookie-box3">
+					<div id="yes-goals2" class="cookie-box3">
 
 						<h1>Let's Play.</h1>
 
@@ -170,7 +170,7 @@
 
 				<div class="play-circle-new">
 
-					<div class="cookie-box2">
+					<div id="no-goals2" class="cookie-box2">
 
 						<h1>Bummer, got better ideas?</h1>
 
@@ -225,7 +225,7 @@
 				<div class="question-box1">
 				<div class="boxline-question1"></div>
 
-			<%= link_to '#', id: "goalbox4", onclick: "showstuff('yes-goals-band'); hidestuff('no-goals-band'); return false;" do %>
+			<%= link_to '#yes-goals-band2', id: "goalbox4", onclick: "showstuff('yes-goals-band'); hidestuff('no-goals-band');" do %>
 			
 				<div class="yesno-circle boxhover">YES</div>
 				<% end %>
@@ -234,7 +234,7 @@
 
 			<div class="question-box2">
 				<div class="boxline-question1"></div>
-				<%= link_to '#', id: "goalbox4", onclick: "hidestuff('yes-goals-band'); showstuff('no-goals-band'); return false;" do %>
+				<%= link_to '#no-goals-band2', id: "goalbox4", onclick: "hidestuff('yes-goals-band'); showstuff('no-goals-band');" do %>
 				<div class="yesno-circle boxhover">NO</div>
 				<% end %>
 
@@ -258,7 +258,7 @@
 				<div class="play-circle-new">
 					
 
-					<div class="cookie-box2">
+					<div id="yes-goals-band2" class="cookie-box2">
 
 						<h1>Let's Go Viral.</h1>
 
@@ -316,7 +316,7 @@
 
 				<div class="play-circle-new">
 
-					<div class="cookie-box2">
+					<div id="no-goals-band2" class="cookie-box2">
 
 						<h1>Not Much of A Musician, Huh?</h1>
 
@@ -371,7 +371,7 @@
 				<div class="question-box1">
 				<div class="boxline-question1"></div>
 
-			<%= link_to '#', id: "goalbox4", onclick: "showstuff('yes-goals-recycle'); hidestuff('no-goals-recycle'); return false;" do %>
+			<%= link_to '#yes-goals-recycle2', id: "goalbox4", onclick: "showstuff('yes-goals-recycle'); hidestuff('no-goals-recycle');" do %>
 			
 				<div class="yesno-circle boxhover">YES</div>
 				<% end %>
@@ -380,7 +380,7 @@
 
 			<div class="question-box2">
 				<div class="boxline-question1"></div>
-				<%= link_to '#', id: "goalbox4", onclick: "hidestuff('yes-goals-recycle'); showstuff('no-goals-recycle'); return false;" do %>
+				<%= link_to '#no-goals-recycle2', id: "goalbox4", onclick: "hidestuff('yes-goals-recycle'); showstuff('no-goals-recycle');" do %>
 				<div class="yesno-circle boxhover">NO</div>
 				<% end %>
 
@@ -402,7 +402,7 @@
 
 
 				<div class="play-circle-new">
-					<div class="cookie-box2">
+					<div id="yes-goals-recycle2" class="cookie-box2">
 
 						<h1>Every Little Bit Counts.</h1>
 
@@ -455,7 +455,7 @@
 
 
 				<div class="play-circle-new">
-			<div class="cookie-box2">
+			<div id="no-goals-recycle2" class="cookie-box2">
 
 						<h1>Let's Start A Program</h1>
 
@@ -507,7 +507,7 @@
 				<div class="question-box1">
 				<div class="boxline-question1"></div>
 
-			<%= link_to '#', id: "goalbox4", onclick: "showstuff('yes-goals-bake'); hidestuff('no-goals-bake'); return false;" do %>
+			<%= link_to '#yes-goals-bake2', id: "goalbox4", onclick: "showstuff('yes-goals-bake'); hidestuff('no-goals-bake');" do %>
 			
 				<div class="yesno-circle boxhover">YES</div>
 				<% end %>
@@ -516,7 +516,7 @@
 
 			<div class="question-box2">
 				<div class="boxline-question1"></div>
-				<%= link_to '#', id: "goalbox4", onclick: "hidestuff('yes-goals-bake'); showstuff('no-goals-bake'); return false;" do %>
+				<%= link_to '#no-goals-bake2', id: "goalbox4", onclick: "hidestuff('yes-goals-bake'); showstuff('no-goals-bake');" do %>
 				<div class="yesno-circle boxhover">NO</div>
 				<% end %>
 
@@ -537,7 +537,7 @@
 
 		<div class="play-circle-new">
 
-						<div class="cookie-box">
+						<div id="yes-goals-bake2" class="cookie-box">
 						<h1>Try Our Favorite</h1>
 
 							<h4>Exclusive Browcookies Recipe</h4>
@@ -587,7 +587,7 @@
 			</div>
 
 						<div class="play-circle-new">
-			<div class="cookie-box2">
+			<div id="no-goals-bake2" class="cookie-box2">
 
 						<h1>Let's Bake Some Cookies</h1>
 
