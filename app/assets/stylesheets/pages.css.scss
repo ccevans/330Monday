@@ -30,7 +30,7 @@
 .headline-service2 {float: left; text-align: left; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; font-size: 50px; color: #fff; clear: both; width: 100%; margin: 0 0 25px 0;}
 
 .title-service {float: left; text-align: center;}
-.description-service {float: left; text-align: left;}
+.description-service {float: left; text-align: left; width: 100%;}
 
 div.description-service ul {float: left; width: 50%; padding: 10px 5%; list-style: none;}
 
@@ -111,11 +111,12 @@ div.description-service ul {float: left; width: 50%; padding: 10px 5%; list-styl
 .boxline-question3 {float: left; width: 30%; margin: -50px 0 -20px 60%; padding: 0; height: 200px; border-left: 30px solid #16a085;}
 
 .boxlines-33 {float: left; background-color: #e74c3c; width: 100%; margin: 0 0 0 0; padding: 0; height: auto; font-size: 40px; line-height: 40px; color: #fff; text-align:center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
-.boxlines-5a {float: left; width: 40%; margin: -5px 40% 0 20%; padding: 0; border-right: 30px solid #e74c3c; height: 150px; border-bottom: 30px solid #e74c3c;}
-.boxlines-5b {float: left; width: 60%; margin: -5px 20% 0 20%; padding: 0; border-left: 30px solid #e74c3c; height: 150px;}
+.boxlines-5a {float: left; width: 40%; margin: -5px 40% 0 20%; padding: 0; border-right: 30px solid #e74c3c; height: 100px; border-bottom: 30px solid #e74c3c;}
+.boxlines-5b {float: left; width: 60%; margin: -5px 20% 0 20%; padding: 0; border-left: 30px solid #e74c3c; height: 100px;}
 .boxlines-5c {float: left; width: 15%; margin: 0px -5px 0 -5px; padding: 0; border-bottom: 30px solid #e74c3c; height: 150px;}
 .boxlines-5d {float: left; width: 15%; margin: 0px -5px 0 -5px; padding: 0; border-bottom: 30px solid #e74c3c; height: 75px;}
 .boxlines-5e {float: left; width: 20%; margin: -5px 0 0 25%; padding: 0; border-left: 30px solid #e74c3c; height: 150px;}
+.boxlines-5a2 {float: left; width: 40%; margin: -5px 40% 0 20%; padding: 0; border-right: 30px solid #e74c3c; height: 100px;}
 
 
 .play-circle3 {float: left; width: 400px; height: 400px; padding: 75px 50px; border-radius: 200px; margin: -50px 0 0 5%; background-color: #e74c3c;; color: #fff; font-size: 40px; line-height: 40px; text-align: center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
@@ -131,13 +132,13 @@ div.description-service ul {float: left; width: 50%; padding: 10px 5%; list-styl
 .box-research-over {float: left; margin: 0; padding: 0; width: 40%; height: 300px;}
 
 
-.boxlines-6a {float: left; width: 40%; margin: -5px 40% 0 20%; padding: 0; border-right: 30px solid #000; height: 150px; border-bottom: 30px solid #000;}
-.boxlines-6b {float: left; width: 60%; margin: -5px 20% 0 20%; padding: 0; border-left: 30px solid #000; height: 150px;}
-.boxlines-6c {float: left; width: 60%; margin: -5px 10% 0 30%; padding: 0; border-left: 30px solid #000; height: 150px;}
-.boxlines-6d {float: left; width: 60%; margin: -5px 15% 0 25%; padding: 0; border-left: 30px solid #000; height: 150px;}
+.boxlines-6a {float: left; width: 40%; margin: -5px 40% 0 20%; padding: 0; border-right: 30px solid #000; height: 100px; border-bottom: 30px solid #000;}
+.boxlines-6b {float: left; width: 60%; margin: -5px 20% 0 20%; padding: 0; border-left: 30px solid #000; height: 100px;}
+.boxlines-6c {float: left; width: 60%; margin: -5px 10% 0 30%; padding: 0; border-left: 30px solid #000; height: 100px;}
+.boxlines-6d {float: left; width: 60%; margin: -5px 15% 0 25%; padding: 0; border-left: 30px solid #000; height: 100px;}
 .boxlines-6e {float: left; width: 15%; margin: 0px -5px 0 -5px; padding: 0; border-bottom: 30px solid #000; height: 75px;}
-.boxlines-6f {float: left; width: 60%; margin: -40px 20% 0 20%; padding: 0; border-right: 30px solid #000; height: 150px; border-bottom: 30px solid #000;}
-.boxlines-6g {float: left; width: 60%; margin: -5px 20% 0 20%; padding: 0; border-left: 30px solid #000; border-right: 30px solid #000; height: 150px;}
+.boxlines-6f {float: left; width: 60%; margin: -40px 20% 0 20%; padding: 0; border-right: 30px solid #000; height: 100px; border-bottom: 30px solid #000;}
+.boxlines-6g {float: left; width: 60%; margin: -15px 20% 0 20%; padding: 0; border-left: 30px solid #000; border-right: 30px solid #000; height: 100px;}
 
 
 .box-solution {float: left; color: #fff; width: auto; max-width: 55%; min-width: 40%; height: auto; min-height: 400px; border-radius: 25px; background-color: #000; margin: 0 0 0 10%; padding: 25px; font-size: 40px; line-height: 40px; text-align: center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
@@ -157,6 +158,11 @@ div#yes-goals-recycle {display: none;}
 div#no-goals-recycle {display: none;}
 div#yes-goals-bake {display: none;}
 div#no-goals-bake {display: none;}
+div#yes-research {display: none;}
+div#no-research {display: none;}
+div#yes-invest {display: none;}
+div#no-invest {display: none;}
+
 .play-circle-new {float: left; width: 80%; min-height: 400px; height: auto; padding: 50px 25px; border-radius: 50px; margin: -50px 10% 0 10%; background-color: #16a085; color: #fff; font-size: 40px; line-height: 40px; text-align: center;}
 
 .cookie-box p {text-align: left; font-size: 16px; line-height: 18px;}
@@ -195,3 +201,17 @@ div#band1 div#no-goals-band div.play-circle-new div.cookie-box-half {margin: 0;}
 
 div.cookie-box3 button {float: left; border: none; margin: 10px 70% 10px 10%; width: 20%; padding: 10px; background-color: #f7dc6f !important; color: #000; font-family: "ff-enzo-web",sans-serif; font-weight: 900;}
 div.cookie-box3 button:hover {float: left; border: none; margin: 10px 70% 10px 10%; width: 20%; padding: 10px; background-color: #000 !important; color: #fff; font-family: "ff-enzo-web",sans-serif; font-weight: 900;}
+
+.research-box0 {float: left; width: 80%; margin: 0 10%; padding: 10px; background-color: #e74c3c; color: #fff; border-radius: 125px; height: auto; min-height: 300px; font-size: 16px; line-height: 18px;font-family: Arial, Helvetica,Arial,sans-serif; text-transform: none;}
+.research-box0 div.cookie-box3 {font-size: 22px; line-height: 24px;}
+
+div#yes-research div.cookie-box3 ul.fa-ul {float: left; font-size: 20px; line-height: 26px; color: #fff; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
+div#yes-research div.cookie-box3 ul.fa-ul li i.fa-li.fa.fa-square-o:hover:before {
+  content: "\f046"
+}
+
+div.play-circle7:hover {color: #f7dc6f;}
+div.play-circle8:hover {color: #f7dc6f;}
+
+div.box-invest div.cookie-box3 p {float: left; text-align: left;}
+

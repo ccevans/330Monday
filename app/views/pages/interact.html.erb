@@ -586,7 +586,7 @@
 
 			</div>
 
-						<div class="play-circle-new">
+			<div class="play-circle-new">
 			<div id="no-goals-bake2" class="cookie-box2">
 
 						<h1>Let's Bake Some Cookies</h1>
@@ -626,22 +626,42 @@
 
 				<%= image_tag 'research-interact2.jpg', :class => "title-image" %>
 
+				<div class="boxlines-5a2"></div>
+
+ 				<div class="research-box0">
+
+					<div  class="cookie-box3">
+
+						<h1>Do You Know Your Customers?</h1>
+
+						<p>Based on the marketing goals of your brand, we can start researching your target market and strateging a plan.  It's one thing to know who your target market is but it's another thing to know how to interact with your market to turn them into fans and customers of your brand.  We will help you figure out the best market to focus on and how to find them and connect with them.</p>
+
+						</div>
+
+				</div>				
+
+
 				<div class="boxlines-5a"></div>
 				<div class="boxlines-5b"></div>
 
 
 
+
 				<div class="play-circle3">
-					Want To Bid On Our Brainwashing Machine?
+					Ready To Reveiw Our Top Reseach Questions 
 				</div>
 
 				<div class="box-research-over">
 
 					<div class="boxlines-5c"></div>
 
-					<div class="play-circle4">
-						No
-					</div>
+				<%= link_to '#yes-research', id: "goalbox4", onclick: "showstuff('yes-research'); hidestuff('no-research');" do %>
+				<div class="play-circle4">
+					Yes
+				</div>
+				<% end %>					
+
+
 					<div class="clear"></div>
 
 					<div class="boxlines-5e"></div>
@@ -649,14 +669,55 @@
 				</div>
 
 				<div class="boxlines-5b"></div>
+					<%= link_to '#no-research', id: "goalbox4", onclick: "showstuff('no-research'); hidestuff('yes-research');" do %>
+					<div class="play-circle5">
+						No
+					</div>
 
-				<div class="play-circle5">
-					Yes
-				</div>
+					<% end %>				
+
 
 				<div class="boxlines-5d"></div>
 
 				<div class="box-research">
+
+
+					<div id="yes-research">
+					<div  class="cookie-box3">
+
+						<h1>Research Questions.</h1>
+
+						<ul class="fa-ul">
+							<li><i class="fa-li fa fa-square-o"></i>What Does Your Target Market Look Like?</li>
+							<li><i class="fa-li fa fa-square-o"></i>Where Does Your Taget Market eat?</li>
+							<li><i class="fa-li fa fa-square-o"></i>Where Does Your Taget Market play?</li>
+							<li><i class="fa-li fa fa-square-o"></i>What Does Your Target Market Watch?</li>
+							<li><i class="fa-li fa fa-square-o"></i>What Social Media Does Your Target Market Use?</li>
+							<li><i class="fa-li fa fa-square-o"></i>What Does Your Target Market Do On The Weekend?</li>
+						</ul>
+
+						</div>						
+
+					</div>
+
+					<div id="no-research">
+					<div  class="cookie-box3">
+
+						<h1>Maybe You Would Like To Bid On Our Brainwashing Machine</h1>
+
+						<p>Researching your target market and developing a plan to learn how to intereact with your potential customers is important.  Most brands like to just throw a dart at a board and hope for the best.  </p>
+
+						</div>						
+
+					</div>
+
+
+
+
+
+
+
+
 
 				</div>
 
@@ -677,7 +738,38 @@
 
 				<div class="box-solution">
 
-					Interactive Exhibits
+					<div  class="cookie-box3">
+
+					<h1>Interactive Exhibits</h1>
+
+						
+							<p>If you have to chase people down to come to your booth, you are doing it all wrong.  What if you had an exhibtion, where poeple ran over to see what was going on.  We develop interactive exhibitions for festivals, concerts, events, street campaigns, etc for brands that want to reach new markets and make long lasting impressions on potential customers.</p>
+
+							<div class="description-service">
+							<ul>
+								<li>Research / Consulting</li>
+								<li>Interactive Events</li>
+								<li>Custom Booth Displays</li>
+								<li>Customer Engagement</li>
+								<li>Data Collection</li>
+								<li>Photography & Videography</li>
+								<li>Mini Event Series</li>
+								<li>Traveling Tours</li>
+							</ul>
+
+							<ul>
+								<li>Promo & Banner Design</li>
+								<li>Tradeshows and Conventions</li>
+								<li>Interactive Sporting Exhibits</li>
+								<li>Local Festivals and Events</li>
+								<li>Contest Development</li>
+								<li>Event Sponsorships</li>
+								<li>Fan Acquisition</li>
+							</ul>
+								
+
+						</div>
+					</div>
 
 				</div>
 
@@ -685,8 +777,30 @@
 
 
 				<div class="box-solution">
+	
 
-					Interactive Social Media
+				<div  class="cookie-box3">
+
+					<h1>Interactive Social Media</h1>
+						
+							<p>How are you engaging your followers?  Do you need to organicly grow your followers?</p>
+
+						<div class="description-service">
+							<ul>
+								<li>Research / Consulting</li>
+								<li>Interactive Events</li>
+								<li>Custom Booth Displays</li>
+								<li>Customer Engagement</li>
+								<li>Data Collection</li>
+								<li>Photography & Videography</li>
+								<li>Mini Event Series</li>
+								<li>Traveling Tours</li>
+							</ul>
+
+								
+
+						</div>
+					</div>
 
 				</div>
 
@@ -694,8 +808,32 @@
 
 
 				<div class="box-solution">
+				
 
-					Interactive Microsites
+				<div  class="cookie-box3">
+
+					<h1>Interactive Microsites</h1>
+
+						
+							<p>Our interactive microsites are used to turn potential markets into customers and fan of your brand.</p>
+
+							<div class="description-service">
+							<ul>
+								<li>Research / Consulting</li>
+								<li>Interactive Events</li>
+								<li>Custom Booth Displays</li>
+								<li>Customer Engagement</li>
+								<li>Data Collection</li>
+								<li>Photography & Videography</li>
+								<li>Mini Event Series</li>
+								<li>Traveling Tours</li>
+							</ul>
+
+
+								
+
+						</div>
+					</div>	
 
 				</div>
 
@@ -717,22 +855,45 @@
 		<div class="boxlines-6f"></div>
 		<div class="boxlines-6g"></div>
 		<div class="question-box1">
-
-		<div class="play-circle7">
-			Yes
-		</div>
-
+			<%= link_to '#yes-invest', id: "goalbox4", onclick: "showstuff('yes-invest'); hidestuff('no-invest');" do %>
+			<div class="play-circle7">
+				Yes
+			</div>
+		<% end %>
 		</div>
 
 		<div class="question-box2">
-		<div class="play-circle8">
-			No
-		</div>
+			<%= link_to '#no-invest', id: "goalbox4", onclick: "showstuff('no-invest'); hidestuff('yes-invest');" do %>
+			<div class="play-circle8">
+				No
+			</div>
+		<% end %>
 		</div>
 
 		<div class="boxlines-6g"></div>
 
 		<div class="box-invest">
+			<div id="yes-invest">
+
+				<div  class="cookie-box3">
+
+					<h1>You’re in luck.</h1>
+
+				<p>Can we offer a no obligation in person 15min consultation to discuss your goals? We can come to you or you can come to us? break the ice by starting with this.</p>
+			</div>
+
+
+			</div>
+			<div id="no-invest">
+
+				<div  class="cookie-box3">
+
+					<h1>Still have questions?</h1>
+
+				<p>Contact Us Today</p>
+			</div>
+
+			</div>
 
 		</div>
 
