@@ -18,6 +18,7 @@ gem 'font-awesome-sass'
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'jquery-turbolinks'
 gem 'aws-sdk'
+gem 'mail_form'
 
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development

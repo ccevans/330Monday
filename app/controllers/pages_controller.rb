@@ -7,4 +7,9 @@ class PagesController < ApplicationController
 
   def admin
   end
+
+    def interact
+  end
+    def faq
+  end
 end
