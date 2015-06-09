@@ -217,3 +217,10 @@ div.box-invest div.cookie-box3 p {float: left; text-align: left;}
 
 .about5 dl {color: #fff; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; font-size: 24px; line-height: 24px;}
 .about5 dl dd {font-family: Arial, Helvetica,Arial,sans-serif; font-size: 20px; line-height: 24px;}
+
+div.cookie-box3 div form.simple_form.contact {float: left; width: 70%; margin: 0 30% 0 0;}
+div.cookie-box3 div form.simple_form.contact div.form-group label {float: left; width: 30%; text-align: left; font-family: Arial, Helvetica,Arial,sans-serif;}
+div.cookie-box3 div form.simple_form.contact div.form-group label abbr {display: none;}
+div.cookie-box3 div form.simple_form.contact div.form-group textarea#contact_message {min-height: 200px;}
+div.cookie-box3 div form.simple_form.contact div.form-group select#contact_status {margin: 0; padding: 0; color: #000; float: left; width: 25%;}
+div.cookie-box3 div form.simple_form.contact div input.btn.btn-default.btn.btn-primary {background-color: #1bc5a4 !important;}

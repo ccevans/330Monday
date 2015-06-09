@@ -1,13 +1,22 @@
 <div align="center">
   <h3>Send A message to Us</h3>
 
-  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+
+  <%= simple_form_for :contact, :url => {:action => :create, :controller => :contacts} do |f| %>
     <%= f.input :name, :required => true %>
     <%= f.input :email, :required => true %>
+
     <%= f.input :message, :as => :text, :required => true %>
     <div class= "hidden">
       <%= f.input :nickname, :hint => 'Leave this field blank!' %>
     </div>
+
+  <div class="form-group string required contact_name">
+    <label class="string required control-label" for="contact_name">
+        Budget
+    </label>
+    <%= f.collection_select :status, Contact::STATUS, :to_s, :humanize %>
+  </div><div class="clear"></div>
     <div>
       </br>
       <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>

@@ -3,6 +3,7 @@ class Contact < MailForm::Base
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :message
   attribute :nickname,  :captcha  => true
+  attribute :status 
 
   # Declare the e-mail headers. It accepts anything the mail method
   # in ActionMailer accepts.
@@ -13,4 +14,7 @@ class Contact < MailForm::Base
       :from => %("#{name}" <#{email}>)
     }
   end
+
+  STATUS = %w[$1k-5k $5k-10k 10k-20k 20k-50k]
+
 end
