@@ -29,7 +29,8 @@
 					<div class="boxlines-3a boxhover">GET</br>MONEY!</div>
 				<% end %>
 
-				<hr height="100%" widht="30px" background-color="#16a085"/>
+				<div class="boxlines-b2b"></div>
+
 
 			</div>
 			<div class="boxoutlines-3">
@@ -37,17 +38,23 @@
 				<%= link_to '#band1', id: "goalbox2", onclick: "hidestuff('lottery1'); showstuff('band1'); hidestuff('recycle1'); hidestuff('bake1'); hidestuff('blank1'); hidestuff('no-goals'); hidestuff('yes-goals'); hidestuff('yes-goals-recycle'); hidestuff('no-goals-recycle'); hidestuff('yes-goals-bake'); hidestuff('no-goals-bake');" do %>
 					<div class="boxlines-3b boxhover">GET</br>FAME!</div>
 				<% end %>
+
+				<div class="boxlines-b2c"></div>
 			</div>
 			<div class="boxoutlines-3">
 				<%= link_to '#recycle1', id: "goalbox3", onclick: "hidestuff('lottery1'); hidestuff('band1'); showstuff('recycle1'); hidestuff('bake1'); hidestuff('blank1'); hidestuff('no-goals'); hidestuff('yes-goals'); hidestuff('no-goals-band'); hidestuff('yes-goals-band'); hidestuff('yes-goals-bake'); hidestuff('no-goals-bake');" do %>
 					<div class="boxlines-3c boxhover">CHANGE</br>THE</br>WORLD!</div>
 				<% end %>
+
+				<div class="boxlines-b2b"></div>
 			</div>
 			<div class="boxoutlines-3">
 				<div class="boxlines-3d2"></div>
 				<%= link_to '#bake1', id: "goalbox4", onclick: "hidestuff('lottery1'); hidestuff('band1'); hidestuff('recycle1'); showstuff('bake1'); hidestuff('blank1'); hidestuff('no-goals'); hidestuff('yes-goals'); hidestuff('no-goals-band'); hidestuff('yes-goals-band'); hidestuff('yes-goals-recycle'); hidestuff('no-goals-recycle');" do %>
 					<div class="boxlines-3d boxhover">BAKE</br>COOKIES!</div>
 				<% end %>
+
+				<div class="boxlines-b2a"></div>
 			</div>
 
 			<div class="boxlinesbottom-3"></div>
@@ -655,7 +662,7 @@
 
 					<div class="boxlines-5c"></div>
 
-				<%= link_to '#yes-research', id: "goalbox4", onclick: "showstuff('yes-research'); hidestuff('no-research');" do %>
+				<%= link_to '#yes-research', id: "goalbox4", onclick: "showstuff('yes-research'); hidestuff('no-research'); hidestuff('ready-yesno');" do %>
 				<div class="play-circle4">
 					Yes
 				</div>
@@ -669,7 +676,7 @@
 				</div>
 
 				<div class="boxlines-5b"></div>
-					<%= link_to '#no-research', id: "goalbox4", onclick: "showstuff('no-research'); hidestuff('yes-research');" do %>
+					<%= link_to '#no-research', id: "goalbox4", onclick: "showstuff('no-research'); hidestuff('yes-research'); hidestuff('ready-yesno');" do %>
 					<div class="play-circle5">
 						No
 					</div>
@@ -680,6 +687,11 @@
 				<div class="boxlines-5d"></div>
 
 				<div class="box-research">
+
+
+					<div id="ready-yesno">
+						Ready?</br><span class="small-ready">(Yes/No)</span>
+					</div>
 
 
 					<div id="yes-research">
@@ -776,7 +788,7 @@
 				<div class="boxlines-6c"></div>
 
 
-				<div class="box-solution">
+				<div class="box-solution2">
 	
 
 				<div  class="cookie-box3">
@@ -804,10 +816,7 @@
 
 				</div>
 
-				<div class="boxlines-6d"></div>
-
-
-				<div class="box-solution">
+		<div class="box-solution2">
 				
 
 				<div  class="cookie-box3">
@@ -837,11 +846,14 @@
 
 				</div>
 
-				<div class="boxlines-6e"></div>
+				<div class="boxlines-6b"></div>
+
 
 				<div class="play-circle6">
 						Why</br>Us?
-				</div>
+				</div>				
+
+
 
 				<div class="boxlines-6b"></div>
 
@@ -855,7 +867,7 @@
 		<div class="boxlines-6f"></div>
 		<div class="boxlines-6g"></div>
 		<div class="question-box1">
-			<%= link_to '#yes-invest', id: "goalbox4", onclick: "showstuff('yes-invest'); hidestuff('no-invest');" do %>
+			<%= link_to '#yes-invest', id: "goalbox4", onclick: "showstuff('yes-invest'); hidestuff('no-invest'); hidestuff('ready-yesno');" do %>
 			<div class="play-circle7">
 				Yes
 			</div>
@@ -863,7 +875,7 @@
 		</div>
 
 		<div class="question-box2">
-			<%= link_to '#no-invest', id: "goalbox4", onclick: "showstuff('no-invest'); hidestuff('yes-invest');" do %>
+			<%= link_to '#no-invest', id: "goalbox4", onclick: "showstuff('no-invest'); hidestuff('yes-invest'); hidestuff('ready-yesno');" do %>
 			<div class="play-circle8">
 				No
 			</div>
@@ -873,6 +885,11 @@
 		<div class="boxlines-6g"></div>
 
 		<div class="box-invest">
+
+			<div id="ready-yesno">
+				Ready?</br><span class="small-ready">(Yes/No)</span>
+			</div>
+
 			<div id="yes-invest">
 
 				<div  class="cookie-box3">
