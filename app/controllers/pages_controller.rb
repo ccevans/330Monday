@@ -9,6 +9,7 @@ class PagesController < ApplicationController
   end
 
     def interact
+
   end
     def faq
   end
