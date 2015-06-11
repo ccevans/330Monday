@@ -243,6 +243,8 @@ div.box-solution div.cookie-box3 p {text-align: left;}
 div.box-solution2 div.cookie-box3 p {text-align: left;}
 div.box-solution2 div.cookie-box3 h1 {font-size: 32px; line-height: 32px;}
 
+.title-image-mobile {display: none;}
+
 
 @media screen and (max-width: 500px){
 
@@ -324,7 +326,7 @@ div.research-box0 div.cookie-box3 p {font-size: 12px; line-height: 14px;}
 div.box-research {float: left; width: 50%; height: auto; min-height: 150px; border-radius: 15px; background-color: #e74c3c; margin: -50px 0 0 0; padding: 15px; font-size: 20px; line-height: 20px; text-align: center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
 div.box-research-over {float: left; margin: 0; padding: 0; width: 40%; height: 100px;}
 
-div.boxlines-6a {float: left; width: 30%; margin: -10px 50% 0 20%; padding: 0; border-right: 10px solid #000; height: 50px; border-bottom: 10px solid #000;}
+div.boxlines-6a {float: left; width: 45%; margin: -10px 35% 0 20%; padding: 0; border-right: 10px solid #000; height: 50px; border-bottom: 10px solid #000;}
 div.boxlines-6b {float: left; width: 60%; margin: -5px 20% 0 20%; padding: 0; border-left: 10px solid #000; height: 25px;}
 div.boxlines-6c {float: left; width: 40%; margin: -5px 30% 0 30%; padding: 0; border-left: 10px solid #000; border-right: 10px solid #000; height: 50px;}
 div.boxlines-6d {float: left; width: 60%; margin: -5px 15% 0 25%; padding: 0; border-left: 10px solid #000; height: 50px;}
@@ -394,4 +396,7 @@ div.cookie-box3 div form.simple_form.contact div input.btn.btn-default.btn.btn-p
 div.box-invest {float: left; color: #fff; width: 90%; margin: 0 5%; padding: 15px; height: auto; min-height: 150px; border-radius: 25px; background-color: #000; font-size: 14px; line-height: 14px; text-align: center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
 div.cookie-box3 div form.simple_form.contact div.form-group label {font-size: 12px; line-height: 12px;}
 div.cookie-box3 div form.simple_form.contact div.form-group .form-control {width: 90%;}
+
+.title-image-mobile {float: left; width: 100%; height: auto; margin: 0; padding: 0; display: inline;}
+.title-image {display: none;}
 }
