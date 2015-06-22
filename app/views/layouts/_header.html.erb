@@ -21,10 +21,18 @@
 
       <ul class="nav navbar-nav navbar-right">
         
-        <li><%= link_to 'play', pages_interact_path %></li>
-        <li><%= link_to 'faq', pages_faq_path %></li>
+        <li><%= link_to 'Play', pages_interact_path %></li>
+        <li class="dropdown2">
+          <%= link_to 'About Us', pages_about_us_path %>
+          <ul class="dropdown-menu">
+            <li><%= link_to 'Services', pages_about_us_path(:anchor => "services1") %></li>
+            <li><%= link_to 'Process', pages_about_us_path(:anchor => "process1") %></li>
+            <li><%= link_to 'Team', pages_about_us_path(:anchor => "team1") %></li>
+            <li><%= link_to 'FAQs', pages_about_us_path(:anchor => "faq1") %></li>
+          </ul>
+        </li>
 
-         <li><%= link_to 'contact', pages_contact_path %></li>
+         <li><%= link_to 'Contact', pages_about_us_path(:anchor => "contact1") %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

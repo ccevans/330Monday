@@ -154,8 +154,9 @@
 						<div class="cookie-box-bottom">		
 						Did you win?  No worries, good thing getting results don't take being lucky.  We provide interactive startegies that get customers excited about your brand and results for your barnd.  Let's head to the research step.</br></br>
 
-						<span class="contact-interact">Ready To Work?  Contact Us Today.</span>
-					
+						<%= link_to pages_about_us_path(:anchor => "contact1") do %>
+							<span class="contact-interact">Ready To Work? Contact Us Today.</span>
+						<% end %>
 
 			
 					</div>
@@ -213,8 +214,9 @@
 						<div class="cookie-box-bottom">		
 						Any luck on making a fortune?  No worries, good thing getting results don't take being lucky.  We provide interactive startegies that get customers excited about your brand and results for your barnd.  Let's head to the research step.</br></br>
 
-						<span class="contact-interact">Ready To Work?  Contact Us Today.</span>
-					
+						<%= link_to pages_about_us_path(:anchor => "contact1") do %>
+							<span class="contact-interact">Ready To Work? Contact Us Today.</span>
+						<% end %>
 
 			
 					</div>
@@ -302,8 +304,9 @@
 					<div class="cookie-box-bottom">		
 						Famous yet?  No worries, getting fame is kinda overrated.  Gaining fans and followers of your brand is not though.  We can help turn potential customers into people who love and adore your brand like they would their favorite band.  Let's head to the research step.</br></br>
 
-						<span class="contact-interact">Ready To Work?  Contact Us Today.</span>
-
+						<%= link_to pages_about_us_path(:anchor => "contact1") do %>
+							<span class="contact-interact">Ready To Work? Contact Us Today.</span>
+						<% end %>
 					</div>
 					
 
@@ -362,7 +365,9 @@
 					<div class="cookie-box-bottom">		
 						Famous yet?  No worries, getting fame is kinda overrated.  Gaining fans and followers of your brand is not though.  We can help turn potential customers into people who love and adore your brand like they would their favorite band.  Let's head to the research step.</br></br>
 
-						<span class="contact-interact">Ready To Work?  Contact Us Today.</span>
+						<%= link_to pages_about_us_path(:anchor => "contact1") do %>
+							<span class="contact-interact">Ready To Work? Contact Us Today.</span>
+						<% end %>
 
 					</div>
 
@@ -444,7 +449,9 @@
 					<div class="cookie-box-bottom">	
 						Our goal is to help you change the world as well.  We can help connect your brand to people who share your mission and passion.  Let's head to the solution step.</br></br>
 
-						<span class="contact-interact">Ready To Work?  Contact Us Today.</span>
+						<%= link_to pages_about_us_path(:anchor => "contact1") do %>
+							<span class="contact-interact">Ready To Work? Contact Us Today.</span>
+						<% end %>
 
 					</div>
 				</div>
@@ -497,7 +504,9 @@
 					<div class="cookie-box-bottom">	
 						Our goal is to help you change the world as well.  We can help connect your brand to people who share your mission and passion.  Let's head to the solution step.</br></br>
 
-						<span class="contact-interact">Ready To Work?  Contact Us Today.</span>
+						<%= link_to pages_about_us_path(:anchor => "contact1") do %>
+							<span class="contact-interact">Ready To Work? Contact Us Today.</span>
+						<% end %>
 
 					</div>
 				</div>
@@ -577,7 +586,9 @@
 					<div class="cookie-box-bottom">	
 						How the cookies turn out?  Connecting your brand to what potential customers love is one of the things we do best.  Do you know what your target market like to do in their spare time? </br></br>
 
-						<span class="contact-interact">Ready To Work?  Contact Us Today.</span>
+						<%= link_to pages_about_us_path(:anchor => "contact1") do %>
+							<span class="contact-interact">Ready To Work? Contact Us Today.</span>
+						<% end %>
 
 					</div>
 				</div>
@@ -621,8 +632,10 @@
 					<div class="cookie-box-bottom">	
 						How the cookies turn out?  Connecting your brand to what potential customers love is one of the things we do best.  Do you know what your target market like to do in their spare time? </br></br>
 
+					<%= link_to pages_about_us_path(:anchor => "contact1") do %>
 						<span class="contact-interact">Ready To Work?  Contact Us Today.</span>
-
+					<% end %>
+					
 					</div>
 				</div>
 	
@@ -916,6 +929,9 @@
 					<h1>Still have questions?</h1>
 
 				<p>Contact Us Today</p>
+
+				<%= render 'contacts/new' %>
+
 			</div>
 
 			</div>

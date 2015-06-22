@@ -60,6 +60,11 @@
     font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif !important;
 }
 
+  .dropdown2 .dropdown-menu {display: none;}
+  .dropdown2:hover .dropdown-menu {display: inline;}
+
+  li.dropdown2 ul.dropdown-menu {background-color: #e74c3c; color: #fff;}
+
 @media screen and (max-width: 640px){
 .logo-head2 {min-width: 100px; max-width: 250px; width: 60%;}
 

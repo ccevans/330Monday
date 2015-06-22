@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
   devise_for :users
-  root 'posts#index'
+  root 'pages#interact'
 
   get 'pages/about_us'
   get 'pages/admin'
-  get 'pages/interact'
   get 'pages/faq'
   get 'pages/contact'
+  get 'pages/interact'
 
     resources :posts
 

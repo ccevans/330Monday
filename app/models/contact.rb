@@ -15,6 +15,6 @@ class Contact < MailForm::Base
     }
   end
 
-  STATUS = %w[$1k-5k $5k-10k 10k-20k 20k-50k]
+  STATUS = %w[$1k-5k $5k-10k $10k-20k $20k-50k]
 
 end
