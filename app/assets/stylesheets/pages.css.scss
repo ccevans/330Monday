@@ -5,7 +5,7 @@
 
 .about1 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background: url('/assets/oktoberfest7.JPG'); background-size: 100% auto; background-repeat: no-repeat;}
 .about2 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background-color: #e74c3c;}
-.about3 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 800px; background-color: #fff;}
+.about3 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 800px; background-color: #f1c40f;}
 .about4 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background-color: #f1c40f;}
 .about5 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background-color: #1bc5a4;}
 .about6 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background: url('grey_wash_wall2.png');}
@@ -34,6 +34,7 @@
 .description-service {float: left; text-align: left; width: 100%;}
 
 div.description-service ul {float: left; width: 50%; padding: 10px 5%; list-style: none;}
+div.box-solution2 div.description-service ul {float: left; width: 100%; padding: 10px 5%; list-style: none;}
 
 .contact {float: left; margin: 0; padding: 0; color: #fff; padding: 15px;}
 .contact p {font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; color: #000; font-size: 18px; line-height: 20px;}
@@ -231,12 +232,15 @@ div.box-invest div.cookie-box3 p {float: left; text-align: left;}
 .about6 dl {color: #fff; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; font-size: 24px; line-height: 24px;}
 .about6 dl dd {font-family: Arial, Helvetica,Arial,sans-serif; font-size: 20px; line-height: 24px;}
 
+.about6 dl dd a {font-family: Arial, Helvetica,Arial,sans-serif; font-size: 20px; line-height: 24px; color: #f1c40f;}
+.about6 dl dd a:hover {font-family: Arial, Helvetica,Arial,sans-serif; font-size: 20px; line-height: 24px; color: #f1c40f; text-decoration: underline;}
+
 div.cookie-box3 div form.simple_form.contact2 {float: left; width: 70%; margin: 0 30% 0 0;}
 div.cookie-box3 div form.simple_form.contact2 div.form-group label {float: left; width: 30%; text-align: left; font-family: Arial, Helvetica,Arial,sans-serif;}
 div.cookie-box3 div form.simple_form.contact2 div.form-group label abbr {display: none;}
 div.cookie-box3 div form.simple_form.contact2 div.form-group textarea#contact_message {min-height: 200px;}
 div.cookie-box3 div form.simple_form.contact2 div.form-group select#contact_status {margin: 0; padding: 0; color: #000; float: left; width: 25%;}
-div.cookie-box3 div form.simple_form.contact2 div input.btn.btn-default.btn.btn-primary {background-color: #1bc5a4 !important;}
+div.cookie-box3 div form.simple_form.contact2 div input.btn.btn-default.btn.btn-primary {background-color: #e74c3c !important; border: none !important;}
 
 div.contact div.cookie-box3 div form.simple_form.contact2 div.form-group label {color: #000;}
 div.contact div.cookie-box3 div form.simple_form.contact2 div.form-group select {color: #000;}
@@ -261,7 +265,25 @@ li.dropdown2 ul.dropdown-menu li a {font-family: Arial Rounded MT Bold,Helvetica
 
 .interact-section5 .play-circle6 a {color: #fff;}
 .interact-section5 .play-circle6 a:hover {color: #F7DC6F; text-decoration: none;}
-@media screen and (max-width: 500px){
+
+@media (min-width: 900px) and (max-width: 1200px){
+
+div.boxlines-3 {float: left; width: 96%; margin: 0 0 0 4%; padding: 0; height: auto; font-size: 28px; line-height: 28px; color: #fff; text-align:center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
+
+}
+
+@media (min-width: 640px) and (max-width: 900px){
+
+div.boxlines-3 {float: left; width: 96%; margin: 0 0 0 4%; padding: 0; height: auto; font-size: 22px; line-height: 22px; color: #fff; text-align:center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
+div.play-circle3 {float: left; width: 350px; height: 350px; padding: 75px 50px; border-radius: 175px; margin: -50px 0 0 5%; background-color: #e74c3c;; color: #fff; font-size: 30px; line-height: 30px; text-align: center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
+div.box-research {float: left; width: auto; max-width: 55%; min-width: 40%; height: auto; min-height: 400px; border-radius: 25px; background-color: #e74c3c; margin: -125px 0 0 0; padding: 25px; font-size: 40px; line-height: 40px; text-align: center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
+div.play-circle6 {float: left; width: 200px; height: 200px; padding: 50px 0; border-radius: 100px; margin: -10px 0 0 10%; background-color: #000; color: #fff; font-size: 40px; line-height: 40px; text-align: center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
+div.play-circle7 {float: left; width: 150px; height: 150px; padding: 50px 0; border-radius: 75px; margin: -10px 0 0 25%; background-color: #000; color: #fff; font-size: 30px; line-height: 30px; text-align: center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
+div.play-circle8 {float: left; width: 150px; height: 150px; padding: 50px 0; border-radius: 75px; margin: -10px 0 0 40%; background-color: #000; color: #fff; font-size: 30px; line-height: 30px; text-align: center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
+div.boxlines-6g {float: left; width: 60%; margin: -20px 20% 0 20%; padding: 0; border-left: 30px solid #000; border-right: 30px solid #000; height: 100px;}
+div.yesno-circle {float: left; width: 150px; height: 150px; padding: 50px 0; border-radius: 75px; margin: -10px 0 0 25%; background-color: #16a085; color: #fff; font-size: 40px; line-height: 40px; text-align: center;}
+div.viral-stats {font-size: 60px; line-height: 60px; float: left; width: 100%; text-align: right;}
+.about1 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 550px; background: url('/assets/oktoberfest7.JPG'); background-size: 100% auto; background-repeat: no-repeat;}
 
 
 }
@@ -406,7 +428,7 @@ div.cookie-box3 div form.simple_form.contact2 div.form-group label {float: left;
 div.cookie-box3 div form.simple_form.contact2 div.form-group label abbr {display: none;}
 div.cookie-box3 div form.simple_form.contact2 div.form-group textarea#contact_message {min-height: 100px;}
 div.cookie-box3 div form.simple_form.contact2 div.form-group select#contact_status {margin: 0; padding: 0; color: #000; float: left; width: 50%;}
-div.cookie-box3 div form.simple_form.contact2 div input.btn.btn-default.btn.btn-primary {background-color: #1bc5a4 !important; margin-top: 10px;}
+div.cookie-box3 div form.simple_form.contact2 div input.btn.btn-default.btn.btn-primary {background-color: #e74c3c !important; margin-top: 10px; border: none !important;}
 
 div.box-invest {float: left; color: #fff; width: 90%; margin: 0 5%; padding: 15px; height: auto; min-height: 150px; border-radius: 25px; background-color: #000; font-size: 14px; line-height: 14px; text-align: center; text-transform: uppercase; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
 div.cookie-box3 div form.simple_form.contact2 div.form-group label {font-size: 12px; line-height: 12px;}
@@ -415,9 +437,9 @@ div.cookie-box3 div form.simple_form.contact2 div.form-group .form-control {widt
 .title-image-mobile {float: left; width: 100%; height: auto; margin: 0; padding: 0; display: inline;}
 .title-image {display: none;}
 
-.about1 {width: 100%; padding: 25px 10%; float: left; height: auto; min-height: 400px; background: url('/assets/oktoberfest7.JPG'); background-size: 100% auto; background-repeat: no-repeat;}
+.about1 {width: 100%; padding: 25px 10%; float: left; height: auto; min-height: 400px; background: url('/assets/oktoberfest7-mobile.jpg'); background-size: 100% auto; background-repeat: no-repeat;}
 .about2 {width: 100%; padding: 25px 10%; float: left; height: auto; min-height: 400px; background-color: #e74c3c;}
-.about3 {width: 100%; padding: 25px 10%; float: left; height: auto; min-height: 600px; background-color: #fff;}
+.about3 {width: 100%; padding: 25px 10%; float: left; height: auto; min-height: 600px; background-color: #f1c40f;}
 .about4 {width: 100%; padding: 25px 10%; float: left; height: auto; min-height: 400px; background-color: #f1c40f;}
 .about5 {width: 100%; padding: 25px 10%; float: left; height: auto; min-height: 400px; background-color: #1bc5a4;}
 .about6 {width: 100%; padding: 25px 10%; float: left; height: auto; min-height: 400px; background: url('grey_wash_wall2.png');}
@@ -452,6 +474,9 @@ div.description-service ul {float: left; width: 100%; padding: 0px 10%; list-sty
 .about6 dl {color: #fff; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; font-size: 20px; line-height: 22px;}
 .about6 dl dd {font-family: Arial, Helvetica,Arial,sans-serif; font-size: 16px; line-height: 18px;}
 .about6 dl dt {color: #fff; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; font-size: 20px; line-height: 22px; padding-bottom: 5px;}
+
+.about6 dl dd a {font-family: Arial, Helvetica,Arial,sans-serif; font-size: 16px; line-height: 18px; color: #f1c40f;}
+.about6 dl dd a:hover {font-family: Arial, Helvetica,Arial,sans-serif; font-size: 16px; line-height: 18px; color: #f1c40f; text-decoration: underline;}
 
 .contact {float: left; margin: 0; padding: 0; color: #fff; padding: 15px 0;}
 .contact p {font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; color: #000; font-size: 16px; line-height: 18px;}
