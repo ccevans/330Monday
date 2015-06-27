@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
+ruby '2.1.5'
 
 gem 'rails', '4.1.7'
 
@@ -19,6 +19,8 @@ gem 'bootstrap-sass', '~> 3.3.3'
 gem 'jquery-turbolinks'
 gem 'aws-sdk'
 gem 'mail_form'
+gem 'tzinfo-data'
+gem 'coffee-script-source', '1.8.0'
 
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
