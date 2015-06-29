@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
     @contact.request = request
     if @contact.deliver
       respond_to do |format|
-        format.html {redirect_to(@contact)}
+        format.html {redirect_to 'create'}
         format.json
         format.js
       end
