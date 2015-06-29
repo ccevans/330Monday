@@ -7,8 +7,7 @@ Rails.application.routes.draw do
   get 'pages/faq'
   get 'pages/contact'
   get 'pages/interact'
-  get 'pages/secret'
-  
+
     resources :posts
 
     match '/contacts', to: 'contacts#new', via: 'get'
