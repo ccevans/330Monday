@@ -1,6 +1,6 @@
 <div align="center">
 
-  <%= simple_form_for :contact2, :url => {:action => :create, :controller => :contacts} do |f| %>
+  <%= simple_form_for :contact, :url => {:action => :create, :controller=>"contacts"}, remote: true do |f| %>
     <%= f.input :name, :required => true %>
     <%= f.input :email, :required => true %>
 
