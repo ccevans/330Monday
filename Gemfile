@@ -18,7 +18,7 @@ gem 'font-awesome-sass'
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'jquery-turbolinks'
 gem 'aws-sdk'
-gem 'mail_form'
+gem 'mail_form', '~> 1.5.1'
 gem 'tzinfo-data'
 gem 'coffee-script-source', '1.8.0'
 
