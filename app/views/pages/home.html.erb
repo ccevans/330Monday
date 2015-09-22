@@ -1,2 +1,127 @@
-<h1>330 Monday</h1>
-<p>Interactive Marketing Agency</p>
+<div class="bscontainer-fluid">
+	<div class="bsrow">
+
+
+	<div id="demo-wrapper" class="">
+		<div id="demo-canvas">
+
+			<div class="centertop">
+				<div class="title-home">
+					<h1>Customer Engagement</br> And Interactions,</br> Done Right!</h1>
+
+					<div class="image-part1">
+						<%= image_tag 'bike-shape.svg', :class => "bikeimage" %>
+					</div>
+
+					<button class="contact-button">
+						Contact Today
+					</button>
+				</div>
+
+			</div>
+
+			<div id="exhibit-menu">
+				<div id="exhibitwrap" class="hidden-xs hidden-sm">
+
+					<%= link_to '#', id: "exhibitcircle" do %>
+						<span class="">EXHIBITS</span>
+					
+						<%= image_tag 'arrow_exhibit.png', :class => "", id: "arrowexhibit" %>
+						<% end %>
+
+					<div id="exhibit-content">
+						<h2>
+							Interactive Exhibit </br>Campaigns
+						</h2>
+						<ul id="exhibitside">
+						<li>Interactive exhibits for festivals.</li>
+						<li>Handle exhibit design to connecting online.</li>
+						<li>360 Campaigns that get results.</li>
+						</ul>
+						<%= link_to 'Learn More', '#', :class => "learnmore" %>
+						
+						<button id="contact-exhibit" class="contact-button">
+						Contact Today
+					</button>
+					</div>
+
+				</div>
+
+			</div>
+			<div id="partner-menu">
+				<div id="partnerwrap" class="hidden-xs hidden-sm">
+
+					<%= link_to '#', id: "partnercircle" do %>
+						<span class="">PARTNER</span>
+
+						<%= image_tag 'arrow_partner.png', :class => "", id: "arrowpartner" %>
+					<% end %>
+
+					<div id="partner-content">
+					<h2>
+							Communication & Marketing</br> Partnerships
+						</h2>
+						<ul id="partnerside">
+						<li>Handle all communication and marketing</li>
+						<li>Save time and money.</li>
+						<li>A partner you can rely on.</li>
+						</ul>
+						<%= link_to 'Learn More', '#', :class => "learnmore" %>
+						
+						<button id="contact-partner" class="contact-button">
+						Contact Today
+					</button>
+					</div>
+
+				</div>
+				
+			</div>
+
+
+		</div>
+
+	</div>
+
+</div>
+</div>
+
+
+<script>
+//When you hover over partner circle, you add class show-nav to wrapper demo
+//select cirlce
+$("#exhibit-menu").mouseenter(function(){
+	$("#demo-wrapper").addClass("show-nav2");
+	$("#exhibitcircle span").addClass("opacity");
+	$("#arrowexhibit").addClass("clockwise180");
+});
+$("#exhibit-menu").mouseleave(function(){
+	$("#demo-wrapper").removeClass("show-nav2");
+	$("#exhibitcircle span").removeClass("opacity");
+	$("#arrowexhibit").removeClass("clockwise180");
+});
+
+$("#partner-menu").mouseenter(function(){
+	$("#demo-wrapper").addClass("show-nav");
+	$("#partnercircle span").addClass("opacity");
+	$("#arrowpartner").addClass("clockwise180");
+});
+$("#partner-menu").mouseleave(function(){
+	$("#demo-wrapper").removeClass("show-nav");
+	$("#partnercircle span").removeClass("opacity");
+	$("#arrowpartner").removeClass("clockwise180");
+});
+
+
+//add class show-nav to wrapper demo
+//how to do smooth tranisition
+//stay on section long as hover over partner section
+//move back to center section
+//take class show-nav off wrapper demo
+
+//When you haver over exhibit circle, you add class show-nav2 to wrapper demo
+
+
+
+</script>
+
+

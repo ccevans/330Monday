@@ -10,6 +10,256 @@ div.contact-ty {margin: 25px 5%; color: #fff;}
 .about5 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background-color: #1bc5a4;}
 .about6 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background: url('grey_wash_wall2.png');}
 
+.home1 {width: 100%; padding: 5px 10%; float: left; height: auto; min-height: 600px; background-color: #fff;}
+
+.bscontainer-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fff;
+}
+.bsrow {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#demo-wrapper {
+    display: block;
+    min-height: 600px;
+    height: auto;
+    margin: 0 auto 50px;
+    overflow: hidden;
+    width: 100%;
+    background-color: #fff;
+}
+
+#demo-wrapper #demo-canvas {
+    color: #fff;
+    font-size: 20px;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 0.6s ease 0s;
+    width: 100%;
+    }
+#demo-wrapper #demo-canvas .centertop {
+    min-height: 600px;
+    height: auto;
+    margin: 5rem auto;
+    width: 75%;
+}
+
+#demo-wrapper #demo-canvas .centertop h1 {
+    color: #e74c3c;
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+#demo-wrapper #demo-canvas .centertop .image-part1 {
+	position: relative;
+	width: 100%;
+}
+
+.bikeimage {
+	width: 70%; 
+	margin: 0 15%;
+	position: relative;
+	height: auto;
+}
+
+#demo-wrapper #demo-canvas #partner-menu {
+    color: #000;
+    display: block;
+    font-size: 14px;
+    height: 100%;
+    left: -60%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 65%;
+}
+
+#demo-wrapper #demo-canvas #exhibit-menu {
+    color: #000;
+    display: block;
+    font-size: 14px;
+    height: 100%;
+    position: absolute;
+    right: -60%;
+    text-align: center;
+    top: 0;
+    width: 65%;
+    }
+
+ #demo-wrapper #demo-canvas #exhibit-menu #exhibitwrap {
+    display: block;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 999;
+}
+
+#demo-wrapper #demo-canvas #exhibit-menu #exhibitwrap #exhibitcircle {
+    background-color: #f5cd0c;
+    border-radius: 50%;
+    color: white;
+    display: block;
+    height: 320px;
+    left: -150px;
+    margin: 30px auto;
+    position: absolute;
+    text-align: center;
+    top: 12%;
+    width: 320px;
+}
+
+#demo-wrapper #demo-canvas #exhibit-menu #exhibitwrap #exhibit-content {
+    float: right;
+    height: 400px;
+    margin-right: -30%;
+    margin-top: 14%;
+    width: 100%;
+}
+
+#demo-wrapper #demo-canvas #exhibit-menu #exhibitwrap #exhibit-content h2 {
+    color: #000;
+    font-size: 4rem;
+    position: relative;
+    text-align: left;
+    font-variant: small-caps;
+}
+
+#demo-wrapper #demo-canvas #partner-menu #partnerwrap #partner-content h2 {
+    color: #000;
+    font-size: 4rem;
+    position: relative;
+    text-align: left;
+    font-variant: small-caps;
+}
+
+#exhibitside {
+		    color: #000;
+    font-size: 2rem;
+        position: relative;
+    text-align: left;
+
+}
+
+#partnerside {
+	    color: #000;
+    font-size: 2rem;
+        position: relative;
+    text-align: left;
+}
+
+.learnmore {
+	float: left;
+	color: #7f8c8d;
+}
+
+#contact-exhibit{
+	clear: left;
+	margin: 10px 0 0 0;
+	border: 3px solid #f5cd0c;
+	color: #f5cd0c;
+	float: left;
+}
+
+#contact-partner{
+	clear: both;
+	margin: 10px 0 0 0;
+	border: 3px solid #20a286;
+	color: #20a286;
+	float: left;
+}
+
+#demo-wrapper #demo-canvas #partner-menu #partnerwrap {
+    display: block;
+    min-height: 600px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    z-index: 999;
+}
+
+#demo-wrapper #demo-canvas #partner-menu #partnerwrap #partnercircle {
+    background-color: #20a286;
+    border-radius: 50%;
+    color: white;
+    display: block;
+    height: 320px;
+    margin: 30px auto;
+    position: absolute;
+    right: -150px;
+    text-align: center;
+    top: 12%;
+    width: 320px;
+}
+
+#demo-wrapper #demo-canvas #partner-menu #partnerwrap #partner-content {
+    float: left;
+    height: 400px;
+    margin-left: 10%;
+    margin-top: 14%;
+    width: 100%;
+}
+
+
+#demo-wrapper #demo-canvas #exhibit-menu #exhibitwrap #exhibitcircle span {
+    font-size: 3rem;
+    font-weight: 600;
+    left: -32px;
+    position: relative;
+    top: 40%;
+}
+
+#demo-wrapper #demo-canvas #partner-menu #partnerwrap #partnercircle span {
+    font-size: 3rem;
+    font-weight: 600;
+    left: 60px;
+    position: relative;
+    top: 40%;
+}
+
+#demo-wrapper.show-nav #demo-canvas {
+    transform: translateX(60%);
+}
+#demo-wrapper.show-nav2 #demo-canvas {
+    transform: translateX(-60%);
+}
+
+.clockwise180 {
+    transform: rotate(-180deg);
+    transition: all 1.2s ease 0s;
+}
+.opacity {
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+}
+
+img#arrowexhibit {
+  border: 0 none;
+    height: 4rem;
+    position: relative;
+    right: 3rem;
+    top: 12rem;
+    vertical-align: middle;
+}
+img#arrowpartner {
+    height: 4rem;
+    position: relative;
+    right: 11.7rem;
+    top: 12rem;
+    vertical-align: middle;
+    border: 0 none;
+}
+
+.contact-button {background-color: #fff; border: 3px solid #e74c3c; border-radius: 20px; color: #e74c3c; padding: 5px 10px;}
 
 .about-title {width: auto; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; font-size: 52px; line-height: 52px; color: #f1c40f; text-align: center; float: left;}
 

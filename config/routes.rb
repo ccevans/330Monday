@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'pages/faq'
   get 'pages/contact'
   get 'pages/interact'
+  get 'pages/home'
 
     resources :posts
 
