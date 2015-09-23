@@ -37,7 +37,9 @@
 	padding: 0 !important;
 }
 
-#330header {background-color: none !important; margin: 0; padding-bottom: 10px;}
+#330header {background-color: none !important; margin: 0; margin-bottom: 0px; border-radius: 0px;}
+
+.navbar { margin-bottom: 0px !important; border-radius: 0px !important;}
 
 .rights {float: left; width: 100%; text-align: left; padding: 5px 0 5px 5%;}
 

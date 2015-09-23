@@ -29,7 +29,7 @@ div.contact-ty {margin: 25px 5%; color: #fff;}
     display: block;
     min-height: 600px;
     height: auto;
-    margin: 0 auto 50px;
+    margin: 0 auto;
     overflow: hidden;
     width: 100%;
     background-color: #fff;
@@ -254,13 +254,60 @@ img#arrowexhibit {
 img#arrowpartner {
     height: 4rem;
     position: relative;
-    right: 11.7rem;
+    right: 10.5rem;
     top: 12rem;
     vertical-align: middle;
     border: 0 none;
 }
 
 .contact-button {background-color: #fff; border: 3px solid #e74c3c; border-radius: 20px; color: #e74c3c; padding: 5px 10px;}
+
+
+.blog-section {float: left; width: 100%; margin: 0; height: auto; min-height: 600px; padding: 15px 10%; background-color: #20a286;}
+.learnhow-box {float: left; width: 80%; margin: 50px 10% 25px; padding: 0; background-color: #fff; color: #000;}
+.learnhow-boxleft {float: left; width: 40%; padding: 15px 5%;}
+.learnhow-boxleft h1 {font-size: 3rem; text-align: center;}
+.learnhow-boxleft h2 {font-size: 2rem; text-align: center;}
+.learnhow-button {width: 80%; float: left; margin: 50px 10% 0; padding: 10px 15px; font-size: 2rem; text-align: center; color: #fff; background-color: #e74c3c;}
+.learnhow-boxright {float: left;  background: url('oktoberfest7.JPG'); width: 60%; height: 100%;}
+.learnbox-image {float: left; width: 100%;}
+
+@media screen and (max-width: 640px){
+
+	#demo-wrapper #demo-canvas #exhibit-menu #exhibitwrap #exhibitcircle {
+    background-color: #f5cd0c;
+    border-radius: 50%;
+    color: white;
+    display: block;
+    height: 200px;
+    left: -50px;
+    margin: 30px auto;
+    position: absolute;
+    text-align: center;
+    top: 12%;
+    width: 200px;}
+
+    #demo-wrapper #demo-canvas #partner-menu #partnerwrap #partnercircle {
+    background-color: #20a286;
+    border-radius: 50%;
+    color: white;
+    display: block;
+    height: 200px;
+    margin: 30px auto;
+    position: absolute;
+    right: -50px;
+    text-align: center;
+    top: 12%;
+    width: 200px;}
+
+
+
+
+	}
+
+.happy-box {position: relative; width: 100%; text-align: center; color: #fff; margin: 15px 0;}
+.happy-box h1 {font-size: 5rem;}
+.happy-box h2 {font-size: 2.6rem;}
 
 .about-title {width: auto; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; font-size: 52px; line-height: 52px; color: #f1c40f; text-align: center; float: left;}
 
