@@ -1,0 +1,36 @@
+<div id="services-layer">
+
+	<%= image_tag 'green-circle.svg', :class => "", :id => "services-circle" %>
+	<%= image_tag 'yellow-circle.svg', :class => "", :id => "services-circle2" %>
+	<%= image_tag 'red-circle.svg', :class => "", :id => "services-circle3" %>
+</div>
+
+<script>
+//When you hover over partner circle, you add class show-nav to wrapper demo
+//select cirlce
+
+$("#services-circle").mouseenter(function(){
+	$("#services-circle").addClass("counterclockwise90");
+	$("#services-circle").removeClass("clockwise0");
+});
+$("#services-circle").mouseleave(function(){
+	$("#services-circle").removeClass("counterclockwise90");
+	$("#services-circle").addClass("clockwise0");
+});
+$("#services-circle2").mouseenter(function(){
+	$("#services-circle2").addClass("counterclockwise90");
+	$("#services-circle2").removeClass("clockwise0");
+});
+$("#services-circle2").mouseleave(function(){
+	$("#services-circle2").removeClass("counterclockwise90");
+	$("#services-circle2").addClass("clockwise0");
+});
+$("#services-circle3").mouseenter(function(){
+	$("#services-circle3").addClass("counterclockwise90");
+	$("#services-circle3").removeClass("clockwise0");
+});
+$("#services-circle3").mouseleave(function(){
+	$("#services-circle3").removeClass("counterclockwise90");
+	$("#services-circle3").addClass("clockwise0");
+});
+</script>

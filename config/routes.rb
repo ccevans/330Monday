@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'pages/contact'
   get 'pages/interact'
   get 'pages/home'
+  get 'pages/marketingpartner'
 
     resources :posts
 

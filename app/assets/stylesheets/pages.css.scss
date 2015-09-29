@@ -2,11 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#services-circle {position: relative; width: 34%; margin: 50px -4% 0 0; z-index: 10;}
+#services-circle2 {position: relative; width: 34%; margin: 50px -4% 0 -4%; z-index: 8;}
+#services-circle3 {position: relative; width: 34%; margin: 50px 0 0 -4%; z-index: 6;}
+
+#services-layer {float: left; width: 100%; height: auto; padding: 50px 20%;}
+
 div.contact-ty {margin: 25px 5%; color: #fff;}
 .about1 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background: url('/assets/oktoberfest7.JPG'); background-size: 100% auto; background-repeat: no-repeat;}
 .about2 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background-color: #e74c3c;}
 .about3 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 800px; background-color: #f1c40f;}
-.about4 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background-color: #f1c40f;}
+.about4 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background-color: #e74c3c; color: #fff;}
 .about5 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background-color: #1bc5a4;}
 .about6 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background: url('grey_wash_wall2.png');}
 
@@ -238,6 +244,14 @@ div.contact-ty {margin: 25px 5%; color: #fff;}
     transform: rotate(-180deg);
     transition: all 1.2s ease 0s;
 }
+.counterclockwise90 {
+    transform: rotate(90deg);
+    transition: all 1.2s ease 0s;
+}
+.clockwise0 {
+    transform: rotate(0deg);
+    transition: all 1.2s ease 0s;
+}
 .opacity {
     opacity: 0;
     transition: all 0.4s ease 0s;
@@ -272,6 +286,21 @@ img#arrowpartner {
 .learnhow-boxright {float: left;  background: url('oktoberfest7.JPG'); width: 60%; height: 100%;}
 .learnbox-image {float: left; width: 100%;}
 
+.blogpost-section {float: left; width: 80%; margin: 15px 10%;}
+.blog-post {float: left; height: 250px; width: 40%; margin: 0 5% 25px 5%; background-color: #e74c3c; color: #fff;}
+.img-box {float: left; width: 100%; height: 125px; overflow: hidden;}
+.blog-title {float: left; width: 100%; text-align: center; font-size: 3rem; line-height: 4rem; vertical-align: center; padding: 15px 5px;}
+
+.services-section {float: left; width: 100%; margin: 0; height: auto; min-height: 600px; padding: 15px 10%; background-color: #fff;}
+.services-section h1 {float: left; width: 100%; padding: 25px 5%; text-align: left; color: #e74c3c; font-size: 6.5rem; line-height: 6.5rem;}
+.categories {float: left; width: 100%; margin: 0; padding: 0;}
+.service-category {float: left; width: 28%; margin: 15px 2%; padding: 0; height: auto;}
+.category-image {float: left; height: auto; margin: 0; padding: 0; width: 100%;}
+.category-box {float: left; height: auto; width: 100%; padding: 5px 5%; color: #e74c3c; text-align: center;}
+.category-box h2 {float: left; width: 100%; font-size: 2rem; line-height: 2rem; text-align: center;}
+.category-box p {float: left; width: 100%; font-size: 1.4rem; line-height: 1.5rem; text-align: center;}
+.learn-button {background-color: #e74c3c; border: 3px solid #e74c3c; border-radius: 20px; color: #fff; min-width: 70%; margin: 5px 15%; padding: 5px 10px;}
+
 @media screen and (max-width: 640px){
 
 	#demo-wrapper #demo-canvas #exhibit-menu #exhibitwrap #exhibitcircle {
@@ -305,7 +334,7 @@ img#arrowpartner {
 
 	}
 
-.happy-box {position: relative; width: 100%; text-align: center; color: #fff; margin: 15px 0;}
+.happy-box {position: relative; width: 100%; text-align: center; color: #fff; margin: 15px 0 50px 0;}
 .happy-box h1 {font-size: 5rem;}
 .happy-box h2 {font-size: 2.6rem;}
 
@@ -341,9 +370,9 @@ div.box-solution2 div.description-service ul {float: left; width: 100%; padding:
 .contact span.contact-phone {font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; float: left; width: 100%; font-size: 50px; line-height: 50px; color: #e74c3c; margin: 10px 0;}
 
 .about-stuff {width: 100%; float: left; margin: 0; padding: 0;}
-.stuff1 {float: left; width: auto; margin: 0 25px; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; color: #000; font-size: 20px; line-height: 22px;}
+.stuff1 {float: left; width: auto; margin: 0 25px; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; color: #fff; font-size: 20px; line-height: 22px;}
 .bigstuff {font-family: "hwt-republic-gothic-outline"; font-size: 68px; line-height: 68px;}
-.about-information {float: left; width: 60%; padding: 50px 5% 0 5%; margin: 0; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; color: #000; font-size: 20px; line-height: 22px;}
+.about-information {float: left; width: 60%; padding: 50px 5% 0 5%; margin: 0; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; color: #fff; font-size: 20px; line-height: 22px;}
 .about-information p {font-size: 16px; line-height: 18px;}
 .puzzle-image2 {float: left; width: 30%; height: auto; margin: 0 10% 0 0;}
 .contact div.social-links {float: left; margin: 10px 0 0 0; font-size: 20px; line-height: 20px; color: #000;}
