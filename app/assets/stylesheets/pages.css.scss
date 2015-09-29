@@ -242,19 +242,43 @@ div.contact-ty {margin: 25px 5%; color: #fff;}
 
 .clockwise180 {
     transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
     transition: all 1.2s ease 0s;
+    -webkit-transition: all 1.2s ease 0s;
+    -moz-transition: all 1.2s ease 0s;
+    -o-transition: all 1.2s ease 0s;
 }
 .counterclockwise90 {
     transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
     transition: all 1.2s ease 0s;
+    -webkit-transition: all 1.2s ease 0s;
+    -moz-transition: all 1.2s ease 0s;
+    -o-transition: all 1.2s ease 0s;
 }
 .clockwise0 {
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
     transition: all 1.2s ease 0s;
+    -webkit-transition: all 1.2s ease 0s;
+    -moz-transition: all 1.2s ease 0s;
+    -o-transition: all 1.2s ease 0s;
 }
 .opacity {
     opacity: 0;
     transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
 }
 
 img#arrowexhibit {
