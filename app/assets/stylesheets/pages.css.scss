@@ -6,9 +6,9 @@
 #nav-circle2 {float: left; width: 34%; margin: 0px -4% 0 -4%; z-index: 8; height: auto;}
 #nav-circle3 {float: left; width: 34%; margin: 0px 0 0 -4%; z-index: 6; height: auto;}
 
-#services-circle {position: relative; width: 100%; z-index: 10; height: auto;}
-#services-circle2 {position: relative; width: 100%; z-index: 8; height: auto;}
-#services-circle3 {position: relative; width: 100%; z-index: 6; height: auto;}
+#services-circle {position: relative; width: 100%; z-index: 10; height: auto; margin-bottom: 15px;}
+#services-circle2 {position: relative; width: 100%; z-index: 8; height: auto; margin-bottom: 15px;}
+#services-circle3 {position: relative; width: 100%; z-index: 6; height: auto; margin-bottom: 15px;}
 
 #redcircle {transition: all 1.2s ease 0s; transfrom-origin: 50% 50%;}
 #redcircle:hover {fill: #c0392b; transform: rotate(90deg);}
@@ -251,11 +251,13 @@ div.contact-ty {margin: 25px 5%; color: #fff;}
 }
 
 .movedown {
-    margin: 15px;
+    margin-top: 15px;
+    margin-bottom: 0px !important;
     transition: all .6s ease 0s;
     -webkit-transition: all .6s ease 0s;
     -moz-transition: all .6s ease 0s;
     -o-transition: all .6s ease 0s;
+    transform: rotate(90deg);
 
 }
 
@@ -375,6 +377,7 @@ img#arrowpartner {
 
     .services-section h1 {float: left; width: 100%; padding: 25px 5%; text-align: left; color: #e74c3c; font-size: 2rem; line-height: 2rem;}
     #services-layer {float: left; background-color: #fff; width: 100%; height: auto; padding: 50px 5%;}
+    .nav-circle-title {position: relative; margin-top: 0px; z-index: 12; color: #000; text-align: center; width: 100%; font-size: 1.2rem; text-transform: uppercase;}
 
 
 	}

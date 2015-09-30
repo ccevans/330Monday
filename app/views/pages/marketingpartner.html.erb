@@ -98,6 +98,11 @@ $("#services-circle").click(function(){
 	$("#services-circle").addClass("movedown");
 	$("#services-circle2").removeClass("movedown");
 	$("#services-circle3").removeClass("movedown");
+	$("#services-circle").off('mouseleave');
+	$("#services-circle2").on('mouseleave');
+	$("#services-circle3").on('mouseleave');
+	$("#services-circle2").addClass("clockwise0");
+	$("#services-circle3").addClass("clockwise0");
 });
 $("#services-circle2").mouseenter(function(){
 	$("#services-circle2").addClass("counterclockwise90");
@@ -111,6 +116,11 @@ $("#services-circle2").click(function(){
 	$("#services-circle2").addClass("movedown");
 	$("#services-circle").removeClass("movedown");
 	$("#services-circle3").removeClass("movedown");
+	$("#services-circle2").off('mouseleave');
+	$("#services-circle").on('mouseleave');
+	$("#services-circle3").on('mouseleave');
+	$("#services-circle").addClass("clockwise0");
+	$("#services-circle3").addClass("clockwise0");
 });
 $("#services-circle3").mouseenter(function(){
 	$("#services-circle3").addClass("counterclockwise90");
@@ -124,5 +134,10 @@ $("#services-circle3").click(function(){
 	$("#services-circle3").addClass("movedown");
 	$("#services-circle2").removeClass("movedown");
 	$("#services-circle").removeClass("movedown");
+	$("#services-circle3").off('mouseleave');
+	$("#services-circle2").on('mouseleave');
+	$("#services-circle").on('mouseleave');
+	$("#services-circle2").addClass("clockwise0");
+	$("#services-circle").addClass("clockwise0");
 });
 </script>
