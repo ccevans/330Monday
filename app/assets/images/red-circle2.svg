@@ -3,14 +3,15 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="-172 263 266.5 268" style="enable-background:new -172 263 266.5 268;" xml:space="preserve">
 <style type="text/css">
-	.st0{display:none;fill:#E64C3C;}
-	.st1{fill:#16A085;}
+	.st0{fill:#E64C3C;}
+	.st1{display:none;fill:#16A085;}
 	.st2{display:none;fill:#F1C40F;}
 	.st3{display:none;fill:#FFFFFF;}
 	.st4{font-family:'ProximaNova-Regular';}
 	.st5{font-size:31px;}
 	.st6{display:none;}
 	.st7{display:inline;fill:#FFFFFF;}
+	.st8{fill:#FFFFFF;}
 </style>
 <path class="st0" d="M-38.5,266c-72.1,0-130.5,58.4-130.5,130.5S-110.6,527-38.5,527S92,468.6,92,396.5S33.6,266-38.5,266z
 	 M64.8,409.3l8.8-12.8l-8.8-12.8h7.4l8.8,12.8l-8.8,12.8H64.8z"/>
@@ -20,5 +21,5 @@
 	 M64.8,409.8l8.8-12.8l-8.8-12.8h7.4L81,397l-8.8,12.8H64.8z"/>
 <text transform="matrix(1 0 0 1 -102 405.3004)" class="st3 st4 st5">Services</text>
 <text transform="matrix(1 0 0 1 -107 385.7001)" class="st6"><tspan x="0" y="0" class="st7 st4 st5">Why</tspan><tspan x="0" y="37.2" class="st7 st4 st5">Marketing?</tspan></text>
-<text transform="matrix(1 0 0 1 -107 385.6999)" class="st6"><tspan x="0" y="0" class="st7 st4 st5">Why</tspan><tspan x="0" y="37.2" class="st7 st4 st5">330?</tspan></text>
+<text transform="matrix(1 0 0 1 -71 385.7001)"><tspan x="0" y="0" class="st8 st4 st5">Why</tspan><tspan x="0" y="37.2" class="st8 st4 st5">330?</tspan></text>
 </svg>

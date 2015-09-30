@@ -1,9 +1,86 @@
 <div id="services-layer">
-
-	<%= image_tag 'green-circle.svg', :class => "", :id => "services-circle" %>
+	<div id="nav-circle">
+		
+		<%= image_tag 'green-circle.svg', :class => "", :id => "services-circle" %>
+		<div class="nav-circle-title">Services</div>
+	</div>
+	<div id="nav-circle2">
+		
 	<%= image_tag 'yellow-circle.svg', :class => "", :id => "services-circle2" %>
-	<%= image_tag 'red-circle.svg', :class => "", :id => "services-circle3" %>
+	<div class="nav-circle-title">Why Marketing?</div>
 </div>
+	<div id="nav-circle3">
+		
+	<%= image_tag 'red-circle.svg', :class => "", :id => "services-circle3" %>
+	<div class="nav-circle-title">Why 330?</div>
+	</div>
+</div>
+
+
+	<section class="services-section">
+
+		<h1>WE HANDLE ALL OF</br>YOUR MARKETING AND</br>COMMUNICATIONS NEEDS.</h1>
+
+		<div class="categories">
+		<div class="service-category">
+			<%= image_tag 'services-face.jpg', :class => "category-image" %>
+
+			<div class="category-box">
+				<h2>Face To Face</h1>
+
+					<p>We provide interactive solutions to engage future customers at festivals, tradeshows and events.  Also provide solutions for in house events and sponsorship partnerships.</p>
+
+					<button class="learn-button">
+						Learn More
+					</button>
+
+
+			</div>
+
+
+		</div>
+
+				<div class="service-category">
+			<%= image_tag 'services-social.jpg', :class => "category-image" %>
+
+			<div class="category-box">
+				<h2>Communication</h1>
+
+					<p>We provide solutions to connect to your target market online and offline.  We help you develop a message to use on social media and in other tradition channels.</p>
+
+					<button class="learn-button">
+						Learn More
+					</button>
+
+
+			</div>
+
+
+		</div>
+
+				<div class="service-category">
+			<%= image_tag 'services-web.jpg', :class => "category-image" %>
+
+			<div class="category-box">
+				<h2>Web Presense</h1>
+
+					<p>We provide simple solutions to showcase your brand and make a great first impression online.  We make sure your business looks professional and consistent on all devices.</p>
+
+					<button class="learn-button">
+						Learn More
+					</button>
+
+
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+	</section>
+
 
 <script>
 //When you hover over partner circle, you add class show-nav to wrapper demo
@@ -17,6 +94,11 @@ $("#services-circle").mouseleave(function(){
 	$("#services-circle").removeClass("counterclockwise90");
 	$("#services-circle").addClass("clockwise0");
 });
+$("#services-circle").click(function(){
+	$("#services-circle").addClass("movedown");
+	$("#services-circle2").removeClass("movedown");
+	$("#services-circle3").removeClass("movedown");
+});
 $("#services-circle2").mouseenter(function(){
 	$("#services-circle2").addClass("counterclockwise90");
 	$("#services-circle2").removeClass("clockwise0");
@@ -25,6 +107,11 @@ $("#services-circle2").mouseleave(function(){
 	$("#services-circle2").removeClass("counterclockwise90");
 	$("#services-circle2").addClass("clockwise0");
 });
+$("#services-circle2").click(function(){
+	$("#services-circle2").addClass("movedown");
+	$("#services-circle").removeClass("movedown");
+	$("#services-circle3").removeClass("movedown");
+});
 $("#services-circle3").mouseenter(function(){
 	$("#services-circle3").addClass("counterclockwise90");
 	$("#services-circle3").removeClass("clockwise0");
@@ -32,5 +119,10 @@ $("#services-circle3").mouseenter(function(){
 $("#services-circle3").mouseleave(function(){
 	$("#services-circle3").removeClass("counterclockwise90");
 	$("#services-circle3").addClass("clockwise0");
+});
+$("#services-circle3").click(function(){
+	$("#services-circle3").addClass("movedown");
+	$("#services-circle2").removeClass("movedown");
+	$("#services-circle").removeClass("movedown");
 });
 </script>

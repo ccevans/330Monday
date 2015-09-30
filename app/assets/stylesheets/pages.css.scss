@@ -2,11 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#services-circle {position: relative; width: 34%; margin: 50px -4% 0 0; z-index: 10;}
-#services-circle2 {position: relative; width: 34%; margin: 50px -4% 0 -4%; z-index: 8;}
-#services-circle3 {position: relative; width: 34%; margin: 50px 0 0 -4%; z-index: 6;}
+#nav-circle {float: left; width: 34%; margin: 0px -4% 0 0; z-index: 10; height: auto;}
+#nav-circle2 {float: left; width: 34%; margin: 0px -4% 0 -4%; z-index: 8; height: auto;}
+#nav-circle3 {float: left; width: 34%; margin: 0px 0 0 -4%; z-index: 6; height: auto;}
 
-#services-layer {float: left; width: 100%; height: auto; padding: 50px 20%;}
+#services-circle {position: relative; width: 100%; z-index: 10; height: auto;}
+#services-circle2 {position: relative; width: 100%; z-index: 8; height: auto;}
+#services-circle3 {position: relative; width: 100%; z-index: 6; height: auto;}
+
+#redcircle {transition: all 1.2s ease 0s; transfrom-origin: 50% 50%;}
+#redcircle:hover {fill: #c0392b; transform: rotate(90deg);}
+
+
+.nav-circle-title {position: relative; margin-top: 0px; z-index: 12; color: #000; text-align: center; width: 100%; font-size: 2.5rem; text-transform: uppercase;}
+
+#services-layer {float: left; background-color: #fff; width: 100%; height: auto; padding: 50px 20%;}
 
 div.contact-ty {margin: 25px 5%; color: #fff;}
 .about1 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background: url('/assets/oktoberfest7.JPG'); background-size: 100% auto; background-repeat: no-repeat;}
@@ -238,6 +248,15 @@ div.contact-ty {margin: 25px 5%; color: #fff;}
 }
 #demo-wrapper.show-nav2 #demo-canvas {
     transform: translateX(-60%);
+}
+
+.movedown {
+    margin: 15px;
+    transition: all .6s ease 0s;
+    -webkit-transition: all .6s ease 0s;
+    -moz-transition: all .6s ease 0s;
+    -o-transition: all .6s ease 0s;
+
 }
 
 .clockwise180 {
