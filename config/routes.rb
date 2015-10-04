@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'pages/interact'
   get 'pages/home'
   get 'pages/marketingpartner'
+  get 'pages/jpmicrosite'
 
     resources :posts
 

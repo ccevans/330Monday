@@ -1,0 +1,146 @@
+
+ <div id="micrositeform" align="center">
+
+<form id="ugcform" method="post" action="">
+<div class="field-holder">
+<div class="label">I am</div>
+<div class="tip">Field is empty</div>
+<input class="small indv" id="text11" type="text" value="" maxlength="20" autocomplete="off" name="name" onkeyup="formChanged()" onchange="formChanged()" style="font-size: 36px; width: 285.877px;">
+
+</div>
+<div class="field-holder">
+	<div class="label">
+<u>born</u>
+in
+</div>
+<div class="tip">Field is empty</div>
+<input class="small" id="text22" type="text" value="" maxlength="20" autocomplete="off" name="born" onkeyup="formChanged()" onchange="formChanged()" style="font-size: 36px; width: 242.612px;">
+
+</div>
+<div class="field-holder">
+<div class="label">
+<u>made</u>
+with
+</div>
+<div class="tip">Field is empty</div>
+<input class="large" id="text33" type="text" value="" maxlength="20" autocomplete="off" name="made" onkeyup="formChanged()" onchange="formChanged()" style="font-size: 36px; width: 207.489px;">
+
+</div>
+<div class="field-holder">
+<div class="label">I am</div>
+<div class="tip">Field is empty</div>
+<input class="medium" id="text44" type="text" value="" maxlength="20" autocomplete="off" name="parent" onkeyup="formChanged()" onchange="formChanged()" style="font-size: 36px; width: 258.942px;">
+
+<div class="label" style="margin-right:0; margin-left:10px">’s</div>
+</div>
+<div class="field-holder" style="width: 100%; text-align: right">daughter</div>
+</form>
+
+<button id="upload">Upload Button</button>
+
+</div>
+
+<div id="yourOutputDiv"></div>
+<div id="yourUrl"></div>
+
+<div class="canvasbox">
+<canvas id="myCanvas" width="600" height="400"></canvas>
+</div>
+
+ <button onclick="saveCanvas()">Save</button> 
+
+
+<script type="text/javascript">
+
+
+        var canvas = new fabric.Canvas('myCanvas');
+
+
+        fabric.Image.fromURL('/assets/oktoberfest5.JPG', function(oImg) {
+		  // scale image down, and flip it, before adding it onto canvas
+		  oImg.scale(0.1);
+		  canvas.add(oImg);
+		  canvas.sendToBack(oImg);
+		});
+
+			var firstName = document.getElementsByName("name")[0].value;
+    var bornIn = document.getElementsByName("born")[0].value;
+    var madeWith = document.getElementsByName("made")[0].value;
+    var daughter = document.getElementsByName("parent")[0].value;
+    var results = "I'm " + firstName + " born in " + bornIn + " made with " + madeWith + " I am "+ daughter + "'s daughter";
+    
+
+    document.getElementById("yourOutputDiv").innerHTML = results;
+          var dataURL = canvas.toDataURL();
+
+      // set canvasImg image src to dataURL
+      // so it can be saved as an image
+      document.getElementById('myCanvas').src = dataURL;
+    var dataResults = "URL: " + dataURL;
+    document.getElementById("yourUrl").innerHTML = dataResults;
+
+        
+    function formChanged() {  
+        
+		var text = new fabric.Text("I'm ", { left: 100, top: 50 }, fillStyle = 'blue');
+		var textname = new fabric.Text(document.getElementsByName("name")[0].value, {left: 200, top: 50});
+		var text2 = new fabric.Text('born in', { left: 100, top: 100 });	
+		var textborn = new fabric.Text(document.getElementsByName("born")[0].value, {left: 250, top: 100});
+		var text3 = new fabric.Text('made with', { left: 100, top: 150 });
+		var textmade = new fabric.Text(document.getElementsByName("made")[0].value, {left: 300, top: 150});
+		var text4 = new fabric.Text('I am', { left: 100, top: 200 });
+		var textparent = new fabric.Text(document.getElementsByName("parent")[0].value, {left: 200, top: 200});
+
+		
+		canvas.add(text);
+		canvas.add(textname);
+		canvas.add(text2);
+		canvas.add(textborn);
+		canvas.add(text3);
+		canvas.add(textmade);
+		canvas.add(text4);
+		canvas.add(textparent);
+
+		text.set({fill: '#FF0000'});
+		text2.set({fill: '#34495e'});
+		text3.set({fill: '#d35400'});
+		text4.set({fill: '#d35400'});
+		textname.set({fill: '#8e44ad'});
+		textborn.set({fill: '#8e44ad'});
+		textmade.set({fill: '#8e44ad'});
+		textparent.set({fill: '#8e44ad'});
+		
+
+		text.set('selectable', false);
+		text2.set('selectable', false);
+		text3.set('selectable', false);
+		text4.set('selectable', false);
+		textname.set('selectable', false);
+		textborn.set('selectable', false);
+		textmade.set('selectable', false);
+		textparent.set('selectable', false);
+
+		canvas.sendToBack(oImg);
+
+
+	var firstName = document.getElementsByName("name")[0].value;
+    var bornIn = document.getElementsByName("born")[0].value;
+    var madeWith = document.getElementsByName("made")[0].value;
+    var daughter = document.getElementsByName("parent")[0].value;
+    var results = "I'm " + firstName + " born in " + bornIn + " made with " + madeWith + " I am "+ daughter + "'s daughter";
+
+    document.getElementById("yourOutputDiv").innerHTML = results;
+	}
+
+	function saveCanvas(){
+			      // save canvas image as data url (png format by default)
+		  canvas.deactivateAll().renderAll();  
+		  window.open(canvas.toDataURL('png')); 
+      
+	}
+
+
+
+
+
+    </script>
