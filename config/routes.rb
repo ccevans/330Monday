@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'pages/home'
   get 'pages/marketingpartner'
   get 'pages/jpmicrosite'
+  get 'pages/checkoutclt'
 
     resources :posts
 

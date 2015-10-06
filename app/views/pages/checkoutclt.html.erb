@@ -1,0 +1,315 @@
+<div id="overwrap" class="">
+	<div id="holder" class="">
+		<div id="imagecontrolbox" class="">
+
+		</div>
+
+		<div id="canvasholder" class="contentoverlay">
+
+			<div id="canvasbox">
+				<div class="canvascontainer">
+						<canvas id="myCanvas" width="400" height="400"></canvas>
+
+						<input type="file" id="fileElem" multiple accept="image/*" style="display:none; width:400px;" onchange="handleFiles(this.files)">
+
+						<a href="#" id="fileSelect">Upload File</a>
+
+						<button onclick="saveCanvas()">Save</button> 
+
+						<button onclick="removeText()">Clear</button> 
+
+				</div>
+
+				<div id="hiddentextform1" class="canvas-text"></div>
+				<div id="hiddentextform2" class="canvas-text"></div>
+
+
+
+			</div>
+
+
+		</div>
+
+
+
+
+	</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+<section class="cltfirstpart">
+
+	<div class="firstexample">
+
+		<%= image_tag 'romare.png', :class => "jackbeagal" %>
+
+	</div>
+
+
+</section>
+	<div class="hashtag">
+		<i class="fa fa-instagram"></i>#CheckoutCLT <span>and make your own</span>
+
+	</div>
+<section class="cltsecondpart">
+	<div class="cltinfo">
+		Readymade plaid bitters street art, fanny pack banh mi authentic Shoreditch American Apparel bicycle rights post-ironic brunch 3 wolf moon lo-fi +1. Locavore sartorial occupy Marfa polaroid. Forage fixie meh gastropub Echo Park Vice. Austin banh mi Odd Future chambray fixie, Echo Park trust fund deep v irony hoodie VHS banjo Vice hashtag. Hella butcher authentic Marfa, bespoke Pinterest blog Tumblr. Sartorial tote bag occupy bicycle rights master cleanse, aesthetic 8-bit health goth kogi disrupt next level cornhole Williamsburg. Roof party messenger bag four loko ennui Pinterest Godard.
+	</div>
+
+		<div class="hashtag2">
+		<i class="fa fa-instagram"></i><span>#CheckoutCLT</span>
+
+	</div>
+
+</section>
+<section class="cltthirdpart">
+	<div class="cltwrapper">
+	<div class="cltinstruction">
+		<h2>Tell us what to checkout in Charlotte</h2>
+		<div class="specialfont">Checkout</br>CLT
+		</div>
+		<h2>in 3 Easy Steps</h2>
+
+
+	</div>
+	<div class="cltformbox">
+
+		<form id="cltform" method="post" action="">
+			<div class="field-holder">
+			<div class="label">Charlotte is</div>
+			<div class="tip">Field is empty</div>
+			<input class="small indv" id="text11" type="text" value="" maxlength="20" autocomplete="off" name="textform1" onkeyup="formChanged()" onchange="formChanged()" style="font-size: 24px; width: 270px;">
+
+			</div>
+			<div class="field-holder">
+				<div class="label">checkout</div>
+			<div class="tip">Field is empty</div>
+			<input class="small" id="text22" type="text" value="" maxlength="20" autocomplete="off" name="textform2" onkeyup="formChanged()" onchange="formChanged()" style="font-size: 24px; width: 285px;">
+
+			</div>
+
+			</form>
+
+			<div class="cltsteps">
+				<div id="step1" class="cltstep">
+					<span>#1</span> What To Checkout?
+				</div>
+				<div id="step2" class="cltstep">
+					<button onclick="addText()"><span>#2</span> Add Cool Pic</button> 
+					
+				</div>
+				<div id="step3" class="cltstep">
+					<span>#3</span> Share To All
+				</div>
+			</div>
+
+
+	</div>
+</div>
+
+	<div class="cltgallery">
+
+
+	</div>
+
+
+	</section>
+
+
+	<script type="text/javascript">
+
+
+        var canvas = new fabric.Canvas('myCanvas');
+        canvas.hoverCursor = 'move';
+
+		canvas.setBackgroundColor('rgba(149, 165, 166,1.0)', canvas.renderAll.bind(canvas));
+
+		var text = new fabric.Text("Charlotte is", { left: 10, top: 260, fontSize: 18, fontFamily: "proxima-nova" }, fillStyle = 'black');
+		var text3 = new fabric.Text("Checkout", { left: 10, top: 325, fontSize: 18, fontFamily: "proxima-nova" }, fillStyle = 'black');
+		var text5 = new fabric.Text("#CheckoutCLT", { left: 280, top: 386, fontSize: 14, fontFamily: "shuriken-std" }, fillStyle = 'black');
+
+		var colorSet = '#e74c3c';
+
+  fabric.loadSVGFromURL('/assets/cltskylineyellow.svg', function(objects, options) {
+    var shape = fabric.util.groupSVGElements(objects, options);
+    shape.set({
+        left: -1, 
+		top: 149, 
+		opacity: 1,
+		scaleY: canvas.width / shape.width + 2/canvas.width,
+		scaleX: canvas.width / shape.width + 2/canvas.width
+    });
+
+    console.log('22222');
+
+    if (shape.isSameColor && shape.isSameColor() || !shape.paths) {
+      shape.setFill(colorSet);
+    }
+    else if (shape.paths) {
+      for (var i = 0; i < shape.paths.length; i++) {
+        shape.paths[i].setFill(colorSet);
+      }
+    }
+
+    canvas.add(shape);
+    shape.set('selectable', false);
+	canvas.sendToBack(shape);
+    canvas.renderAll();
+  }); 
+
+
+
+      // fabric.Image.fromURL('/assets/cltskylineyellow.png', function(oImg) {
+		  // scale image down, and flip it, before adding it onto canvas
+		//  oImg.scale(1);
+		//  oImg.set({
+		 // 	left: -1, 
+		 // 	top: 149, 
+		 // 	opacity: .7,
+		 // 	scaleY: canvas.width / oImg.width + 2/canvas.width,
+		//	scaleX: canvas.width / oImg.width + 2/canvas.width
+		//  });
+		 // canvas.add(oImg);
+		 // oImg.set('selectable', false);
+		//  canvas.sendToBack(oImg);
+		// });
+
+        canvas.add(text);
+		canvas.add(text3);
+		canvas.add(text5);
+
+		text.set('selectable', false);
+		text3.set('selectable', false);
+		text5.set('selectable', false);
+
+	function addText() {
+		var text2 = new fabric.Text(document.getElementById('hiddentextform1').textContent, { left: 10, top: 280, fontSize: 36, fontFamily: "shuriken-std" }, fillStyle = 'black');
+		var text4 = new fabric.Text(document.getElementById('hiddentextform2').textContent, { left: 10, top: 345, fontSize: 36, fontFamily: "shuriken-std" }, fillStyle = 'black');
+
+		canvas.add(text2);
+		canvas.add(text4);
+
+		text2.set('selectable', false);
+		text4.set('selectable', false);
+
+		console.log('fdsfgdfdfd');
+
+	}
+
+
+	function removeText() {
+		var textremove1 = canvas.item(5);
+		var textremove2 = canvas.item(6);
+		var imageremove = canvas.item(8);
+
+		canvas.remove(textremove1);
+		canvas.remove(textremove2);
+		canvas.remove(imageremove);
+		
+	}
+
+
+        
+    function formChanged() {  
+        
+		var texthidden1 = document.getElementsByName("textform1")[0].value;
+		var texthidden2 = document.getElementsByName("textform2")[0].value;
+
+		document.getElementById("hiddentextform1").textContent = texthidden1;
+		document.getElementById("hiddentextform2").textContent = texthidden2;
+
+	}
+
+	function saveCanvas(){
+			      // save canvas image as data url (png format by default)
+		  canvas.deactivateAll().renderAll();  
+		  window.open(canvas.toDataURL('png')); 
+      
+	}
+
+
+	document.getElementById('fileElem').onchange = function handleImage(e) {
+	    var reader = new FileReader();
+	    reader.onload = function (event) { console.log('fdsf');
+	        var imgObj = new Image();
+	        imgObj.src = event.target.result;
+	        imgObj.onload = function () {
+	            // start fabricJS stuff
+	            
+	            var image = new fabric.Image(imgObj);
+
+	            //image.scale(getRandomNum(0.1, 0.25)).setCoords();
+
+	   
+	            if (image.width > image.height) {
+	         
+			            image.set({
+						    top: -1,
+						    left: -(canvas.width/2),
+						    scaleY: (canvas.height / image.height) + 2/canvas.height,
+						    scaleX: canvas.height / image.height
+						});
+	          
+	            } else if (image.width < image.height) {
+
+		            image.set({
+					    top: -(canvas.height/2),
+					    left: -1,
+					    scaleY: canvas.width / image.width,
+					    scaleX: (canvas.width / image.width) + 2/canvas.width
+					});
+
+	            } else {
+
+		            image.set({
+					    top: -1,
+					    left: -1,
+					    scaleY: (canvas.height / image.height) + 2/canvas.height,
+					    scaleX: (canvas.width / image.width) + 2/canvas.width
+					});
+	            }
+	         
+
+	            canvas.add(image);
+	            image.set('selectable', false);
+
+	            canvas.sendToBack(image);
+	            
+	            // end fabricJS stuff
+	        }
+	        
+	    }
+	    reader.readAsDataURL(e.target.files[0]);
+	}
+
+	var fileSelect = document.getElementById("fileSelect"),
+	  fileElem = document.getElementById("fileElem");
+
+	fileSelect.addEventListener("click", function (e) {
+	  if (fileElem) {
+	    fileElem.click();
+	  }
+	  e.preventDefault(); // prevent navigation to "#"
+	}, false);
+
+	//function addImage() {
+	//	fabric.Image.fromURL('/assets/oktoberfest5.JPG', function(oImg2) {
+	//	  // scale image down, and flip it, before adding it onto canvas
+	//	  oImg2.scale(.2);
+	//	  canvas.add(oImg2);
+	//	  
+	//	  canvas.sendToBack(oImg2);
+	//	 });
+	//}
+
+    </script>
+
+    

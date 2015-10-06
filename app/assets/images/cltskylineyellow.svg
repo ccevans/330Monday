@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="800" height="502" viewBox="0 0 400 251">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#color-overlay-1);
+      }
+
+      .cls-2, .cls-3 {
+        fill: #000;
+      }
+
+      .cls-3 {
+        fill-rule: evenodd;
+      }
+    </style>
+
+    <filter id="color-overlay-1" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend in2="SourceGraphic" result="solidFill"/>
+    </filter>
+  </defs>
+  <g class="cls-1">
+    <rect y="102" width="400" height="149" class="cls-2"/>
+    <rect x="378" y="93" width="9" height="11" class="cls-2"/>
+    <path d="M382.500,85.000 L386.997,95.014 L378.003,95.014 L382.500,85.000 Z" class="cls-3"/>
+    <rect x="301" y="86" width="64" height="18" class="cls-2"/>
+    <rect x="301" y="66" width="40" height="24" class="cls-2"/>
+    <rect x="310" y="17" width="25" height="52" class="cls-2"/>
+    <rect x="334" y="52" width="7" height="17" class="cls-2"/>
+    <rect x="257" width="6" height="10" class="cls-2"/>
+    <rect x="253" y="9" width="14" height="11" class="cls-2"/>
+    <rect x="249" y="19" width="23" height="85" class="cls-2"/>
+    <rect x="241" y="76" width="9" height="29" class="cls-2"/>
+    <rect x="183" y="42" width="28" height="61" class="cls-2"/>
+    <rect x="172" y="78" width="12" height="26" class="cls-2"/>
+    <rect x="210" y="63" width="16" height="40" class="cls-2"/>
+    <rect x="183" y="36" width="8" height="10" class="cls-2"/>
+    <rect x="117" y="58" width="24" height="48" class="cls-2"/>
+    <rect x="138" y="75" width="17" height="29" class="cls-2"/>
+    <rect x="108" y="64" width="11" height="39" class="cls-2"/>
+    <rect x="73" y="58" width="22" height="51" class="cls-2"/>
+    <rect x="94" y="90" width="9" height="16" class="cls-2"/>
+    <rect x="61" y="87" width="13" height="17" class="cls-2"/>
+    <rect x="41" y="42" width="23" height="64" class="cls-2"/>
+    <rect x="20" y="63" width="14" height="41" class="cls-2"/>
+    <rect x="33" y="83" width="10" height="20" class="cls-2"/>
+    <rect x="-1" y="92" width="22" height="14" class="cls-2"/>
+    <path d="M40.987,41.513 L63.987,28.012 L63.987,55.014 L40.987,41.513 Z" class="cls-3"/>
+    <path d="M217.515,49.000 L226.014,64.000 L209.015,64.000 L217.515,49.000 Z" class="cls-3"/>
+  </g>
+</svg>

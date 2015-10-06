@@ -45,9 +45,11 @@
 <body>
 
 
-     <%= render 'layouts/header' %>
-
-
+       <% if current_page?(pages_checkoutclt_path) %>
+             
+        <% else %>
+            <%= render 'layouts/header' %>
+        <% end %>
 
 
 <%= yield %>
