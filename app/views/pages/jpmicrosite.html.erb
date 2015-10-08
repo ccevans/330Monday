@@ -63,7 +63,7 @@ with
 		  canvas.sendToBack(oImg);
 		});
 
-			var firstName = document.getElementsByName("name")[0].value;
+	var firstName = document.getElementsByName("name")[0].value;
     var bornIn = document.getElementsByName("born")[0].value;
     var madeWith = document.getElementsByName("made")[0].value;
     var daughter = document.getElementsByName("parent")[0].value;
@@ -71,6 +71,8 @@ with
     
 
     document.getElementById("yourOutputDiv").innerHTML = results;
+          
+
           var dataURL = canvas.toDataURL();
 
       // set canvasImg image src to dataURL

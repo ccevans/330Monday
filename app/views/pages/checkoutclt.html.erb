@@ -1,10 +1,22 @@
+<div id="sitemenu-icon">
+	<span class="line1"></span>
+	<span class="line2"></span>
+	<span class="line3"></span>
+</div>
 <div id="overwrap" class="">
-	<div id="holder" class="">
+	<div id="holder" class="contentoverlay" style="transform: scale(.8);">
 		<div id="imagecontrolbox" class="">
+
+				<div class="controlholder">
+
+					<input id="scale-control" type="range" step="0.001" max="2" min="1" value="1">
+
+				</div>
 
 		</div>
 
-		<div id="canvasholder" class="contentoverlay">
+		<div id="canvasholder">
+
 
 			<div id="canvasbox">
 				<div class="canvascontainer">
@@ -12,16 +24,31 @@
 
 						<input type="file" id="fileElem" multiple accept="image/*" style="display:none; width:400px;" onchange="handleFiles(this.files)">
 
-						<a href="#" id="fileSelect">Upload File</a>
+						<input type="file" id="fileElem2" multiple accept="image/*" style="display:none; width:400px;" onchange="handleFiles(this.files)">
 
-						<button onclick="saveCanvas()">Save</button> 
+						<a href="#" id="fileSelect" class="active">UPLOAD FILE</a>
 
-						<button onclick="removeText()">Clear</button> 
+						<a href="#" id="fileUpdate"  class="">UPDATE FILE</a>
+
 
 				</div>
 
 				<div id="hiddentextform1" class="canvas-text"></div>
 				<div id="hiddentextform2" class="canvas-text"></div>
+
+
+			<div class="cltsteps2">
+				<div id="step12" class="cltstep">
+					<span>#1</span> What To Checkout?
+				</div>
+				<div id="step22" class="cltstep active">
+					<span>#2</span> Add Cool Pic
+					
+				</div>
+				<div id="step32" class="cltstep">
+					<div id="saveimage" onclick="saveCanvas()"><span>#3</span> Share To All</div>
+				</div>
+			</div>
 
 
 
@@ -86,13 +113,13 @@
 			<div class="field-holder">
 			<div class="label">Charlotte is</div>
 			<div class="tip">Field is empty</div>
-			<input class="small indv" id="text11" type="text" value="" maxlength="20" autocomplete="off" name="textform1" onkeyup="formChanged()" onchange="formChanged()" style="font-size: 24px; width: 270px;">
+			<input class="small indv" id="text11" type="text" value="" maxlength="20" autocomplete="off" name="textform1" onkeyup="checkText()" onkeyup="formChanged()" onchange="formChanged()" style="font-size: 24px; width: 270px;">
 
 			</div>
 			<div class="field-holder">
 				<div class="label">checkout</div>
 			<div class="tip">Field is empty</div>
-			<input class="small" id="text22" type="text" value="" maxlength="20" autocomplete="off" name="textform2" onkeyup="formChanged()" onchange="formChanged()" style="font-size: 24px; width: 285px;">
+			<input class="small" id="text22" type="text" value="" maxlength="20" autocomplete="off" name="textform2" onkeyup="checkText()" onkeyup="formChanged()" onchange="formChanged()" style="font-size: 24px; width: 285px;">
 
 			</div>
 
@@ -103,7 +130,7 @@
 					<span>#1</span> What To Checkout?
 				</div>
 				<div id="step2" class="cltstep">
-					<button onclick="addText()"><span>#2</span> Add Cool Pic</button> 
+					<div id="launch" onclick="addText()"><span>#2</span> Add Cool Pic</div> 
 					
 				</div>
 				<div id="step3" class="cltstep">
@@ -126,8 +153,44 @@
 
 	<script type="text/javascript">
 
+		
+
+		$("#sitemenu-icon").click(function(){
+			$("#overwrap").removeClass("active");
+			$("#holder").removeClass("show");
+			$("#sitemenu-icon").removeClass("open");
+			$('body').removeClass("noscroll");
+			removeText();
+		});
+
+		
+
+
+		function checkText() {
+			var mytext1 = document.getElementById('text11').value;
+			var mytext2 = document.getElementById('text22').value;
+
+			if(!mytext1.match(/\S/) || !mytext2.match(/\S/)) {
+		        $("#step1").addClass("active");
+		        $("#step2").removeClass("active");
+		        return false;
+		    } else {
+		        $("#step2").addClass("active");
+		        $("#step1").removeClass("active");
+		        return true;
+		    }
+
+		    console.log('heyYo');
+		}
+
+		checkText();
+
 
         var canvas = new fabric.Canvas('myCanvas');
+        var imageCheck = false;
+        canvas.setHeight(400);
+		canvas.setWidth(400);
+
         canvas.hoverCursor = 'move';
 
 		canvas.setBackgroundColor('rgba(149, 165, 166,1.0)', canvas.renderAll.bind(canvas));
@@ -136,14 +199,14 @@
 		var text3 = new fabric.Text("Checkout", { left: 10, top: 325, fontSize: 18, fontFamily: "proxima-nova" }, fillStyle = 'black');
 		var text5 = new fabric.Text("#CheckoutCLT", { left: 280, top: 386, fontSize: 14, fontFamily: "shuriken-std" }, fillStyle = 'black');
 
-		var colorSet = '#e74c3c';
+		var colorSet = '#fff';
 
   fabric.loadSVGFromURL('/assets/cltskylineyellow.svg', function(objects, options) {
     var shape = fabric.util.groupSVGElements(objects, options);
     shape.set({
         left: -1, 
 		top: 149, 
-		opacity: 1,
+		opacity: .7,
 		scaleY: canvas.width / shape.width + 2/canvas.width,
 		scaleX: canvas.width / shape.width + 2/canvas.width
     });
@@ -193,14 +256,26 @@
 	function addText() {
 		var text2 = new fabric.Text(document.getElementById('hiddentextform1').textContent, { left: 10, top: 280, fontSize: 36, fontFamily: "shuriken-std" }, fillStyle = 'black');
 		var text4 = new fabric.Text(document.getElementById('hiddentextform2').textContent, { left: 10, top: 345, fontSize: 36, fontFamily: "shuriken-std" }, fillStyle = 'black');
+		var mytext11 = document.getElementById('text11').value;
+		var mytext22 = document.getElementById('text22').value;
 
-		canvas.add(text2);
-		canvas.add(text4);
+			if (checkText()) {
+				       	canvas.add(text2);
+						canvas.add(text4);
 
-		text2.set('selectable', false);
-		text4.set('selectable', false);
+						text2.set('selectable', false);
+						text4.set('selectable', false);
 
-		console.log('fdsfgdfdfd');
+								$("#overwrap").addClass("active");
+								$("#holder").addClass("show");
+								$("#sitemenu-icon").addClass("open");
+								$('body').addClass("noscroll");
+
+						console.log('fdsfgdfdfd');
+		         
+		    } else {
+		 
+		    }
 
 	}
 
@@ -230,10 +305,23 @@
 
 	function saveCanvas(){
 			      // save canvas image as data url (png format by default)
-		  canvas.deactivateAll().renderAll();  
-		  window.open(canvas.toDataURL('png')); 
+		  if (imageCheck) {
+		  		canvas.deactivateAll().renderAll();  
+		  		window.open(canvas.toDataURL('png')); 
+
+		  }
+		  
       
 	}
+
+	function removeImage(){
+		var lastimage = canvas.item(0);
+	     canvas.remove(lastimage);
+	     canvas.renderAll(); 
+	}
+
+
+
 
 
 	document.getElementById('fileElem').onchange = function handleImage(e) {
@@ -276,6 +364,8 @@
 					    scaleX: (canvas.width / image.width) + 2/canvas.width
 					});
 	            }
+
+
 	         
 
 	            canvas.add(image);
@@ -288,7 +378,90 @@
 	        
 	    }
 	    reader.readAsDataURL(e.target.files[0]);
+	    imageCheck = true;
+
+	     $("#step22").removeClass("active");
+		 $("#step32").addClass("active");
+		 $("#fileSelect").removeClass("active");
+		 $("#fileUpdate").addClass("active");
 	}
+
+
+
+// replace image
+	document.getElementById('fileElem2').onchange = function handleImage(e) {
+	    var reader2 = new FileReader();
+	    reader2.onload = function (event) { console.log('fdsf222');
+	    	removeImage();
+	        var imgObj2 = new Image();
+	        imgObj2.src = event.target.result;
+	        imgObj2.onload = function () {
+	            // start fabricJS stuff
+	            
+	            var image2 = new fabric.Image(imgObj2);
+
+	            //image.scale(getRandomNum(0.1, 0.25)).setCoords();
+
+	   
+	            if (image2.width > image2.height) {
+	         
+			            image2.set({
+						    top: -1,
+						    left: -(canvas.width/2),
+						    scaleY: (canvas.height / image2.height) + 2/canvas.height,
+						    scaleX: canvas.height / image2.height
+						});
+	          
+	            } else if (image2.width < image2.height) {
+
+		            image2.set({
+					    top: -(canvas.height/2),
+					    left: -1,
+					    scaleY: canvas.width / image2.width,
+					    scaleX: (canvas.width / image2.width) + 2/canvas.width
+					});
+
+	            } else {
+
+		            image2.set({
+					    top: -1,
+					    left: -1,
+					    scaleY: (canvas.height / image2.height) + 2/canvas.height,
+					    scaleX: (canvas.width / image2.width) + 2/canvas.width
+					});
+	            }
+
+
+	         
+
+	            canvas.add(image2);
+	            image2.set('selectable', false);
+
+	            canvas.sendToBack(image2);
+	            
+	            // end fabricJS stuff
+	        }
+	        
+	    }
+	    reader2.readAsDataURL(e.target.files[0]);
+	    imageCheck = true;
+
+	   //  $("#step22").removeClass("active");
+		// $("#step32").addClass("active");
+		// $("#fileSelect").removeClass("active");
+		// $("#fileUpdate").addClass("active");
+	}
+
+	    var ranger = document.getElementById('scale-control');
+
+	            ranger.onchange = function(){
+	            	console.log('changeranger');
+					imagehere.set({
+						scaleY: ranger.value,
+						scaleX: ranger.value
+					});
+
+				}
 
 	var fileSelect = document.getElementById("fileSelect"),
 	  fileElem = document.getElementById("fileElem");
@@ -299,6 +472,21 @@
 	  }
 	  e.preventDefault(); // prevent navigation to "#"
 	}, false);
+
+//update image
+
+	var fileUpdate = document.getElementById("fileUpdate"),
+	  fileElem2 = document.getElementById("fileElem2");
+
+	fileUpdate.addEventListener("click", function (e) {
+	  if (fileElem2) {
+	    fileElem2.click();
+	  }
+	  e.preventDefault(); // prevent navigation to "#"
+	}, false);
+
+
+		
 
 	//function addImage() {
 	//	fabric.Image.fromURL('/assets/oktoberfest5.JPG', function(oImg2) {

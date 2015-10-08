@@ -19,10 +19,78 @@ form#cltform div.field-holder div.label {margin: 10px 0; }
 .cltsteps {float: left; width: 90%; margin: 10px 5%; padding-top: 2px solid #fff;}
 .cltstep {float: left; width: 100%; margin: 5px 0; padding: 2px; text-align: center; background-color: #bdc3c7; color: #000;}
 .cltstep span {font-family: "shuriken-std",fantasy;}
+.cltstep.active {color: #e74c3c; background-color: #fff; cursor: pointer;}
+
+.cltsteps2 {float: left; width: 90%; margin: 10px 5%; padding-top: 2px solid #fff;}
+.cltstep {float: left; width: 100%; margin: 5px 0; padding: 2px; text-align: center; background-color: #bdc3c7; color: #000;}
+.cltstep span {font-family: "shuriken-std",fantasy;}
+.cltsteps .cltstep.active {color: #e74c3c; background-color: #fff; cursor: pointer;}
+
+#step22.active {color: #e74c3c; background-color: #fff; cursor: text;}
+#step32.active {color: #e74c3c; background-color: #fff; cursor: pointer;}
 
 #poster-holder #poster.disable {
   pointer-events: none;
 }
 
-.contentoverlay {position: relative; width: 400px; height: auto; margin: 50px auto;}
-#canvasbox {background-color: #8e44ad;}
+#sitemenu-icon {
+	background-color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    height: 24px;
+    position: fixed;
+    right: 40px;
+    top: 40px;
+    width: 32px;
+    z-index: 10000;
+}
+
+#sitemenu-icon span {
+    background: #eaeaea none repeat scroll 0 0;
+    height: 4px;
+    position: absolute;
+    transition: all 300ms cubic-bezier(0.63, 0.64, 0.3, 1) 0s;
+    width: 32px;
+}
+#sitemenu-icon span.line1 {
+    top: 0;
+}
+#sitemenu-icon span.line2 {
+    top: 10px;
+}
+#sitemenu-icon span.line3 {
+    top: 20px;
+}
+#sitemenu-icon.open .line1 {
+    top: 12px;
+    transform: rotate(-45deg);
+}
+#sitemenu-icon.open .line2 {
+    opacity: 0;
+}
+#sitemenu-icon.open .line3 {
+    top: 12px;
+    transform: rotate(45deg);
+}
+
+#overwrap {background-color: rgba(0, 0, 0, .9); height: 120%; left: 0; opacity: 0; position: fixed; top: 0; transition: opacity 200ms ease 0s; width: 100%; z-index: -9999;}
+#overwrap.active {opacity: 1; z-index: 1000;}
+.contentoverlay {left: 50%; top: 50%; width: 434px; margin-left: -180px; margin-top: -280px; position: fixed; width: 400px; height: auto; text-align: center; transition: all 300ms ease 0s; z-index: -999; opacity: 0;}
+#canvasbox {background-color: none;}
+.contentoverlay.show {opacity: 1; z-index: 1000;}
+
+body.noscroll {
+    overflow: hidden;
+    position: relative;
+}
+
+#hiddentextform1 {display: none;}
+#hiddentextform2 {display: none;}
+
+div.canvascontainer a#fileSelect {color: #9b59b6; padding: 10px; margin: 0 auto;}
+
+#fileSelect {display: none;}
+#fileUpdate {display: none;}
+
+#fileSelect.active {display: inline;}
+#fileUpdate.active {display: inline;}
