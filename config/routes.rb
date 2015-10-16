@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'pages/marketingpartner'
   get 'pages/jpmicrosite'
   get 'pages/checkoutclt'
+  get 'pages/interactivecampaigns'
 
     resources :posts
 

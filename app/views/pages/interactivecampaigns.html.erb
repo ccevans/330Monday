@@ -1,0 +1,153 @@
+<div class="bscontainer-fluid">
+	<div class="bsrow">
+
+			<div class="exhibits-section">
+
+				<h1>WE CREATE AWESOME</br>INTERACTIVE CAMPAIGNS</br>THAT WIN CUSTOMERS OVER.</h1>
+
+				<div class="campaignbox">
+					<%= image_tag 'campaign1.png', :class => "campaignimages" %>
+
+					<div class="campaign-info">
+
+					We love to start a campaign with Face To Face contact by developing cool <span class="campaigninfo1" id="goexhibits">Exhibitions</span> that connect with specific cultures.
+
+				</div>
+
+				</div>
+				<div class="campaignbox">
+					<%= image_tag 'campaign3.png', :class => "campaignimages" %>
+
+					<div class="campaign-info">
+
+					We then create interactive and engaging movements on <span class="campaigninfo2" id="gosocial">Social Media</span> to continue to build relationships with customers.
+
+
+				</div>
+
+				</div>
+				<div class="campaignbox">
+					<%= image_tag 'campaign2.png', :class => "campaignimages" %>
+					<div class="campaign-info">
+
+				 We bring it all together by creating a <span class="campaigninfo3" id="gomicro">Microsite</span> that gives better opportunity to create leads, build communites or closed sales.
+
+
+				</div>
+
+				</div>
+				
+				
+				
+				
+
+				
+
+
+			</div>
+
+			<div class="exhibits1">
+
+					<div class="image-part1">
+						<%= image_tag 'greenbike-shape.svg', :class => "bikeimage" %>
+					</div>
+
+					<div class="exhibits-info">
+						<div class="exhibits-title">Interactive Exhibits</div>
+
+						<div class="exhibits-para">
+							We develop interactive exhibit concepts that get guest to wonder whats going on at your booth.  No more sitting behind a table and running customers away. Our exhibits are visualy appealing and always include an interactive component so guests can connect with your brand on an emotional level.
+
+						</div>
+
+
+					</div>
+
+
+			</div>
+
+
+			<div class="socialmedia1">
+
+
+					<div class="socialmedia-info">
+						<div class="socialmedia-title">Interactive Social Media</div>
+
+						<div class="socialmedia-para">
+							We develop interactive exhibit concepts that get guest to wonder whats going on at your booth.  No more sitting behind a table and running customers away. Our exhibits are visualy appealing and always include an interactive component so guests can connect with your brand on an emotional level.
+
+						</div>
+
+
+					</div>
+
+					<div class="image-part1">
+						<%= image_tag 'yellowbike-shape.svg', :class => "bikeimage" %>
+					</div>
+
+
+			</div>
+
+				<div class="microsite1">
+
+					<div class="image-part1">
+						<%= image_tag 'bike-shape.svg', :class => "bikeimage2" %>
+					</div>
+
+					<div class="microsite-info">
+						<div class="microsite-title">Interactive Microsite</div>
+
+						<div class="microsite-para">
+							We develop interactive exhibit concepts that get guest to wonder whats going on at your booth.  No more sitting behind a table and running customers away. Our exhibits are visualy appealing and always include an interactive component so guests can connect with your brand on an emotional level.
+
+						</div>
+
+
+					</div>
+
+
+			</div>
+
+
+
+	</div>
+</div>
+
+
+<script>
+//When you hover over partner circle, you add class show-nav to wrapper demo
+//select cirlce
+$("#exhibit-menu2").mouseenter(function(){
+	$("#demo-wrapper2").addClass("show-nav2");
+	$("#exhibitcircle2 span").addClass("opacity");
+	$("#arrowexhibit2").addClass("clockwise180");
+});
+$("#exhibit-menu2").mouseleave(function(){
+	$("#demo-wrapper2").removeClass("show-nav2");
+	$("#exhibitcircle2 span").removeClass("opacity");
+	$("#arrowexhibit2").removeClass("clockwise180");
+});
+
+$("#partner-menu2").mouseenter(function(){
+	$("#demo-wrapper2").addClass("show-nav");
+	$("#partnercircle2 span").addClass("opacity");
+	$("#arrowpartner2").addClass("clockwise180");
+});
+$("#partner-menu2").mouseleave(function(){
+	$("#demo-wrapper2").removeClass("show-nav");
+	$("#partnercircle2 span").removeClass("opacity");
+	$("#arrowpartner2").removeClass("clockwise180");
+});
+
+
+//add class show-nav to wrapper demo
+//how to do smooth tranisition
+//stay on section long as hover over partner section
+//move back to center section
+//take class show-nav off wrapper demo
+
+//When you haver over exhibit circle, you add class show-nav2 to wrapper demo
+
+
+
+</script>

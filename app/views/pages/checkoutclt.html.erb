@@ -407,6 +407,7 @@
 	         
 			            image2.set({
 						    top: -1,
+						    left: -(((canvas.height / imagehere.height)*imagehere.width) -canvas.width)/2,
 						    left: -(canvas.width/2),
 						    scaleY: (canvas.height / image2.height) + 2/canvas.height,
 						    scaleX: canvas.height / image2.height
@@ -453,13 +454,41 @@
 	}
 
 	    var ranger = document.getElementById('scale-control');
+	    
 
 	            ranger.onchange = function(){
-	            	console.log('changeranger');
-					imagehere.set({
-						scaleY: ranger.value,
-						scaleX: ranger.value
+	            	var imagehere = canvas.item(0);
+	            	console.log(ranger.value);
+
+	            if (imagehere.width > imagehere.height) {
+	         
+			            imagehere.set({
+						    top: -1,
+						    left: -(((canvas.height / imagehere.height)*imagehere.width) -canvas.width)/2,
+						    scaleY: ((canvas.height / imagehere.height) + 2/canvas.height)*ranger.value,
+						    scaleX: (canvas.height / imagehere.height)*ranger.value
+						});
+	          
+	            } else if (imagehere.width < imagehere.height) {
+
+		            imagehere.set({
+					    top: -(((canvas.width / imagehere.width)*imagehere.height) -canvas.height)/2,
+					    left: -1,
+					    scaleY: (canvas.width / imagehere.width)*ranger.value,
+					    scaleX: (canvas.width / imagehere.width)*ranger.value) + 2/canvas.width)
 					});
+
+	            } else {
+
+		            imagehere.set({
+					    top: -1,
+					    left: -1,
+					    scaleY: ((canvas.height / imagehere.height)*ranger.value) + 2/canvas.height),
+					    scaleX: ((canvas.width / imagehere.width)*ranger.value) + 2/canvas.width)
+					});
+	            }
+
+					 canvas.renderAll();
 
 				}
 
