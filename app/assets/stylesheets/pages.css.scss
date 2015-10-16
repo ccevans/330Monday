@@ -381,7 +381,7 @@ img#arrowpartner {
 
 
 .exhibits-section {float: left; width: 100%; margin: 0 0 0 0; height: auto; padding: 15px 10% 100px 10%; background-color: #fff;}
-.exhibits-section h1 {float: left; width: 100%; padding: 0px 5%; text-align: center; color: #e74c3c; font-size: 6.5rem; line-height: 6.5rem;}
+.exhibits-section h1 {float: left; width: 100%; padding: 10px 5%; text-align: center; color: #e74c3c; font-size: 6.5rem; line-height: 6.5rem;}
 
 .exhibits1 {float: left; width: 100%; padding: 20px 0; height: auto; background-color: #fff;}
 .exhibits1 .image-part1 {float: left; width: 50%; margin-left: -25%;}
@@ -437,6 +437,61 @@ img#arrowpartner {
 
 
 @media screen and (max-width: 640px){
+
+.exhibits-section {float: left; width: 100%; margin: 0 0 0 0; height: auto; padding: 15px 10% 100px 10%; background-color: #fff;}
+.exhibits-section h1 {float: left; width: 100%; padding: 10px 5%; text-align: center; color: #e74c3c; font-size: 3.5rem; line-height: 3.5rem;}
+
+.exhibits1 {float: left; width: 100%; padding: 20px 0; height: auto; background-color: #fff;}
+.exhibits1 .image-part1 {float: left; width: 50%; margin-left: -25%;}
+.socialmedia1 {float: left; width: 100%; padding: 20px 0; height: auto; background-color: #fff;}
+.socialmedia1 .image-part1 {float: right; width: 50%; margin-right: -25%;}
+.microsite1 {float: left; width: 100%; padding: 20px 0; height: auto; background-color: #fff;}
+.microsite1 .image-part1 {float: left; width: 50%; margin-left: -25%;}
+
+.exhibits-info {float: right; width: 75%; padding: 0; margin: 0;}
+.exhibits-title {float: left; font-family: "proxima-nova",sans-serif; width: 100%; text-align: left; padding: 5px 0 5px 10px; margin: 10px 0; background-color: #20a286; color: #fff; font-size: 2rem; }
+.exhibits-para {float: left; width: 80%; padding: 10px 5%; font-size: 1.8rem; line-height: 2rem; text-align: center; color: #20a286; }
+
+.socialmedia-info {float: left; width: 75%; padding: 0; margin: 0;}
+.socialmedia-title {float: left; font-family: "proxima-nova",sans-serif; width: 100%; text-align: left; padding: 5px 0 5px 10px; margin: 10px 0; background-color: #f5cd0c; color: #fff; font-size: 2rem; }
+.socialmedia-para {float: left; width: 80%; padding: 10px 5%; font-size: 1.8rem; line-height: 2rem; text-align: center; color: #f5cd0c; }
+
+.microsite-info {float: right; width: 75%; padding: 0; margin: 0;}
+.microsite-title {float: left; font-family: "proxima-nova",sans-serif; width: 100%; text-align: left; padding: 5px 0 5px 10px; margin: 10px 0; background-color: #e74c3c; color: #fff; font-size: 2rem; }
+.microsite-para {float: left; width: 80%; padding: 10px 5%; font-size: 1.8rem; line-height: 2rem; text-align: center; color: #e74c3c; }
+
+.campaign-info {float: left; width: 95%; margin: 10px 2.5%; font-size: 2.4rem; line-height: 3rem; color: #595959; text-align: center;}
+
+.campaignimages {
+    width: 100%; 
+    margin: 0;
+    position: relative; 
+    height: auto;
+}
+
+.campaignbox {
+    float: left;
+    position: relative;
+    width: 90%; 
+    margin: 15px 5%;
+    height: auto;
+}
+
+.campaigninfo1 {
+    background-color: #20a286;
+    padding: 5px;
+    color: #fff;
+}
+.campaigninfo2 {
+    background-color: #f5cd0c;
+    padding: 5px;
+    color: #fff;
+}
+.campaigninfo3 {
+    background-color: #e74c3c;
+    padding: 5px;
+    color: #fff;
+}
 
 	#demo-wrapper #demo-canvas #exhibit-menu #exhibitwrap #exhibitcircle {
     background-color: #f5cd0c;
