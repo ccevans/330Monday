@@ -279,13 +279,25 @@ $("#partner-menu").mouseleave(function(){
 });
 
 /// mobile adjustment
-$("a#exhibitcircle").click(function(){
+$("#exhibitcircle span").click(function(){
+	$("#demo-wrapper").addClass("show-nav2");
+	$("#exhibitcircle span").addClass("opacity");
+	$("#arrowexhibit").addClass("clockwise180");
+	$("#homecontact").addClass("nodisplay");
+});
+$("#partnercircle span").click(function(){
+	$("#demo-wrapper").addClass("show-nav");
+	$("#partnercircle span").addClass("opacity");
+	$("#arrowpartner").addClass("clockwise180");
+	$("#homecontact").addClass("nodisplay");
+});
+$("#exhibitcircle").click(function(){
 	$("#demo-wrapper").toggleClass("show-nav2");
 	$("#exhibitcircle span").toggleClass("opacity");
 	$("#arrowexhibit").toggleClass("clockwise180");
 	$("#homecontact").toggleClass("nodisplay");
 });
-$("a#partnercircle").click(function(){
+$("#partnercircle").click(function(){
 	$("#demo-wrapper").toggleClass("show-nav");
 	$("#partnercircle span").toggleClass("opacity");
 	$("#arrowpartner").toggleClass("clockwise180");
