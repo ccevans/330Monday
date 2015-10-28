@@ -1,9 +1,19 @@
+				<div id="homecontact">
+					<%= link_to pages_about_us_path(:anchor => "contact1") do %>
+					<button class="contact-button">
+						Contact Today
+					</button>
+					<% end %>
+				</div>
+
 <div class="bscontainer-fluid">
 	<div class="bsrow">
 
 
 	<div id="demo-wrapper" class="">
 		<div id="demo-canvas">
+
+
 
 			<div class="centertop">
 				<div class="title-home">
@@ -13,9 +23,7 @@
 						<%= image_tag 'bike-shape.svg', :class => "bikeimage" %>
 					</div>
 
-					<button class="contact-button">
-						Contact Today
-					</button>
+					
 				</div>
 
 			</div>
@@ -38,11 +46,13 @@
 						<li>Handle exhibit design to connecting online.</li>
 						<li>360 Campaigns that get results.</li>
 						</ul>
-						<%= link_to 'Learn More', '#', :class => "learnmore" %>
-						
-						<button id="contact-exhibit" class="contact-button">
-						Contact Today
-					</button>
+						<%= link_to 'Learn More', pages_interactivecampaigns_path, :class => "learnmore" %>
+
+						<%= link_to pages_about_us_path(:anchor => "contact1") do %>
+							<button id="contact-exhibit" class="contact-button">
+							Contact Today
+							</button>
+						<% end %>
 					</div>
 
 				</div>
@@ -66,11 +76,13 @@
 						<li>Save time and money.</li>
 						<li>A partner you can rely on.</li>
 						</ul>
-						<%= link_to 'Learn More', '#', :class => "learnmore" %>
-						
-						<button id="contact-partner" class="contact-button">
-						Contact Today
-					</button>
+						<%= link_to 'Learn More', pages_marketingpartner_path, :class => "learnmore" %>
+
+						<%= link_to pages_about_us_path(:anchor => "contact1") do %>
+							<button id="contact-partner" class="contact-button">
+								Contact Today
+							</button>
+						<% end %>
 					</div>
 
 				</div>
@@ -244,22 +256,26 @@ $("#exhibit-menu").mouseenter(function(){
 	$("#demo-wrapper").addClass("show-nav2");
 	$("#exhibitcircle span").addClass("opacity");
 	$("#arrowexhibit").addClass("clockwise180");
+	$("#homecontact").addClass("nodisplay");
 });
 $("#exhibit-menu").mouseleave(function(){
 	$("#demo-wrapper").removeClass("show-nav2");
 	$("#exhibitcircle span").removeClass("opacity");
 	$("#arrowexhibit").removeClass("clockwise180");
+	$("#homecontact").removeClass("nodisplay");
 });
 
 $("#partner-menu").mouseenter(function(){
 	$("#demo-wrapper").addClass("show-nav");
 	$("#partnercircle span").addClass("opacity");
 	$("#arrowpartner").addClass("clockwise180");
+	$("#homecontact").addClass("nodisplay");
 });
 $("#partner-menu").mouseleave(function(){
 	$("#demo-wrapper").removeClass("show-nav");
 	$("#partnercircle span").removeClass("opacity");
 	$("#arrowpartner").removeClass("clockwise180");
+	$("#homecontact").removeClass("nodisplay");
 });
 
 
