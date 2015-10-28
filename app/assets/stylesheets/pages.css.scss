@@ -6,10 +6,10 @@
 //home page
 .bscontainer-fluid {margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px; background-color: #fff; font-family: "proxima-nova",sans-serif;}
 .bsrow {margin-left: -15px; margin-right: -15px;}
-#demo-wrapper {display: block; min-height: 600px; height: auto; margin: 0 auto; overflow: hidden; width: 100%; background-color: #fff;}
+#demo-wrapper {display: block; min-height: 0px; height: auto; margin: 0 auto; overflow: hidden; width: 100%; background-color: #fff;}
 #demo-canvas {color: #fff; font-size: 20px; height: 100%; position: relative; text-align: center; transform: translate3d(0px, 0px, 0px); transition: all 0.6s ease 0s; width: 100%;}
-#demo-canvas .centertop {min-height: 0px; height: auto; margin: 0 auto; width: 75%;}
-#demo-canvas .centertop h1 {color: #e74c3c; font-size: 4rem; font-weight: 300; margin-bottom: 2rem; position: relative; z-index: 2;}
+#demo-canvas .centertop {min-height: 600px; height: auto; margin: 0 auto; width: 75%;}
+#demo-canvas .centertop h1 {color: #e74c3c; font-size: 40px; font-weight: 300; margin-bottom: 20px; position: relative; z-index: 2;}
 #demo-canvas .centertop .image-part1 {position: relative; width: 100%;}
 .bikeimage {width: 60%; margin: 0 20%; position: relative; height: auto;}
 .bikeimage3 {width: 50%; margin: 0 25%; position: relative; height: auto;}
@@ -19,20 +19,20 @@
 #exhibitwrap {display: block; height: 600px; margin: 0 auto; position: relative; z-index: 999;}
 #exhibitcircle {background-color: #f5cd0c; border-radius: 50%; color: white; display: block; height: 320px; left: -150px; margin: 30px auto; position: absolute; text-align: center; top: 12%; width: 320px;}
 #exhibit-content {float: right; height: 400px; margin-right: -30%; margin-top: 14%; width: 100%;}
-#exhibit-content h2 {color: #000; font-size: 4rem; position: relative; text-align: left; font-variant: small-caps;}
-#partner-content h2 {color: #000; font-size: 4rem; position: relative; text-align: left; font-variant: small-caps;}
-#exhibitside {color: #000; font-size: 2rem; position: relative; text-align: left;}
-#partnerside {color: #000; font-size: 2rem; position: relative; text-align: left;}
+#exhibit-content h2 {color: #000; font-size: 40px; position: relative; text-align: left; font-variant: small-caps;}
+#partner-content h2 {color: #000; font-size: 40px; position: relative; text-align: left; font-variant: small-caps;}
+#exhibitside {color: #000; font-size: 20px; position: relative; text-align: left;}
+#partnerside {color: #000; font-size: 20px; position: relative; text-align: left;}
 .learnmore {float: left; color: #7f8c8d;}
 #contact-exhibit {clear: left; margin: 10px 0 0 0; border: 3px solid #f5cd0c; color: #f5cd0c; float: left;}
 #contact-partner {clear: both; margin: 10px 0 0 0; border: 3px solid #20a286; color: #20a286; float: left;}
 #partnerwrap {display: block; min-height: 600px; height: auto; margin: 0 auto; position: relative; z-index: 999;}
 #partnercircle {background-color: #20a286; border-radius: 50%; color: white; display: block; height: 320px; margin: 30px auto; position: absolute; right: -150px; text-align: center; top: 12%; width: 320px;}
 #partner-content {float: left; height: 400px; margin-left: 10%; margin-top: 14%; width: 100%;}
-#exhibitcircle span {font-size: 3rem; font-weight: 600; left: -32px; position: relative; top: 40%;}
-#partnercircle span {font-size: 3rem; font-weight: 600; left: 60px; position: relative; top: 40%;}
-img#arrowexhibit {border: 0 none; height: 4rem; position: relative; right: 3rem; top: 12rem; vertical-align: middle;}
-img#arrowpartner {height: 4rem; position: relative; right: 10.5rem; top: 12rem; vertical-align: middle; border: 0 none;}
+#exhibitcircle span {font-size: 30px; font-weight: 600; left: -32px; position: relative; top: 40%;}
+#partnercircle span {font-size: 30px; font-weight: 600; left: 60px; position: relative; top: 40%;}
+img#arrowexhibit {border: 0 none; height: 4rem; position: relative; right: 30px; top: 120px; vertical-align: middle;}
+img#arrowpartner {height: 4rem; position: relative; right: 105px; top: 120px; vertical-align: middle; border: 0 none;}
 
 #homecontact {background-color: rgba(255,255,255,0); bottom: 0; cursor: pointer; left: 0; padding: 0; position: absolute; text-align: center; transition: all .6s ease 0s; -webkit-transition: all .6s ease 0s; -moz-transition: all .6s ease 0s; -o-transition: all .6s ease 0s; width: 100%; z-index:100;}
 .contact-button {background-color: #fff; border: 3px solid #e74c3c; border-radius: 20px; color: #e74c3c; padding: 5px 10px; margin: 5px 0;}
@@ -74,31 +74,31 @@ img#arrowpartner {height: 4rem; position: relative; right: 10.5rem; top: 12rem; 
 #services-circle3 {position: relative; width: 100%; z-index: 6; height: auto; margin-bottom: 15px;}
 #redcircle {transition: all 1.2s ease 0s; transfrom-origin: 50% 50%;}
 #redcircle:hover {fill: #c0392b; transform: rotate(90deg);}
-.nav-circle-title {position: relative; margin-top: 0px; z-index: 12; color: #000; text-align: center; width: 100%; font-size: 2.5rem; text-transform: uppercase;}
+.nav-circle-title {position: relative; margin-top: 0px; z-index: 12; color: #000; text-align: center; width: 100%; font-size: 26px; text-transform: uppercase;}
 
 .services-section {float: left; width: 100%; margin: 0; height: auto; min-height: 600px; padding: 15px 10%; background-color: #fff;}
-.services-section h1 {float: left; width: 100%; padding: 25px 5%; text-align: left; color: #e74c3c; font-size: 6.5rem; line-height: 6.5rem;}
+.services-section h1 {float: left; width: 100%; padding: 25px 5%; text-align: left; color: #e74c3c; font-size: 64px; line-height: 64px;}
 .categories {float: left; width: 100%; margin: 0; padding: 0;}
 .service-category {float: left; width: 28%; margin: 15px 2%; padding: 0; height: auto;}
 .category-image {float: left; height: auto; margin: 0; padding: 0; width: 100%;}
 .category-box {float: left; height: auto; width: 100%; padding: 5px 5%; color: #e74c3c; text-align: center;}
-.category-box h2 {float: left; width: 100%; font-size: 2rem; line-height: 2rem; text-align: center;}
-.category-box p {float: left; width: 100%; font-size: 1.4rem; line-height: 1.5rem; text-align: center;}
+.category-box h2 {float: left; width: 100%; font-size: 20px; line-height: 20px; text-align: center;}
+.category-box p {float: left; width: 100%; font-size: 14px; line-height: 16px; text-align: center;}
 .learn-button {background-color: #e74c3c; border: 3px solid #e74c3c; border-radius: 20px; color: #fff; min-width: 70%; margin: 5px 15%; padding: 5px 10px;}
 
 .services-detail {float: left; width: 100%; margin: 0; height: auto; min-height: 600px; padding: 15px 10%; background-color: #fff;}
 .services-types {float: left; width: 30%; height: auto;}
-.services-types h2 {float: left; width: 100%; font-size: 2rem; color: #000; text-align: left;}
+.services-types h2 {float: left; width: 100%; font-size: 20px; color: #000; text-align: left;}
 .services-types ul {float:left; width: 100%; list-style-type: none; margin: 10px 0; padding: 0;}
-.services-types ul li {float: left; width: 100%; text-transform: uppercase; font-size: 1.5rem;}
+.services-types ul li {float: left; width: 100%; text-transform: uppercase; font-size: 16px;}
 .services-description {float: left; width: 60%; margin: 0 5%; padding: 0;}
-.services-description h1 {float: left; font-size: 1.6rem; color: #000;}
-.services-description p {float: left; font-size: 1.4rem; color: #000; margin: 15px 0; padding: 0;}
-.services-question {float: left; font-size: 1.2rem; margin: 10px 0 20px 0;}
+.services-description h1 {float: left; font-size: 16px; color: #000;}
+.services-description p {float: left; font-size: 14px; color: #000; margin: 15px 0; padding: 0;}
+.services-question {float: left; font-size: 12px; margin: 10px 0 20px 0;}
 
 //interactive campaign
 .exhibits-section {float: left; width: 100%; margin: 0 0 0 0; height: auto; padding: 15px 10% 100px 10%; background-color: #fff;}
-.exhibits-section h1 {float: left; width: 100%; padding: 10px 5%; text-align: center; color: #e74c3c; font-size: 6.5rem; line-height: 6.5rem;}
+.exhibits-section h1 {float: left; width: 100%; padding: 10px 5%; text-align: center; color: #e74c3c; font-size: 64px; line-height: 64px;}
 
 .exhibits1 {float: left; width: 100%; padding: 20px 0; height: auto; background-color: #fff;}
 .exhibits1 .image-part1 {float: left; width: 50%; margin-left: -25%;}
@@ -108,18 +108,18 @@ img#arrowpartner {height: 4rem; position: relative; right: 10.5rem; top: 12rem; 
 .microsite1 .image-part1 {float: left; width: 50%; margin-left: -25%;}
 
 .exhibits-info {float: right; width: 75%; padding: 0; margin: 0;}
-.exhibits-title {float: left; font-family: "proxima-nova",sans-serif; width: 100%; text-align: left; padding: 5px 0 5px 10px; margin: 10px 0; background-color: #20a286; color: #fff; font-size: 3rem; }
-.exhibits-para {float: left; width: 80%; padding: 10px 5%; font-size: 1.8rem; line-height: 2rem; text-align: center; color: #20a286; }
+.exhibits-title {float: left; font-family: "proxima-nova",sans-serif; width: 100%; text-align: left; padding: 5px 0 5px 10px; margin: 10px 0; background-color: #20a286; color: #fff; font-size: 30px; }
+.exhibits-para {float: left; width: 80%; padding: 10px 5%; font-size: 18px; line-height: 20px; text-align: center; color: #20a286; }
 
 .socialmedia-info {float: left; width: 75%; padding: 0; margin: 0;}
-.socialmedia-title {float: left; font-family: "proxima-nova",sans-serif; width: 100%; text-align: left; padding: 5px 0 5px 10px; margin: 10px 0; background-color: #f5cd0c; color: #fff; font-size: 3rem; }
-.socialmedia-para {float: left; width: 80%; padding: 10px 5%; font-size: 1.8rem; line-height: 2rem; text-align: center; color: #f5cd0c; }
+.socialmedia-title {float: left; font-family: "proxima-nova",sans-serif; width: 100%; text-align: left; padding: 5px 0 5px 10px; margin: 10px 0; background-color: #f5cd0c; color: #fff; font-size: 30px; }
+.socialmedia-para {float: left; width: 80%; padding: 10px 5%; font-size: 18px; line-height: 20px; text-align: center; color: #f5cd0c; }
 
 .microsite-info {float: right; width: 75%; padding: 0; margin: 0;}
-.microsite-title {float: left; font-family: "proxima-nova",sans-serif; width: 100%; text-align: left; padding: 5px 0 5px 10px; margin: 10px 0; background-color: #e74c3c; color: #fff; font-size: 3rem; }
-.microsite-para {float: left; width: 80%; padding: 10px 5%; font-size: 1.8rem; line-height: 2rem; text-align: center; color: #e74c3c; }
+.microsite-title {float: left; font-family: "proxima-nova",sans-serif; width: 100%; text-align: left; padding: 5px 0 5px 10px; margin: 10px 0; background-color: #e74c3c; color: #fff; font-size: 30px; }
+.microsite-para {float: left; width: 80%; padding: 10px 5%; font-size: 18px; line-height: 20px; text-align: center; color: #e74c3c; }
 
-.campaign-info {float: left; width: 95%; margin: 10px 2.5%; font-size: 2.4rem; line-height: 3rem; color: #595959; text-align: center;}
+.campaign-info {float: left; width: 95%; margin: 10px 2.5%; font-size: 24px; line-height: 30px; color: #595959; text-align: center;}
 .campaignimages {width: 100%;  margin: 0; position: relative;  height: auto;}
 .campaignbox {float: left; position: relative; width: 30%;  margin: 25px 1.5%; height: auto;}
 .campaigninfo1 {background-color: #20a286; padding: 5px; color: #fff;}
@@ -133,15 +133,15 @@ img#arrowpartner {height: 4rem; position: relative; right: 10.5rem; top: 12rem; 
 .blog-section {float: left; width: 100%; margin: 0; height: auto; min-height: 600px; padding: 15px 10%; background-color: #20a286;}
 .learnhow-box {float: left; width: 80%; margin: 50px 10% 25px; padding: 0; background-color: #fff; color: #000;}
 .learnhow-boxleft {float: left; width: 40%; padding: 15px 5%;}
-.learnhow-boxleft h1 {font-size: 3rem; text-align: center;}
-.learnhow-boxleft h2 {font-size: 2rem; text-align: center;}
-.learnhow-button {width: 80%; float: left; margin: 50px 10% 0; padding: 10px 15px; font-size: 2rem; text-align: center; color: #fff; background-color: #e74c3c;}
+.learnhow-boxleft h1 {font-size: 30px; text-align: center;}
+.learnhow-boxleft h2 {font-size: 20px; text-align: center;}
+.learnhow-button {width: 80%; float: left; margin: 50px 10% 0; padding: 10px 15px; font-size: 20px; text-align: center; color: #fff; background-color: #e74c3c;}
 .learnhow-boxright {float: left;  background: url('oktoberfest7.JPG'); width: 60%; height: 100%;}
 .learnbox-image {float: left; width: 100%;}
 .blogpost-section {float: left; width: 80%; margin: 15px 10%;}
 .blog-post {float: left; height: 250px; width: 40%; margin: 0 5% 25px 5%; background-color: #e74c3c; color: #fff;}
 .img-box {float: left; width: 100%; height: 125px; overflow: hidden;}
-.blog-title {float: left; width: 100%; text-align: center; font-size: 3rem; line-height: 4rem; vertical-align: center; padding: 15px 5px;}
+.blog-title {float: left; width: 100%; text-align: center; font-size: 30px; line-height: 40px; vertical-align: center; padding: 15px 5px;}
 
 .nodisplay {display: none;}
 .arrowshow {float: left; width: 100%; margin: 15px 0 0 0; padding: 0;}
@@ -151,8 +151,57 @@ img#arrowpartner {height: 4rem; position: relative; right: 10.5rem; top: 12rem; 
 /// mobile 
 @media screen and (max-width: 640px){
 
+    //home page
+    .bscontainer-fluid {margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px; background-color: #fff; font-family: "proxima-nova",sans-serif;}
+    .bsrow {margin-left: -15px; margin-right: -15px;}
+    #demo-wrapper {display: block; min-height: 0px; height: auto; margin: 0 auto; overflow: hidden; width: 100%; background-color: #fff;}
+    #demo-canvas {color: #fff; font-size: 20px; height: 100%; position: relative; text-align: center; transform: translate3d(0px, 0px, 0px); transition: all 0.6s ease 0s; width: 100%;}
+    #demo-canvas .centertop {min-height: 600px; height: auto; margin: 0 auto; width: 75%;}
+    #demo-canvas .centertop h1 {color: #e74c3c; font-size: 26px; font-weight: 300; margin-bottom: 20px; position: relative; z-index: 2;}
+    .bikeimage {width: 80%; margin: 120px 10% 0; position: relative; height: auto;}
+    .bikeimage3 {width: 50%; margin: 0 25%; position: relative; height: auto;}
+    .bikeimage2 {width: 70%; margin: 0 15%; position: relative; height: auto; transform: rotate(-180deg); -webkit-transform: rotate(-180deg); -moz-transform: rotate(-180deg); -ms-transform: rotate(-180deg); -o-transform: rotate(-180deg);}
+    #partner-menu {color: #000; display: block; font-size: 14px; height: 100%; left: -98%; position: absolute; text-align: center; top: 0; width: 100%;}
+    #exhibit-menu {color: #000; display: block; font-size: 14px; height: 100%; position: absolute; right: -98%; text-align: center; top: 0; width: 100%;}
+    #exhibitwrap {display: block; height: 600px; margin: 0 auto; position: relative; z-index: 999;}
+    #exhibit-content {float: right; height: 400px; margin-right: -30%; margin-top: 14%; width: 100%;}
+    #exhibit-content h2 {color: #000; font-size: 24px; position: relative; text-align: left; font-variant: small-caps;}
+    #partner-content h2 {color: #000; font-size: 24px; position: relative; text-align: left; font-variant: small-caps;}
+    #exhibitside {color: #000; font-size: 16px; position: relative; text-align: left; width: 70%;}
+    #partnerside {color: #000; font-size: 16px; position: relative; text-align: left; width: 70%;}
+    .learnmore {float: left; color: #7f8c8d;}
+    #contact-exhibit {clear: left; margin: 10px 0 0 0; border: 3px solid #f5cd0c; color: #f5cd0c; float: left;}
+    #contact-partner {clear: both; margin: 10px 0 0 0; border: 3px solid #20a286; color: #20a286; float: left;}
+    #partnerwrap {display: block; min-height: 600px; height: auto; margin: 0 auto; position: relative; z-index: 999;}
+    #exhibitcircle {background-color: #f5cd0c; border-radius: 50%; color: white; display: block; height: 200px; left: -100px; margin: 0px auto; position: absolute; text-align: center; top: 12%; width: 200px;}
+    #partnercircle {background-color: #20a286; border-radius: 50%; color: white; display: block; height: 200px; margin: 0px auto; position: absolute; right: -100px; text-align: center; top: 12%; width: 200px;}
+    #partner-content {float: left; height: 400px; margin-left: 1%; margin-top: 14%; width: 100%;}
+    #exhibitcircle span {font-size: 16px; font-weight: 600; left: -44px; position: relative; top: 44%;}
+    #partnercircle span {font-size: 16px; font-weight: 600; left: 64px; position: relative; top: 44%;}
+    img#arrowexhibit {border: 0 none; height: 24px; position: relative; right: 40px; top: 86px; vertical-align: middle;}
+    img#arrowpartner {height: 24px; position: relative; right: 32px; top: 86px; vertical-align: middle; border: 0 none;}
+
+    #homecontact {background-color: rgba(255,255,255,0); bottom: 0; cursor: pointer; left: 0; padding: 0; position: absolute; text-align: center; transition: all .6s ease 0s; -webkit-transition: all .6s ease 0s; -moz-transition: all .6s ease 0s; -o-transition: all .6s ease 0s; width: 100%; z-index:100;}
+    .contact-button {background-color: #fff; border: 3px solid #e74c3c; border-radius: 20px; color: #e74c3c; padding: 5px 10px; margin: 5px 0;}
+    .contact-button:hover {background-color: #e74c3c; border: 3px solid #e74c3c; border-radius: 20px; color: #fff; padding: 5px 10px; margin: 5px 0;}
+    #contact-exhibit:hover {background-color: #f5cd0c; clear: left; margin: 10px 0 0 0; border: 3px solid #f5cd0c; color: #fff; float: left;}
+    #contact-partner:hover {background-color: #20a286; clear: both; margin: 10px 0 0 0; border: 3px solid #20a286; color: #fff; float: left;}
+
+    .learnmore:hover {text-decoration: none; color: #e74c3c;}
+    //css animation
+    #demo-wrapper.show-nav #demo-canvas {transform: translateX(100%);}
+    #demo-wrapper.show-nav2 #demo-canvas {transform: translateX(-100%);}
+
+    .movedown {margin-top: 15px; margin-bottom: 0px !important; transition: all .6s ease 0s; -webkit-transition: all .6s ease 0s; -moz-transition: all .6s ease 0s; -o-transition: all .6s ease 0s; transform: rotate(90deg);}
+    .clockwise180 {transform: rotate(-180deg); -webkit-transform: rotate(-180deg); -moz-transform: rotate(-180deg); -ms-transform: rotate(-180deg); -o-transform: rotate(-180deg); transition: all 1.2s ease 0s; -webkit-transition: all 1.2s ease 0s; -moz-transition: all 1.2s ease 0s; -o-transition: all 1.2s ease 0s;}
+    .counterclockwise90 {transform: rotate(90deg); -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transition: all 1.2s ease 0s; -webkit-transition: all 1.2s ease 0s; -moz-transition: all 1.2s ease 0s; -o-transition: all 1.2s ease 0s;}
+    .clockwise0 {transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transition: all 1.2s ease 0s; -webkit-transition: all 1.2s ease 0s; -moz-transition: all 1.2s ease 0s; -o-transition: all 1.2s ease 0s;}
+    .opacity {opacity: 0; transition: all 0.4s ease 0s; -webkit-transition: all 0.4s ease 0s; -moz-transition: all 0.4s ease 0s; -o-transition: all 0.4s ease 0s;}
+
+
+
     .exhibits-section {float: left; width: 100%; margin: 0 0 0 0; height: auto; padding: 15px 5% 100px 5%; background-color: #fff;}
-    .exhibits-section h1 {float: left; width: 100%; padding: 10px 5%; text-align: center; color: #e74c3c; font-size: 2rem; line-height: 2rem;}
+    .exhibits-section h1 {float: left; width: 100%; padding: 10px 5%; text-align: center; color: #e74c3c; font-size: 20px; line-height: 20px;}
 
     .exhibits1 {float: left; width: 100%; padding: 20px 0; height: auto; background-color: #fff;}
     .exhibits1 .image-part1 {float: left; width: 50%; margin-left: -25%;}
@@ -162,54 +211,51 @@ img#arrowpartner {height: 4rem; position: relative; right: 10.5rem; top: 12rem; 
     .microsite1 .image-part1 {float: left; width: 50%; margin-left: -25%;}
 
     .exhibits-info {float: right; width: 75%; padding: 0; margin: 0;}
-    .exhibits-title {float: left; font-family: "proxima-nova",sans-serif; width: 100%; text-align: left; padding: 5px 0 5px 10px; margin: 10px 0; background-color: #20a286; color: #fff; font-size: 2rem; }
-    .exhibits-para {float: left; width: 80%; padding: 10px 5%; font-size: 1.8rem; line-height: 2rem; text-align: center; color: #20a286; }
+    .exhibits-title {float: left; font-family: "proxima-nova",sans-serif; width: 100%; text-align: left; padding: 5px 0 5px 10px; margin: 10px 0; background-color: #20a286; color: #fff; font-size: 20px; }
+    .exhibits-para {float: left; width: 80%; padding: 10px 5%; font-size: 18px; line-height: 20px; text-align: center; color: #20a286; }
 
     .socialmedia-info {float: left; width: 75%; padding: 0; margin: 0;}
-    .socialmedia-title {float: left; font-family: "proxima-nova",sans-serif; width: 100%; text-align: left; padding: 5px 0 5px 10px; margin: 10px 0; background-color: #f5cd0c; color: #fff; font-size: 2rem; }
-    .socialmedia-para {float: left; width: 80%; padding: 10px 5%; font-size: 1.8rem; line-height: 2rem; text-align: center; color: #f5cd0c; }
+    .socialmedia-title {float: left; font-family: "proxima-nova",sans-serif; width: 100%; text-align: left; padding: 5px 0 5px 10px; margin: 10px 0; background-color: #f5cd0c; color: #fff; font-size: 20px; }
+    .socialmedia-para {float: left; width: 80%; padding: 10px 5%; font-size: 18px; line-height: 20px; text-align: center; color: #f5cd0c; }
 
     .microsite-info {float: right; width: 75%; padding: 0; margin: 0;}
-    .microsite-title {float: left; font-family: "proxima-nova",sans-serif; width: 100%; text-align: left; padding: 5px 0 5px 10px; margin: 10px 0; background-color: #e74c3c; color: #fff; font-size: 2rem; }
-    .microsite-para {float: left; width: 80%; padding: 10px 5%; font-size: 1.8rem; line-height: 2rem; text-align: center; color: #e74c3c; }
+    .microsite-title {float: left; font-family: "proxima-nova",sans-serif; width: 100%; text-align: left; padding: 5px 0 5px 10px; margin: 10px 0; background-color: #e74c3c; color: #fff; font-size: 20px; }
+    .microsite-para {float: left; width: 80%; padding: 10px 5%; font-size: 18px; line-height: 20px; text-align: center; color: #e74c3c; }
 
-    .campaign-info {float: left; width: 95%; margin: 10px 2.5%; font-size: 2.4rem; line-height: 3rem; color: #595959; text-align: center;}
+    .campaign-info {float: left; width: 95%; margin: 10px 2.5%; font-size: 24px; line-height: 30px; color: #595959; text-align: center;}
     .campaignimages {width: 100%;  margin: 0; position: relative;  height: auto;}
     .campaignbox {float: left; position: relative; width: 90%;  margin: 15px 5%; height: auto;}
     .campaigninfo1 {background-color: #20a286; padding: 5px; color: #fff;}
     .campaigninfo2 {background-color: #f5cd0c; padding: 5px; color: #fff;}
     .campaigninfo3 {background-color: #e74c3c; padding: 5px; color: #fff;}
 
-    #exhibitcircle {background-color: #f5cd0c; border-radius: 50%; color: white; display: block; height: 200px; left: -50px; margin: 30px auto; position: absolute; text-align: center; top: 12%; width: 200px;}
-    #partnercircle {background-color: #20a286; border-radius: 50%; color: white; display: block; height: 200px; margin: 30px auto; position: absolute; right: -50px; text-align: center; top: 12%; width: 200px;}
 
-
-    .services-section h1 {float: left; width: 100%; padding: 25px 0%; text-align: left; color: #e74c3c; font-size: 2rem; line-height: 2rem;}
+    .services-section h1 {float: left; width: 100%; padding: 25px 0%; text-align: left; color: #e74c3c; font-size: 20px; line-height: 20px;}
     #services-layer {float: left; background-color: #fff; width: 100%; height: auto; padding: 50px 5%;}
-    .nav-circle-title {position: relative; margin-top: 0px; z-index: 12; color: #000; text-align: center; width: 100%; font-size: 1.2rem; text-transform: uppercase;}
+    .nav-circle-title {position: relative; margin-top: 0px; z-index: 12; color: #000; text-align: center; width: 100%; font-size: 12px; text-transform: uppercase;}
     .service-category {float: left; width: 100%; margin: 15px 0%; padding: 0; height: auto;}
     .category-image {float: left; height: auto; margin: 0; padding: 0; width: 100%;}
     .category-box {float: left; height: auto; width: 100%; padding: 5px 2%; color: #e74c3c; text-align: center;}
-    .category-box h2 {float: left; width: 100%; font-size: 2rem; line-height: 2rem; text-align: center;}
-    .category-box p {float: left; width: 100%; font-size: 1.4rem; line-height: 1.5rem; text-align: center;}
+    .category-box h2 {float: left; width: 100%; font-size: 20px; line-height: 20px; text-align: center;}
+    .category-box p {float: left; width: 100%; font-size: 14px; line-height: 16px; text-align: center;}
     .learn-button {background-color: #e74c3c; border: 3px solid #e74c3c; border-radius: 20px; color: #fff; min-width: 70%; margin: 5px 15%; padding: 5px 10px;}
 
     .services-detail {float: left; width: 100%; margin: 0; height: auto; min-height: 600px; padding: 15px 5%; background-color: #fff;}
     .services-types {float: left; width: 100%; height: auto;}
     .services-types h2 {float: left; width: 100%; font-size: 2rem; color: #000; text-align: left;}
     .services-types ul {float:left; width: 100%; list-style-type: none; margin: 10px 0; padding: 0;}
-    .services-types ul li {float: left; width: 100%; text-transform: uppercase; font-size: 1.5rem;}
+    .services-types ul li {float: left; width: 100%; text-transform: uppercase; font-size: 16px;}
     .services-description {float: left; width: 100%; margin: 0 0%; padding: 0;}
-    .services-description h1 {float: left; font-size: 1.6rem; color: #000;}
-    .services-description p {float: left; font-size: 1.4rem; color: #000; margin: 15px 0; padding: 0;}
-    .services-question {float: left; font-size: 1.2rem; margin: 10px 0 20px 0;}
+    .services-description h1 {float: left; font-size: 16px; color: #000;}
+    .services-description p {float: left; font-size: 14px; color: #000; margin: 15px 0; padding: 0;}
+    .services-question {float: left; font-size: 12px; margin: 10px 0 20px 0;}
 
     }
 
 // beginning work
 .happy-box {position: relative; width: 100%; text-align: center; color: #fff; margin: 15px 0 50px 0;}
-.happy-box h1 {font-size: 5rem;}
-.happy-box h2 {font-size: 2.6rem;}
+.happy-box h1 {font-size: 50px;}
+.happy-box h2 {font-size: 26px;}
 
 .about-title {width: auto; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; font-size: 52px; line-height: 52px; color: #f1c40f; text-align: center; float: left;}
 
