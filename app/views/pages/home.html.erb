@@ -61,11 +61,11 @@
 			<div id="partner-menu">
 				<div id="partnerwrap" class="">
 
-					<%= link_to '#', id: "partnercircle" do %>
+					<div id="partnercircle">
 						<span class="">PARTNER</span>
 
 						<%= image_tag 'arrow_partner.png', :class => "", id: "arrowpartner" %>
-					<% end %>
+					</div>
 
 					<div id="partner-content">
 					<h2>
@@ -250,6 +250,20 @@
 	</section>
 
 <script>
+/// mobile adjustment
+$("#exhibitcircle").click(function(){
+	$("#demo-wrapper").toggleClass("show-nav2");
+	$("#exhibitcircle span").toggleClass("opacity");
+	$("#arrowexhibit").toggleClass("clockwise180");
+	$("#homecontact").toggleClass("nodisplay");
+});
+$("#partnercircle").click(function(){
+	$("#demo-wrapper").toggleClass("show-nav");
+	$("#partnercircle span").toggleClass("opacity");
+	$("#arrowpartner").toggleClass("clockwise180");
+	$("#homecontact").toggleClass("nodisplay");
+});
+
 //When you hover over partner circle, you add class show-nav to wrapper demo
 //select cirlce
 $("#exhibit-menu").mouseenter(function(){
@@ -278,31 +292,7 @@ $("#partner-menu").mouseleave(function(){
 	$("#homecontact").removeClass("nodisplay");
 });
 
-/// mobile adjustment
-$("#exhibitcircle span").click(function(){
-	$("#demo-wrapper").addClass("show-nav2");
-	$("#exhibitcircle span").addClass("opacity");
-	$("#arrowexhibit").addClass("clockwise180");
-	$("#homecontact").addClass("nodisplay");
-});
-$("#partnercircle span").click(function(){
-	$("#demo-wrapper").addClass("show-nav");
-	$("#partnercircle span").addClass("opacity");
-	$("#arrowpartner").addClass("clockwise180");
-	$("#homecontact").addClass("nodisplay");
-});
-$("#exhibitcircle").click(function(){
-	$("#demo-wrapper").toggleClass("show-nav2");
-	$("#exhibitcircle span").toggleClass("opacity");
-	$("#arrowexhibit").toggleClass("clockwise180");
-	$("#homecontact").toggleClass("nodisplay");
-});
-$("#partnercircle").click(function(){
-	$("#demo-wrapper").toggleClass("show-nav");
-	$("#partnercircle span").toggleClass("opacity");
-	$("#arrowpartner").toggleClass("clockwise180");
-	$("#homecontact").toggleClass("nodisplay");
-});
+
 
 
 
