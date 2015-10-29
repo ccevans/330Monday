@@ -161,8 +161,8 @@ img#arrowpartner {height: 4rem; position: relative; right: 105px; top: 120px; ve
     .bikeimage {width: 80%; margin: 35% 10% 0; position: relative; height: auto;}
     .bikeimage3 {width: 50%; margin: 0 25%; position: relative; height: auto;}
     .bikeimage2 {width: 70%; margin: 0 15%; position: relative; height: auto; transform: rotate(-180deg); -webkit-transform: rotate(-180deg); -moz-transform: rotate(-180deg); -ms-transform: rotate(-180deg); -o-transform: rotate(-180deg);}
-    #partner-menu {z-index: 100; color: #000; font-size: 14px; height: 100%; left: -98%; position: absolute; text-align: center; top: 0; width: 100%;}
-    #exhibit-menu {z-index: 100; color: #000; font-size: 14px; height: 100%; position: absolute; right: -98%; text-align: center; top: 0; width: 100%;}
+    #partner-menu {color: #000; font-size: 14px; height: 100%; left: -98%; position: absolute; text-align: center; top: 0; width: 100%;}
+    #exhibit-menu {color: #000; font-size: 14px; height: 100%; position: absolute; right: -98%; text-align: center; top: 0; width: 100%;}
     #exhibitwrap {display: block; height: 600px; margin: 0 auto; position: relative; z-index: 999;}
     #exhibit-content {float: right; height: 400px; margin-right: -30%; margin-top: 14%; width: 100%;}
     #exhibit-content h2 {color: #000; font-size: 24px; position: relative; text-align: left; font-variant: small-caps;}
@@ -173,8 +173,8 @@ img#arrowpartner {height: 4rem; position: relative; right: 105px; top: 120px; ve
     #contact-exhibit {clear: left; margin: 10px 0 0 0; border: 3px solid #f5cd0c; color: #f5cd0c; float: left;}
     #contact-partner {clear: both; margin: 10px 0 0 0; border: 3px solid #20a286; color: #20a286; float: left;}
     #partnerwrap {display: block; min-height: 600px; height: auto; margin: 0 auto; position: relative; z-index: 999;}
-    #exhibitcircle {background-color: #f5cd0c; border-radius: 50%; color: white; display: block; height: 200px; left: -100px; margin: 0px auto; position: absolute; text-align: center; top: 12%; width: 200px;}
-    #partnercircle {background-color: #20a286; border-radius: 50%; color: white; display: block; height: 200px; margin: 0px auto; position: absolute; right: -100px; text-align: center; top: 12%; width: 200px;}
+    #exhibitcircle {z-index: 1000; background-color: #f5cd0c; border-radius: 50%; color: white; display: block; height: 200px; left: -100px; margin: 0px auto; position: absolute; text-align: center; top: 12%; width: 200px;}
+    #partnercircle {z-index: 1000; background-color: #20a286; border-radius: 50%; color: white; display: block; height: 200px; margin: 0px auto; position: absolute; right: -100px; text-align: center; top: 12%; width: 200px;}
     #partner-content {float: left; height: 400px; margin-left: 1%; margin-top: 14%; width: 100%;}
     #exhibitcircle span {font-size: 16px; font-weight: 600; left: -44px; position: relative; top: 44%;}
     #partnercircle span {font-size: 16px; font-weight: 600; left: 64px; position: relative; top: 44%;}
