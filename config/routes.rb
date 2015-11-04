@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'pages/contact'
   get 'pages/interact'
   get 'pages/home'
-  get 'pages/marketingpartner'
+  get 'pages/marketingconsulting'
   get 'pages/jpmicrosite'
   get 'pages/checkoutclt'
   get 'pages/interactivecampaigns'
