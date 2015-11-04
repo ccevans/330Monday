@@ -100,24 +100,24 @@ img#arrowpartner {height: 4rem; position: relative; right: 105px; top: 120px; ve
 .exhibits-section {float: left; width: 100%; margin: 0 0 0 0; height: auto; padding: 15px 10% 100px 10%; background-color: #fff;}
 .exhibits-section h1 {float: left; width: 100%; padding: 10px 5%; text-align: center; color: #e74c3c; font-size: 64px; line-height: 64px;}
 
-.exhibits1 {float: left; width: 100%; padding: 20px 0; height: auto; background-color: #fff;}
+.exhibits1 {overflow: hidden; float: left; width: 100%; padding: 20px 0; height: auto; background-color: #fff;}
 .exhibits1 .image-part1 {float: left; width: 50%; margin-left: -25%;}
-.socialmedia1 {float: left; width: 100%; padding: 20px 0; height: auto; background-color: #fff;}
+.socialmedia1 {overflow: hidden; float: left; width: 100%; padding: 20px 0; height: auto; background-color: #fff;}
 .socialmedia1 .image-part1 {float: right; width: 50%; margin-right: -25%;}
-.microsite1 {float: left; width: 100%; padding: 20px 0; height: auto; background-color: #fff;}
+.microsite1 {overflow: hidden; float: left; width: 100%; padding: 20px 0; height: auto; background-color: #fff;}
 .microsite1 .image-part1 {float: left; width: 50%; margin-left: -25%;}
 
 .exhibits-info {float: right; width: 75%; padding: 0; margin: 0;}
 .exhibits-title {float: left; font-family: "proxima-nova",sans-serif; width: 100%; text-align: left; padding: 5px 0 5px 10px; margin: 10px 0; background-color: #20a286; color: #fff; font-size: 30px; }
-.exhibits-para {float: left; width: 80%; padding: 10px 5%; font-size: 18px; line-height: 20px; text-align: center; color: #20a286; }
+.exhibits-para {float: left; width: 80%; padding: 10px 5%; font-size: 18px; line-height: 20px; text-align: left; color: #20a286; }
 
 .socialmedia-info {float: left; width: 75%; padding: 0; margin: 0;}
 .socialmedia-title {float: left; font-family: "proxima-nova",sans-serif; width: 100%; text-align: left; padding: 5px 0 5px 10px; margin: 10px 0; background-color: #f5cd0c; color: #fff; font-size: 30px; }
-.socialmedia-para {float: left; width: 80%; padding: 10px 5%; font-size: 18px; line-height: 20px; text-align: center; color: #f5cd0c; }
+.socialmedia-para {float: left; width: 80%; padding: 10px 5%; font-size: 18px; line-height: 20px; text-align: left; color: #f5cd0c; }
 
 .microsite-info {float: right; width: 75%; padding: 0; margin: 0;}
 .microsite-title {float: left; font-family: "proxima-nova",sans-serif; width: 100%; text-align: left; padding: 5px 0 5px 10px; margin: 10px 0; background-color: #e74c3c; color: #fff; font-size: 30px; }
-.microsite-para {float: left; width: 80%; padding: 10px 5%; font-size: 18px; line-height: 20px; text-align: center; color: #e74c3c; }
+.microsite-para {float: left; width: 80%; padding: 10px 5%; font-size: 18px; line-height: 20px; text-align: left; color: #e74c3c; }
 
 .campaign-info {float: left; width: 95%; margin: 10px 2.5%; font-size: 24px; line-height: 30px; color: #595959; text-align: center;}
 .campaignimages {width: 100%;  margin: 0; position: relative;  height: auto;}
@@ -203,24 +203,24 @@ img#arrowpartner {height: 4rem; position: relative; right: 105px; top: 120px; ve
     .exhibits-section {float: left; width: 100%; margin: 0 0 0 0; height: auto; padding: 15px 5% 100px 5%; background-color: #fff;}
     .exhibits-section h1 {float: left; width: 100%; padding: 10px 5%; text-align: center; color: #e74c3c; font-size: 20px; line-height: 20px;}
 
-    .exhibits1 {float: left; width: 100%; padding: 20px 0; height: auto; background-color: #fff;}
+    .exhibits1 {overflow: hidden; float: left; width: 100%; padding: 20px 0; height: auto; background-color: #fff;}
     .exhibits1 .image-part1 {float: left; width: 50%; margin-left: -25%;}
-    .socialmedia1 {float: left; overflow: hidden; width: 100%; padding: 20px 0; height: auto; background-color: #fff;}
+    .socialmedia1 {overflow: hidden; float: left; overflow: hidden; width: 100%; padding: 20px 0; height: auto; background-color: #fff;}
     .socialmedia1 .image-part1 {float: right; width: 50%; margin-right: -25%;}
-    .microsite1 {float: left; width: 100%; padding: 20px 0; height: auto; background-color: #fff;}
+    .microsite1 {overflow: hidden; float: left; width: 100%; padding: 20px 0; height: auto; background-color: #fff;}
     .microsite1 .image-part1 {float: left; width: 50%; margin-left: -25%;}
 
     .exhibits-info {float: right; width: 75%; padding: 0; margin: 0;}
     .exhibits-title {float: left; font-family: "proxima-nova",sans-serif; width: 100%; text-align: left; padding: 5px 0 5px 10px; margin: 10px 0; background-color: #20a286; color: #fff; font-size: 20px; }
-    .exhibits-para {float: left; width: 80%; padding: 10px 5%; font-size: 18px; line-height: 20px; text-align: center; color: #20a286; }
+    .exhibits-para {float: left; width: 80%; padding: 10px 5%; font-size: 18px; line-height: 20px; text-align: left; color: #20a286; }
 
     .socialmedia-info {float: left; width: 75%; padding: 0; margin: 0;}
     .socialmedia-title {float: left; font-family: "proxima-nova",sans-serif; width: 100%; text-align: left; padding: 5px 0 5px 10px; margin: 10px 0; background-color: #f5cd0c; color: #fff; font-size: 20px; }
-    .socialmedia-para {float: left; width: 80%; padding: 10px 5%; font-size: 18px; line-height: 20px; text-align: center; color: #f5cd0c; }
+    .socialmedia-para {float: left; width: 80%; padding: 10px 5%; font-size: 18px; line-height: 20px; text-align: left; color: #f5cd0c; }
 
     .microsite-info {float: right; width: 75%; padding: 0; margin: 0;}
     .microsite-title {float: left; font-family: "proxima-nova",sans-serif; width: 100%; text-align: left; padding: 5px 0 5px 10px; margin: 10px 0; background-color: #e74c3c; color: #fff; font-size: 20px; }
-    .microsite-para {float: left; width: 80%; padding: 10px 5%; font-size: 18px; line-height: 20px; text-align: center; color: #e74c3c; }
+    .microsite-para {float: left; width: 80%; padding: 10px 5%; font-size: 18px; line-height: 20px; text-align: left; color: #e74c3c; }
 
     .campaign-info {float: left; width: 95%; margin: 10px 2.5%; font-size: 24px; line-height: 30px; color: #595959; text-align: center;}
     .campaignimages {width: 100%;  margin: 0; position: relative;  height: auto;}
@@ -267,7 +267,7 @@ img#arrowpartner {height: 4rem; position: relative; right: 105px; top: 120px; ve
 .about-title2 {display: none; font-family: Arial,Helvetica,Arial,sans-serif; font-size: 40px; line-height: 42px; color: #fff; border-radius: 10px; text-align: center; float: right; margin: 50px 25px; background-color: #e74c3c; padding: 20px;}
 .about-title2:hover {font-family: Arial,Helvetica,Arial,sans-serif; font-size: 40px; line-height: 42px; color: #fff; border-radius: 10px; text-align: center; float: right; margin: 50px 25px; background-color: #000; padding: 20px;}
 
-.about-description { width: 40%; text-shadow: .2px .2px #000; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; font-size: 20px; line-height: 24px; color: #fff; border-radius: 10px; text-align: center; float: right; margin: 50px 0px;}
+.about-description { width: 40%; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; font-size: 20px; line-height: 24px; color: #e74c3c; border-radius: 10px; text-align: center; float: right; margin: 50px 0px;}
 
 .puzzle-image {float: left; width: 40%; height: auto;}
 .about-gurantee {float: left; width: 50%; margin: 40px 25%; height: auto; font-size: 50px; color: #000;}
@@ -291,7 +291,7 @@ img#arrowpartner {height: 4rem; position: relative; right: 105px; top: 120px; ve
 .contact span.contact-phone {font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; float: left; width: 100%; font-size: 50px; line-height: 50px; color: #e74c3c; margin: 10px 0;}
 
 .about-stuff {width: 100%; float: left; margin: 0; padding: 0;}
-.stuff1 {float: left; width: auto; margin: 0 25px; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; color: #fff; font-size: 20px; line-height: 22px;}
+.stuff1 {float: left; width: auto; margin: 0 25px; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; color: #20a286; font-size: 20px; line-height: 22px;}
 .bigstuff {font-family: "hwt-republic-gothic-outline"; font-size: 68px; line-height: 68px;}
 .about-information {float: left; width: 60%; padding: 50px 5% 0 5%; margin: 0; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; color: #20a286; font-size: 20px; line-height: 22px;}
 .about-information p {font-size: 16px; line-height: 18px;}
@@ -700,7 +700,7 @@ div.cookie-box3 div form.simple_form.contact div.form-group .form-control {width
 
 .big-font {font-size: 70px; line-height: 40px;}
 .big-font2 {font-size: 90px; line-height: 70px;}
-.about-description { width: 80%; text-shadow: .2px .2px #000; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; font-size: 16px; line-height: 18px; color: #fff; border-radius: 10px; text-align: center; float: right; margin: 25px 10% 0 10%;}
+.about-description { width: 80%; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; font-size: 16px; line-height: 18px; color: #e74c3c; border-radius: 10px; text-align: center; float: right; margin: 25px 10% 0 10%;}
 
 .headline-service {float: left; text-align: left; font-family: "hwt-republic-gothic-outline"; font-size: 36px; line-height: 36px; color: #e74c3c;}
 .headline-service2 {float: left; text-align: left; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; font-size: 36px; line-height: 36px; color: #e74c3c; clear: both; width: 100%; margin: 0 0 25px 0;}
@@ -713,7 +713,7 @@ div.description-service ul {float: left; width: 100%; padding: 0px 10%; list-sty
 .process-box p {float: left; font-size: 14px; line-height: 18px; padding: 5px 0;}
 .process-box2 {float: left; width: 60%; padding: 15px 5%; color: #000; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;}
 
-.stuff1 {float: left; width: 100%; text-align: center; margin: 5px 0; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; color: #fff; font-size: 16px; line-height: 18px;}
+.stuff1 {float: left; width: 100%; text-align: center; margin: 5px 0; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; color: #20a286; font-size: 16px; line-height: 18px;}
 .bigstuff {font-family: "hwt-republic-gothic-outline"; font-size: 48px; line-height: 48px;}
 .about-information {float: left; width: 100%; padding: 0; margin: 0; font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif; color: #20a286; font-size: 16px; line-height: 18px;}
 .about-information p {font-size: 16px; line-height: 18px;}
