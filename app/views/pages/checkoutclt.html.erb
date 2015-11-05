@@ -1,3 +1,4 @@
+
 <div id="sitemenu-icon">
 	<span class="line1"></span>
 	<span class="line2"></span>
@@ -46,7 +47,7 @@
 					
 				</div>
 				<div id="step32" class="cltstep">
-					<div id="saveimage" onclick="saveCanvas()"><span>#3</span> Share To All</div>
+					<div id="saveimage" onclick="saveCanvas()"><span>#3</span> Save Pic</div>
 				</div>
 			</div>
 
@@ -68,15 +69,17 @@
 </div>
 
 
+<div id="intro">
+	<div class="slide active current" id="banner1"></div>
+</div>
 
 
-
-
+<div id="maincontainter">
 <section class="cltfirstpart">
 
 	<div class="firstexample">
 
-		<%= image_tag 'romare.png', :class => "jackbeagal" %>
+		
 
 	</div>
 
@@ -134,7 +137,7 @@
 					
 				</div>
 				<div id="step3" class="cltstep">
-					<span>#3</span> Share To All
+					<span>#3</span> Save Pic
 				</div>
 			</div>
 
@@ -149,11 +152,17 @@
 
 
 	</section>
-
+</div>
+<script>
+		$("#banner1").backstretch([ "/assets/checkoutclt1.jpg",
+		      "/assets/checkoutclt2.jpg"
+		    , "/assets/checkoutclt3.jpg"
+		    , "/assets/checkoutclt4.jpg" ,
+		    "/assets/checkoutclt5.jpg"
+		  ], {duration: 3000, fade: 750});
+</script>
 
 	<script type="text/javascript">
-
-		
 
 		$("#sitemenu-icon").click(function(){
 			$("#overwrap").removeClass("active");
@@ -359,7 +368,7 @@
 	         
 			            image.set({
 						    top: -1,
-						    left: -(canvas.width/2),
+						    left: -(((image.width*(canvas.height / image.height)) - canvas.width)/2),
 						    scaleY: (canvas.height / image.height) + 2/canvas.height,
 						    scaleX: canvas.height / image.height
 						});
@@ -367,7 +376,7 @@
 	            } else if (image.width < image.height) {
 
 		            image.set({
-					    top: -(canvas.height/2),
+					    top: -(((image.height*(canvas.width / image.width)) - canvas.height)/2),
 					    left: -1,
 					    scaleY: canvas.width / image.width,
 					    scaleX: (canvas.width / image.width) + 2/canvas.width
@@ -425,8 +434,7 @@
 	         
 			            image2.set({
 						    top: -1,
-						    left: -(((canvas.height / imagehere.height)*imagehere.width) -canvas.width)/2,
-						    left: -(canvas.width/2),
+						    left: -(((image2.width*(canvas.height / image2.height)) - canvas.width)/2),
 						    scaleY: (canvas.height / image2.height) + 2/canvas.height,
 						    scaleX: canvas.height / image2.height
 						});
@@ -434,7 +442,7 @@
 	            } else if (image2.width < image2.height) {
 
 		            image2.set({
-					    top: -(canvas.height/2),
+					    top: -(((image2.height*(canvas.width / image2.width)) - canvas.height)/2),
 					    left: -1,
 					    scaleY: canvas.width / image2.width,
 					    scaleX: (canvas.width / image2.width) + 2/canvas.width
