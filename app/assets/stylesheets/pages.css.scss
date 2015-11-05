@@ -60,7 +60,7 @@ img#arrowpartner {height: 4rem; position: relative; right: 105px; top: 120px; ve
 .about3 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 800px; background-color: #f1c40f;}
 .about4 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 0px; background-color: none; color: #fff;}
 .about5 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 0px; background-color: #1bc5a4;}
-.about6 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background: url('grey_wash_wall2.png');}
+.about6 {width: 100%; padding: 50px 10%; float: left; height: auto; min-height: 600px; background-color: #20a286;}
 
 
 //marketing partner
@@ -125,6 +125,9 @@ img#arrowpartner {height: 4rem; position: relative; right: 105px; top: 120px; ve
 .campaigninfo1 {background-color: #20a286; padding: 5px; color: #fff;}
 .campaigninfo2 {background-color: #f5cd0c; padding: 5px; color: #fff;}
 .campaigninfo3 {background-color: #e74c3c; padding: 5px; color: #fff;}
+
+#bottomcontact {background-color: rgba(255,255,255,0); bottom: 0; cursor: pointer; left: 0; padding: 0; position: relative; text-align: center; width: 100%; z-index:100;}
+
 
 
 // not sure
