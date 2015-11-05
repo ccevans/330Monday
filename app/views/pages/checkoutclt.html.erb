@@ -305,9 +305,27 @@
 
 	function saveCanvas(){
 			      // save canvas image as data url (png format by default)
+		//var addImage = document.createElement("img");
+		//addImage.src = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+		//addImage.alt="checkoutclt.png";
+		//addImage.title="checkoutclt.png";
+		//console.log(addImage);
+		//window.location.href=addImage.src;
+
+		var link = document.createElement('a');
+		link.href = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+		link.download = 'checkoutclt.png';
+		document.body.appendChild(link);
+		link.click();
+		document.body.removeChild(link);
+		
+
 		  if (imageCheck) {
 		  		canvas.deactivateAll().renderAll();  
-		  		window.open(canvas.toDataURL("image/png")); 
+		  		//var image3 = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
+
+
+				//window.location.href=image3; // it will save locally
 
 		  }
 		  
@@ -475,7 +493,7 @@
 					    top: -(((canvas.width / imagehere.width)*imagehere.height) -canvas.height)/2,
 					    left: -1,
 					    scaleY: (canvas.width / imagehere.width)*ranger.value,
-					    scaleX: (canvas.width / imagehere.width)*ranger.value) + 2/canvas.width)
+					    scaleX: (((canvas.width / imagehere.width)*ranger.value) + 2/canvas.width)
 					});
 
 	            } else {
@@ -483,8 +501,8 @@
 		            imagehere.set({
 					    top: -1,
 					    left: -1,
-					    scaleY: ((canvas.height / imagehere.height)*ranger.value) + 2/canvas.height),
-					    scaleX: ((canvas.width / imagehere.width)*ranger.value) + 2/canvas.width)
+					    scaleY: (((canvas.height / imagehere.height)*ranger.value) + 2/canvas.height),
+					    scaleX: (((canvas.width / imagehere.width)*ranger.value) + 2/canvas.width)
 					});
 	            }
 
