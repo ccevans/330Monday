@@ -102,3 +102,11 @@ div.canvascontainer a#fileSelect {color: #9b59b6; padding: 10px; margin: 0 auto;
 #fileUpdate.active {display: inline;}
 
 #imagecontrolbox {display: none;}
+
+@media screen and (max-width: 640px){
+    .cltinstruction {float: left; height: 300px; width: 96%; margin: 0 2% 0 2%; padding: 10px; background-color: #c0392b; color: #fff; font-family: "proxima-nova",sans-serif; font-size: 20px;}
+    .cltformbox {float: left; height: 300px; width: 96%; margin: 0 2% 0 2%; padding: 10px; background-color: #c0392b; color: #fff; font-family: "proxima-nova",sans-serif; font-size: 20px;}
+
+
+
+    }
