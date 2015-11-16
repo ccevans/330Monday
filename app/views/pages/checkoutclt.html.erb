@@ -1,9 +1,15 @@
 
-<div id="sitemenu-icon">
+<div id="sitemenu-icon" class="nodisplay">
 	<span class="line1"></span>
 	<span class="line2"></span>
 	<span class="line3"></span>
 </div>
+<div class="checkoutclt-header">
+          <%= link_to root_path do %>
+            <%= image_tag '330monday-logo.png', :class => "logo-head-checkout" %>
+        
+      <% end %>
+  </div>
 <div id="overwrap" class="">
 	<div id="holder" class="contentoverlay" style="transform: scale(.8);">
 		<div id="imagecontrolbox" class="">
@@ -30,6 +36,17 @@
 						<a href="#" id="fileSelect" class="active">UPLOAD FILE</a>
 
 						<a href="#" id="fileUpdate"  class="">UPDATE FILE</a>
+
+						<div class="controlbox">
+							<ul>
+								<li class="red"></li>
+								<li class="blue selectedcolor"></li>
+								<li class="yellow"></li>
+							</ul>
+
+
+
+						</div>
 
 
 				</div>
@@ -116,13 +133,13 @@
 			<div class="field-holder">
 			<div class="label">Charlotte is</div>
 			<div class="tip">Field is empty</div>
-			<input class="small indv" id="text11" type="text" value="" maxlength="20" autocomplete="off" name="textform1" onkeyup="checkText()" onkeyup="formChanged()" onchange="formChanged()" style="font-size: 24px; width: 270px;">
+			<input class="small indv" id="text11" type="text" value="" maxlength="20" autocomplete="off" placeholder="Fun" name="textform1" onkeyup="checkText()" onkeyup="formChanged()" onchange="formChanged()" style="font-size: 24px; width: 270px;">
 
 			</div>
 			<div class="field-holder">
 				<div class="label">checkout</div>
 			<div class="tip">Field is empty</div>
-			<input class="small" id="text22" type="text" value="" maxlength="20" autocomplete="off" name="textform2" onkeyup="checkText()" onkeyup="formChanged()" onchange="formChanged()" style="font-size: 24px; width: 285px;">
+			<input class="small" id="text22" type="text" value="" maxlength="20" autocomplete="off" placeholder="330Monday" name="textform2" onkeyup="checkText()" onkeyup="formChanged()" onchange="formChanged()" style="font-size: 24px; width: 285px;">
 
 			</div>
 
@@ -168,6 +185,7 @@
 			$("#overwrap").removeClass("active");
 			$("#holder").removeClass("show");
 			$("#sitemenu-icon").removeClass("open");
+			$("#sitemenu-icon").addClass("nodisplay");
 			$('body').removeClass("noscroll");
 			removeText();
 		});
@@ -205,10 +223,30 @@
 		canvas.setBackgroundColor('rgba(149, 165, 166,1.0)', canvas.renderAll.bind(canvas));
 
 		var text = new fabric.Text("Charlotte is", { left: 10, top: 260, fontSize: 18, fontFamily: "proxima-nova" }, fillStyle = 'black');
+
 		var text3 = new fabric.Text("Checkout", { left: 10, top: 325, fontSize: 18, fontFamily: "proxima-nova" }, fillStyle = 'black');
 		var text5 = new fabric.Text("#CheckoutCLT", { left: 280, top: 386, fontSize: 14, fontFamily: "shuriken-std" }, fillStyle = 'black');
 
-		var colorSet = '#fff';
+		//var colorSet = $(".selectedcolor").css("background-color");
+		var colorSet = '#FFF';
+
+		//When clicking on control list items
+		$(".controlbox").on("click", "li", function(){
+		  //Deselect sibling elements
+		  $(this).siblings().removeClass("selectedcolor");
+		  //Select clicked element
+		  $(this).addClass("selectedcolor");
+		  //cache current color
+		  colorSet = $(this).css("background-color");
+		  changeColor();
+		  console.log(colorSet);
+		});
+
+	function changeColor(){
+		var shapeChange = canvas.item(10); 
+		shapeChange.setFill(colorSet);
+	}
+
 
   fabric.loadSVGFromURL('/assets/cltskylineyellow.svg', function(objects, options) {
     var shape = fabric.util.groupSVGElements(objects, options);
@@ -220,7 +258,7 @@
 		scaleX: canvas.width / shape.width + 2/canvas.width
     });
 
-    console.log('22222');
+    console.log("skyline");
 
     if (shape.isSameColor && shape.isSameColor() || !shape.paths) {
       shape.setFill(colorSet);
@@ -234,7 +272,7 @@
     canvas.add(shape);
     shape.set('selectable', false);
 	canvas.sendToBack(shape);
-    canvas.renderAll();
+	canvas.renderAll();
   }); 
 
 
@@ -255,8 +293,11 @@
 		// });
 
         canvas.add(text);
+        console.log("text1");
 		canvas.add(text3);
+		console.log("text2");
 		canvas.add(text5);
+		console.log("text3");
 
 		text.set('selectable', false);
 		text3.set('selectable', false);
@@ -270,7 +311,9 @@
 
 			if (checkText()) {
 				       	canvas.add(text2);
+				       	console.log("text4");
 						canvas.add(text4);
+						console.log("text5");
 
 						text2.set('selectable', false);
 						text4.set('selectable', false);
@@ -278,6 +321,7 @@
 								$("#overwrap").addClass("active");
 								$("#holder").addClass("show");
 								$("#sitemenu-icon").addClass("open");
+								$("#sitemenu-icon").removeClass("nodisplay");
 								$('body').addClass("noscroll");
 
 						console.log('fdsfgdfdfd');
@@ -346,6 +390,7 @@
 	     canvas.remove(lastimage);
 	     canvas.renderAll(); 
 	}
+
 
 
 

@@ -3,6 +3,8 @@
 #intro {height: 100%;}
 #intro .slide {background-attachment: fixed; background-position: center 0; background-repeat: no-repeat; background-size: cover; height: 0; overflow: hidden; position: absolute; transition: height 900ms cubic-bezier(.63, .64, .3, 1) 0s; width: 100%;}
 #intro .slide.active {height: 100%;}
+.checkoutclt-header {position: fixed; z-index: 5000; top: 5px; left: 5px; width: 150px;}
+.logo-head-checkout {float: left; width: 100%; padding: 0; margin: 0;}
 
 .cltfirstpart {float: left; width: 100%; margin: 0; height: auto; min-height: 600px; padding: 15px 0; background-color: none;}
 .hashtag {width: 100%; position: absolute; bottom: 0; background-color: #000; padding: 10px auto; font-size: 40px; line-height: 16px; font-family: "shuriken-std",fantasy; color: #fff; text-align: center;}
@@ -15,12 +17,12 @@
 
 .cltthirdpart {float: left; width: 100%; margin: 0; height: auto; height: auto; padding: 15px 0; background-color: #e74c3c;}
 .cltwrapper {width: 850px; margin: 25px auto; position: relative; padding: 0;}
-.cltinstruction {float: left; height: 300px; width: 48%; margin: 0 2% 0 0; padding: 10px; background-color: #c0392b; color: #fff; font-family: "proxima-nova",sans-serif; font-size: 20px;}
+.cltinstruction {float: left; height: 300px; width: 48%; margin: 0 2% 0 0; padding: 10px; background-color: none; color: #fff; font-family: "proxima-nova",sans-serif; font-size: 20px;}
 .cltformbox {float: left; height: 300px; width: 48%; margin: 0 0 0 2%; padding: 10px; background-color: #c0392b; color: #fff; font-family: "proxima-nova",sans-serif; font-size: 20px;}
 .cltinstruction h2 {float: left; width: 100%; text-align: center; font-size: 20px; color: #fff;}
 .specialfont {font-family: "shuriken-std",fantasy; color: #fff; text-align: center; width: 100%; font-size: 40px;}
 form#cltform div.field-holder {margin: 10px 0;}
-form#cltform div.field-holder input {background-color: #c0392b; color: #fff; border: none; border-bottom: 2px solid #fff; font-family: "shuriken-std",fantasy; text-align: center; font-size: 24px;}
+form#cltform div.field-holder input {background-color: #e74c3c; color: #fff; border: none; border-bottom: 0px solid #fff; font-family: "shuriken-std",fantasy; text-align: center; font-size: 24px;}
 form#cltform div.field-holder div.label {margin: 10px 0; }
 .cltsteps {float: left; width: 90%; margin: 10px 5%; padding-top: 2px solid #fff;}
 .cltstep {float: left; width: 100%; margin: 5px 0; padding: 2px; text-align: center; background-color: #bdc3c7; color: #000;}
@@ -42,13 +44,16 @@ form#cltform div.field-holder div.label {margin: 10px 0; }
 #sitemenu-icon {
 	background-color: transparent;
     cursor: pointer;
-    display: inline-block;
     height: 24px;
     position: fixed;
     right: 40px;
     top: 40px;
     width: 32px;
     z-index: 10000;
+}
+
+#sitemenu-icon.nodisplay {
+    display: none;
 }
 
 #sitemenu-icon span {
@@ -62,11 +67,14 @@ form#cltform div.field-holder div.label {margin: 10px 0; }
     top: 0;
 }
 #sitemenu-icon span.line2 {
-    top: 10px;
+    top: 10px;#sitemenu-icon.open {
+    display: inline-block;
+}
 }
 #sitemenu-icon span.line3 {
     top: 20px;
 }
+
 #sitemenu-icon.open .line1 {
     top: 12px;
     transform: rotate(-45deg);
@@ -93,7 +101,7 @@ body.noscroll {
 #hiddentextform1 {display: none;}
 #hiddentextform2 {display: none;}
 
-div.canvascontainer a#fileSelect {color: #9b59b6; padding: 10px; margin: 0 auto;}
+div.canvascontainer a#fileSelect {color: #fff; padding: 10px; margin: 0 auto;}
 
 #fileSelect {display: none;}
 #fileUpdate {display: none;}
@@ -102,6 +110,18 @@ div.canvascontainer a#fileSelect {color: #9b59b6; padding: 10px; margin: 0 auto;
 #fileUpdate.active {display: inline;}
 
 #imagecontrolbox {display: none;}
+
+
+//Control colors
+.controlbox {display: none;}
+.controls {min-height: 40px; margin: 0 auto; width: 100%; border-radius: 5px; overflow: hidden;}
+.controls ul {list-style:none; margin: 0; float:  left; padding: 10px 0 20px; width: 100%; text-align: center;}
+.controlsul li {display:block; height: 40px; width: 40px; border-radius: 60px; cursor: pointer; border: 0; box-shadow: 0 3px 0 0 #222;}
+.controls ul li {display: inline-block; margin: 0 5px 10px;}
+.red {background: #fc4c4f;}
+.blue {background: #4fa3fc;}
+.yellow {background: #ECD13F;}
+.selectedcolor {border: 7px solid #fff; width: 40px; height: 40px;}
 
 @media screen and (max-width: 640px){
 
@@ -114,12 +134,12 @@ div.canvascontainer a#fileSelect {color: #9b59b6; padding: 10px; margin: 0 auto;
 
     .cltthirdpart {float: left; width: 100%; margin: 0; height: auto; height: auto; padding: 15px 0; background-color: #e74c3c;}
     .cltwrapper {width: 100%; margin: 25px auto; position: relative; padding: 0;}
-    .cltinstruction {float: left; height: auto; width: 96%; margin: 5px 2%; padding: 10px; background-color: #c0392b; color: #fff; font-family: "proxima-nova",sans-serif; font-size: 20px;}
+    .cltinstruction {float: left; height: auto; width: 96%; margin: 5px 2%; padding: 10px; background-color: none; color: #fff; font-family: "proxima-nova",sans-serif; font-size: 20px;}
     .cltformbox {float: left; height: auto; width: 96%; margin: 5px 2%; padding: 10px; background-color: #c0392b; color: #fff; font-family: "proxima-nova",sans-serif; font-size: 20px;}
     .cltinstruction h2 {float: left; width: 100%; text-align: center; font-size: 20px; color: #fff;}
     .specialfont {font-family: "shuriken-std",fantasy; color: #fff; text-align: center; width: 100%; font-size: 40px;}
     form#cltform div.field-holder {margin: 10px 0;}
-    form#cltform div.field-holder input {background-color: #c0392b; color: #fff; border: none; border-bottom: 2px solid #fff; font-family: "shuriken-std",fantasy; text-align: center; font-size: 24px;}
+    form#cltform div.field-holder input {background-color: #e74c3c; color: #fff; border: none; border-bottom: 0px solid #fff; font-family: "shuriken-std",fantasy; text-align: center; font-size: 24px;}
     form#cltform div.field-holder div.label {margin: 10px 0; font-size: 20px;}
     .cltsteps {float: left; width: 90%; margin: 10px 5%; padding-top: 2px solid #fff;}
     .cltstep {float: left; width: 100%; margin: 5px 0; padding: 2px; text-align: center; background-color: #bdc3c7; color: #000;}
@@ -144,7 +164,6 @@ div.canvascontainer a#fileSelect {color: #9b59b6; padding: 10px; margin: 0 auto;
     #sitemenu-icon {
         background-color: transparent;
         cursor: pointer;
-        display: inline-block;
         height: 24px;
         position: fixed;
         right: 40px;
@@ -152,6 +171,10 @@ div.canvascontainer a#fileSelect {color: #9b59b6; padding: 10px; margin: 0 auto;
         width: 32px;
         z-index: 10000;
     }
+
+    #sitemenu-icon.nodisplay {
+    display: none;
+}
 
     #sitemenu-icon span {
         background: #eaeaea none repeat scroll 0 0;
@@ -168,6 +191,9 @@ div.canvascontainer a#fileSelect {color: #9b59b6; padding: 10px; margin: 0 auto;
     }
     #sitemenu-icon span.line3 {
         top: 20px;
+    }
+    #sitemenu-icon.open {
+    display: inline-block;
     }
     #sitemenu-icon.open .line1 {
         top: 12px;

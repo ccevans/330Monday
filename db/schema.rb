@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150510152551) do
+ActiveRecord::Schema.define(version: 20151110222022) do
+
+  create_table "campaigns", force: true do |t|
+    t.string   "title"
+    t.string   "goal"
+    t.text     "objectives"
+    t.string   "consulting"
+    t.text     "ideas"
+    t.string   "focus"
+    t.string   "brandwork"
+    t.string   "totalbudget"
+    t.string   "retainerbudget"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+  end
 
   create_table "posts", force: true do |t|
     t.string   "title"

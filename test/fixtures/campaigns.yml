@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  goal: 
+  objectives: MyText
+  consulting: MyString
+  ideas: MyText
+  focus: MyString
+  brandwork: MyString
+  totalbudget: MyString
+  retainerbudget: MyString
+
+two:
+  title: MyString
+  goal: 
+  objectives: MyText
+  consulting: MyString
+  ideas: MyText
+  focus: MyString
+  brandwork: MyString
+  totalbudget: MyString
+  retainerbudget: MyString

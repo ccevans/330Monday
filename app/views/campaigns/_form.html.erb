@@ -1,0 +1,48 @@
+<%= simple_form_for @campaign do |f| %>
+
+      <%= f.error_notification %>
+
+   <%= f.input :title, label: "Let's Title This Campaign" %>
+    <%= f.input :goal, label: "Link To Artist for Credit" %>
+
+<% f.radio_button :goal, label: "inspire", value: "inspire" do  %>
+<img src="http://placehold.it/20x20/35d/fff&text=f">
+<% end %>
+
+<%= f.radio_button :goal, label: "educate", value: "educate" %>
+<%= f.radio_button :goal, label: "entertain", value: "entertain" %>
+<%= f.radio_button :goal, label: "custom", value: "custom" %>
+
+      <label>
+    <input type="radio" name="inspire" value="inspire" />
+    <img src="http://placehold.it/20x20/35d/fff&text=f">
+  </label>
+  
+  <label>
+    <input type="radio" name="educate" value="educate"/>
+    <img src="http://placehold.it/40x60/35d/fff&text=f">
+  </label>
+  
+  <label>
+    <input id="fb3" type="radio" name="entertain" value="entertain" />
+    <img src="http://placehold.it/40x40/35d/fff&text=f">
+  </label>
+  
+  <label>
+    <input id="fb4" type="radio" name="custom" value="custom" />
+    <img src="http://placehold.it/60x15/35d/fff&text=f">
+  </label>
+
+  <%= f.input :objectives, label: "Title" %>
+  <%= f.input :consulting, label: "Tell us more" %>
+   <%= f.input :ideas, label: "Enter rules" %>
+   <%= f.input :focus, label: "Enter rewards" %>
+  <%= f.input :brandwork, label: "Time for Lyric Submission" %>
+  <%= f.input :totalbudget, label: "Time for Design Submission" %>
+    <%= f.input :retainerbudget, label: "Time for Design Submission" %>
+
+  <%= f.button :submit, "Submit", class: "button" %>
+
+
+
+<% end %>
