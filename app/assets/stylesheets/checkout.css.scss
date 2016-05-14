@@ -89,7 +89,7 @@ form#cltform div.field-holder div.label {margin: 10px 0; }
 
 #overwrap {background-color: rgba(0, 0, 0, .9); height: 120%; left: 0; opacity: 0; position: fixed; top: 0; transition: opacity 200ms ease 0s; width: 100%; z-index: -9999;}
 #overwrap.active {opacity: 1; z-index: 1000;}
-.contentoverlay {left: 50%; top: 50%; width: 434px; margin-left: -180px; margin-top: -280px; position: fixed; width: 400px; height: auto; text-align: center; transition: all 300ms ease 0s; z-index: -999; opacity: 0;}
+.contentoverlay {left: 50%; top: 40%; width: 434px; margin-left: -180px; margin-top: -280px; position: fixed; width: 400px; height: auto; text-align: center; transition: all 300ms ease 0s; z-index: -999; opacity: 0;}
 #canvasbox {background-color: none;}
 .contentoverlay.show {opacity: 1; z-index: 1000;}
 
