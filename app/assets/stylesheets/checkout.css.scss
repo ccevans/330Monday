@@ -25,12 +25,12 @@ form#cltform div.field-holder {margin: 10px 0;}
 form#cltform div.field-holder input {background-color: #e74c3c; color: #fff; border: none; border-bottom: 0px solid #fff; font-family: "shuriken-std",fantasy; text-align: center; font-size: 24px;}
 form#cltform div.field-holder div.label {margin: 10px 0; }
 .cltsteps {float: left; width: 90%; margin: 10px 5%; padding-top: 2px solid #fff;}
-.cltstep {float: left; width: 100%; margin: 5px 0; padding: 2px; text-align: center; background-color: #bdc3c7; color: #000;}
+.cltstep {float: left; width: 100%; margin: 5px 0; padding: 2px; text-align: center; color: #000;}
 .cltstep span {font-family: "shuriken-std",fantasy;}
 .cltstep.active {color: #e74c3c; background-color: #fff; cursor: pointer;}
 
 .cltsteps2 {float: left; width: 90%; margin: 10px 5%; padding-top: 2px solid #fff;}
-.cltstep {float: left; width: 100%; margin: 5px 0; padding: 2px; text-align: center; background-color: #bdc3c7; color: #000;}
+.cltstep {float: left; width: 100%; margin: 5px 0; padding: 2px; text-align: center; color: #000;}
 .cltstep span {font-family: "shuriken-std",fantasy;}
 .cltsteps .cltstep.active {color: #e74c3c; background-color: #fff; cursor: pointer;}
 
@@ -214,3 +214,33 @@ div.canvascontainer a#fileSelect {color: #fff; padding: 10px; margin: 0 auto;}
 
 
     }
+
+.brandheader {float: left; width: 100%; padding: 50px 15% 15px 15%; margin: 0; background-color: rgba(255,251,212,1);}
+.brandheader-image {float: left; width: 70%; margin: 25px 15%; padding: 0;}
+.brandheader-description {float: left; width: 100%; padding: 15px 10%; font-size: 24px; line-height: 26px; text-align: center; font-weight: 700; font-family: "futura-pt",sans-serif;}
+
+.interactsection {float: left; width: 100%; padding: 15px 15%; margin: 0; background-color: rgba(255,251,212,1);}
+.examplepics {float: left; width: 100%; margin: 10px 0;}
+.examplepicsbox {float: left; width: 50%; margin: 0; padding: 5px 2%;}
+.example-image {float: left; width: 100%; margin: 0; padding: 0;}
+
+.brandinformation {float: left; width: 100%; padding: 25px 15%; margin: 0; background-color: rgba(255,251,212,1);}
+.branddescription{float: left; width: 100%; padding: 15px 10%; font-size: 18px; line-height: 20px; text-align: center; font-family: "futura-pt",sans-serif;}
+.externallink {float: left; text-align: center; clear: both; margin: 10px 30%; width: 40%; padding: 8px 12px; background-color: rgba(255,157,41, 1); color: #fff; font-size: 24px;}
+.externallink:hover {float: left; text-align: center; clear: both; margin: 10px 30%; width: 40%; padding: 8px 12px; background-color: rgba(255,157,41, 1); color: #000; font-size: 24px; text-decoration: none;}
+
+.memegenerator .cltformbox {float: left; width: 70%; margin: 25px 15%; height: auto; padding: 10px; background-color: rgba(38,170,160,1);}
+.generatortitle {font-family: "continuo", sans-serif; text-align: center; font-size: 46px; line-height: 46px; color: #fff;}
+.memegenerator .cltformbox .cltsteps {float: left; width: 80%; margin: 15px 10%; font-size: 28px;}
+.memegenerator .cltformbox .cltsteps .cltstep {float: left; margin: 10px 0; padding: 2px; color: #fff; border: 3px solid #fff; background-color: none;}
+.memegenerator .cltformbox .cltsteps .cltstep.active {cursor: pointer; color: #ff9d29;}
+.memegenerator .cltformbox #cltform .field-holder input {background-color: #fffbd4; color: #000; border: none; border-bottom: 0px solid #fff; font-family: "continuo", sans-serif; text-align: center; font-size: 36px; width: 80%; margin: 5px 10%;}
+
+.interactsection .hiddenmeme #overwrap {background-color: rgba(38,170,160, .9);}
+.interactsection .hiddenmeme #overwrap .cltsteps2 .cltstep {font-size: 28px; margin: 10px 0; padding: 2px; color: #fff; border: 3px solid #fff; background-color: none;}
+.interactsection .hiddenmeme #overwrap .cltsteps2 .cltstep.active {color: #ff9d29;}
+
+.interactsection .hiddenmeme #overwrap a#fileSelect.active {float: left; margin: 15px 10%; width: 80%; padding: 2px; font-size: 24px; background-color: rgba(255,157,41, 1); color: #fff;}
+.interactsection .hiddenmeme #overwrap a#fileSelect.active:hover {color: #000; text-decoration: none;}
+.interactsection .hiddenmeme #overwrap a#fileUpdate.active {float: left; margin: 15px 10%; width: 80%; padding: 2px; font-size: 24px; background-color: rgba(255,157,41, 1); color: #fff;}
+.interactsection .hiddenmeme #overwrap a#fileUpdate.active:hover {color: #000; text-decoration: none;}

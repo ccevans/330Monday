@@ -1,173 +1,185 @@
+
 <div id="sitemenu-icon" class="nodisplay">
 	<span class="line1"></span>
 	<span class="line2"></span>
 	<span class="line3"></span>
 </div>
-<div class="brandheader">
+<div class="checkoutclt-header">
+          <%= link_to root_path do %>
+            <%= image_tag '330monday-logo.png', :class => "logo-head-checkout" %>
+        
+      <% end %>
+  </div>
+<div id="overwrap" class="">
+	<div id="holder" class="contentoverlay" style="transform: scale(.8);">
+		<div id="imagecontrolbox" class="">
 
-	<div class="brandsocialbox">
+				<div class="controlholder">
 
-	</div>
-
-	<%= image_tag 'brandheader-image.png', :class => "brandheader-image" %>
-	<div class="brandheader-description">
-		<p>Tell the world what to checkout in Charlotte, NC.</p>
-
-	</div>
-
-</div>
-
-<div class="interactsection">
-
-	<div class="memegenerator">
-
-		<div class="cltformbox">
-
-				<h1 class="generatortitle">CHECKOUT</h1>
-
-			<form id="cltform" method="post" action="">
-				<div class="field-holder nodisplay">
-				<input class="small indv" id="text11" type="text" value="" maxlength="20" autocomplete="off" placeholder="Fun" name="textform1" onkeyup="checkText()" onkeyup="formChanged()" onchange="formChanged()" style="font-size: 24px; width: 270px;">
+					<input id="scale-control" type="range" step="0.001" max="2" min="1" value="1">
 
 				</div>
-				<div class="field-holder">
-
-				<input class="small" id="text22" type="text" value="" maxlength="20" autocomplete="off" placeholder="Input Here" name="textform2" onkeyup="checkText()" onkeyup="formChanged()" onchange="formChanged()">
-
-				</div>
-
-				</form>
-
-				<div class="cltsteps">
-					<div id="step1" class="cltstep">
-						<span>#1</span> What To Checkout?
-					</div>
-					<div id="step2" class="cltstep">
-						<div id="launch" onclick="addText()"><span>#2</span> Add Cool Pic</div> 
-						
-					</div>
-					<div id="step3" class="cltstep">
-						<span>#3</span> Save Pic
-					</div>
-				</div>
-
 
 		</div>
 
-	</div>
-
-	<div class="hiddenmeme">
-		<div id="overwrap" class="">
-			<div id="holder" class="contentoverlay" style="transform: scale(.8);">
-				<div id="imagecontrolbox" class="">
-
-						<div class="controlholder">
-
-							<input id="scale-control" type="range" step="0.001" max="2" min="1" value="1">
-
-						</div>
-
-				</div>
-
-				<div id="canvasholder">
+		<div id="canvasholder">
 
 
-					<div id="canvasbox">
-						<div class="canvascontainer">
-								<canvas id="myCanvas" width="400" height="400"></canvas>
+			<div id="canvasbox">
+				<div class="canvascontainer">
+						<canvas id="myCanvas" width="400" height="400"></canvas>
 
-								<input type="file" id="fileElem" multiple accept="image/*" style="display:none; width:400px;" onchange="handleFiles(this.files)">
+						<input type="file" id="fileElem" multiple accept="image/*" style="display:none; width:400px;" onchange="handleFiles(this.files)">
 
-								<input type="file" id="fileElem2" multiple accept="image/*" style="display:none; width:400px;" onchange="handleFiles(this.files)">
+						<input type="file" id="fileElem2" multiple accept="image/*" style="display:none; width:400px;" onchange="handleFiles(this.files)">
 
-								<a href="#" id="fileSelect" class="active">UPLOAD PIC</a>
+						<a href="#" id="fileSelect" class="active">UPLOAD FILE</a>
 
-								<a href="#" id="fileUpdate"  class="">UPDATE PIC</a>
+						<a href="#" id="fileUpdate"  class="">UPDATE FILE</a>
 
-								<div class="controlbox">
-									<ul>
-										<li class="red"></li>
-										<li class="blue selectedcolor"></li>
-										<li class="yellow"></li>
-									</ul>
+						<div class="controlbox">
+							<ul>
+								<li class="red"></li>
+								<li class="blue selectedcolor"></li>
+								<li class="yellow"></li>
+							</ul>
 
-
-
-								</div>
 
 
 						</div>
-
-						<div id="hiddentextform1" class="canvas-text"></div>
-						<div id="hiddentextform2" class="canvas-text"></div>
-
-
-					<div class="cltsteps2">
-						<div id="step12" class="cltstep">
-							<span>#1</span> What To Checkout?
-						</div>
-						<div id="step22" class="cltstep active">
-							<span>#2</span> Add Cool Pic
-							
-						</div>
-						<div id="step32" class="cltstep">
-							<div id="saveimage" onclick="saveCanvas()"><span>#3</span> Save Pic</div>
-						</div>
-					</div>
-
-
-
-					</div>
 
 
 				</div>
 
+				<div id="hiddentextform1" class="canvas-text"></div>
+				<div id="hiddentextform2" class="canvas-text"></div>
+
+
+			<div class="cltsteps2">
+				<div id="step12" class="cltstep">
+					<span>#1</span> What To Checkout?
+				</div>
+				<div id="step22" class="cltstep active">
+					<span>#2</span> Add Cool Pic
+					
+				</div>
+				<div id="step32" class="cltstep">
+					<div id="saveimage" onclick="saveCanvas()"><span>#3</span> Save Pic</div>
+				</div>
+			</div>
 
 
 
 			</div>
 
 
-
-
 		</div>
+
+
+
 
 	</div>
 
-	<div class="examplepics">
-		<div class="examplepicsbox">
-			<%= image_tag 'checkoutexample.png', :class => "example-image" %>
-		</div>
-		<div class="examplepicsbox">
-			<%= image_tag 'checkoutexample.png', :class => "example-image" %>
-		</div>
-		<div class="examplepicsbox">
-			<%= image_tag 'checkoutexample.png', :class => "example-image" %>
-		</div>
-		<div class="examplepicsbox">
-			<%= image_tag 'checkoutexample.png', :class => "example-image" %>
-		</div>		
-	</div>
 
 
 
 </div>
 
-<div class="brandinformation">
 
-	<div class="branddescription">
+<div id="intro">
+	<div class="slide active current" id="banner1"></div>
+</div>
 
-		330 Monday is our premier sponsor for Checkout CLT. 330monday is a interactive marketing agency with a specialty in customizing campaigns that increase customer engagement, lead generation via events and technology integration. CheckoutClt is great platform to introduce your community to hidden gems. We encourage you to submit your favorite getaway, scenic views, new business, or favorite family friendly venues. Feeling friendly, we challenge you to be creative, be generous and explore our city. 
 
+<div id="maincontainter">
+<section class="cltfirstpart">
+
+	<div class="firstexample">
+
+		
+
+	</div>
+
+
+</section>
+	<div class="hashtag">
+		<i class="fa fa-instagram"></i>#CheckoutCLT </br><span>and make your own</span>
+
+	</div>
+<section class="cltsecondpart">
+	<div class="cltinfo">
+		330 Monday is our premier sponsor for Checkout CLT. 330monday is a interactive marketing agency with a specialty in customizing campaigns that  increase customer engagement, lead generation via events and technology integration. CheckoutClt is great platform to introduce your community to hidden gems. We encourage you to submit your favorite getaway, scenic views, new business, or favorite family friendly venues. Feeling friendly, we challenge you to be creative, be generous and explore our city.
+	</div>
+
+		<div class="hashtag2">
+		<i class="fa fa-instagram"></i><span>#CheckoutCLT</span>
+
+	</div>
+
+</section>
+<section class="cltthirdpart">
+	<div class="cltwrapper">
+	<div class="cltinstruction">
+		<h2>Tell us what to checkout in Charlotte</h2>
+		<div class="specialfont">Checkout</br>CLT
+		</div>
+		<h2>in 3 Easy Steps</h2>
+
+
+	</div>
+	<div class="cltformbox">
+
+		<form id="cltform" method="post" action="">
+			<div class="field-holder">
+			<div class="label">Charlotte is</div>
+			<div class="tip">Field is empty</div>
+			<input class="small indv" id="text11" type="text" value="" maxlength="20" autocomplete="off" placeholder="Fun" name="textform1" onkeyup="checkText()" onkeyup="formChanged()" onchange="formChanged()" style="font-size: 24px; width: 270px;">
+
+			</div>
+			<div class="field-holder">
+				<div class="label">checkout</div>
+			<div class="tip">Field is empty</div>
+			<input class="small" id="text22" type="text" value="" maxlength="20" autocomplete="off" placeholder="330Monday" name="textform2" onkeyup="checkText()" onkeyup="formChanged()" onchange="formChanged()" style="font-size: 24px; width: 285px;">
+
+			</div>
+
+			</form>
+
+			<div class="cltsteps">
+				<div id="step1" class="cltstep">
+					<span>#1</span> What To Checkout?
+				</div>
+				<div id="step2" class="cltstep">
+					<div id="launch" onclick="addText()"><span>#2</span> Add Cool Pic</div> 
+					
+				</div>
+				<div id="step3" class="cltstep">
+					<span>#3</span> Save Pic
+				</div>
+			</div>
+
+
+	</div>
+</div>
+
+	<div class="cltgallery">
 
 
 	</div>
 
 
-	<%= link_to "Checkout 330Monday", "www.330monday.com", class: "externallink" %>
+	</section>
 </div>
+<script>
+		$("#banner1").backstretch([ "/assets/checkoutclt1.jpg",
+		      "/assets/checkoutclt2.jpg"
+		    , "/assets/checkoutclt3.jpg"
+		    , "/assets/checkoutclt4.jpg" ,
+		    "/assets/checkoutclt5.jpg"
+		  ], {duration: 3000, fade: 750});
+</script>
 
-<script type="text/javascript">
+	<script type="text/javascript">
 
 		$("#sitemenu-icon").click(function(){
 			$("#overwrap").removeClass("active");
@@ -185,7 +197,7 @@
 			var mytext1 = document.getElementById('text11').value;
 			var mytext2 = document.getElementById('text22').value;
 
-			if(!mytext2.match(/\S/)) {
+			if(!mytext1.match(/\S/) || !mytext2.match(/\S/)) {
 		        $("#step1").addClass("active");
 		        $("#step2").removeClass("active");
 		        return false;
@@ -208,16 +220,12 @@
 
         canvas.hoverCursor = 'move';
 
-		canvas.setBackgroundColor('rgba(255, 255, 255,1.0)', canvas.renderAll.bind(canvas));
+		canvas.setBackgroundColor('rgba(149, 165, 166,1.0)', canvas.renderAll.bind(canvas));
 
-		var text = new fabric.Text("", { left: 125, top: 260, fontSize: 18, fontFamily: "proxima-nova" }, fillStyle = '#fff');
+		var text = new fabric.Text("Charlotte is", { left: 10, top: 260, fontSize: 18, fontFamily: "proxima-nova" }, fillStyle = 'black');
 
-		var text3 = new fabric.Text(" Checkout ", { left: 125, top: 320, fontSize: 18, fontFamily: "continuo", textBackgroundColor: 'rgb(255,157,41)' }, fillStyle = '#fff');
-		var text5 = new fabric.Text("", { left: 280, top: 386, fontSize: 14, fontFamily: "continuo" }, fillStyle = '#fff');
-
-		text.set({fill: '#fff'});
-		text3.set({fill: '#fff'});
-		text5.set({fill: '#fff'});
+		var text3 = new fabric.Text("Checkout", { left: 10, top: 325, fontSize: 18, fontFamily: "proxima-nova" }, fillStyle = 'black');
+		var text5 = new fabric.Text("#CheckoutCLT", { left: 280, top: 386, fontSize: 14, fontFamily: "shuriken-std" }, fillStyle = 'black');
 
 		//var colorSet = $(".selectedcolor").css("background-color");
 		var colorSet = '#FFF';
@@ -240,12 +248,12 @@
 	}
 
 
-  fabric.loadSVGFromURL('/assets/checktoutclt-new.svg', function(objects, options) {
+  fabric.loadSVGFromURL('/assets/cltskylineyellow.svg', function(objects, options) {
     var shape = fabric.util.groupSVGElements(objects, options);
     shape.set({
         left: -1, 
-		top: 279, 
-		opacity: 1,
+		top: 149, 
+		opacity: .7,
 		scaleY: canvas.width / shape.width + 2/canvas.width,
 		scaleX: canvas.width / shape.width + 2/canvas.width
     });
@@ -296,13 +304,10 @@
 		text5.set('selectable', false);
 
 	function addText() {
-		var text2 = new fabric.Text(document.getElementById('hiddentextform1').textContent, { left: 125, top: 280, fontSize: 36, fontFamily: "continuo" }, fillStyle = '#fff');
-		var text4 = new fabric.Text(document.getElementById('hiddentextform2').textContent, { left: 125, top: 345, fontSize: 36, fontFamily: "continuo", textBackgroundColor: 'rgb(255,157,41)' }, fillStyle = '#fff');
+		var text2 = new fabric.Text(document.getElementById('hiddentextform1').textContent, { left: 10, top: 280, fontSize: 36, fontFamily: "shuriken-std" }, fillStyle = 'black');
+		var text4 = new fabric.Text(document.getElementById('hiddentextform2').textContent, { left: 10, top: 345, fontSize: 36, fontFamily: "shuriken-std" }, fillStyle = 'black');
 		var mytext11 = document.getElementById('text11').value;
 		var mytext22 = document.getElementById('text22').value;
-
-		text2.set({fill: '#fff'});
-		text4.set({fill: '#fff'});
 
 			if (checkText()) {
 				       	canvas.add(text2);
