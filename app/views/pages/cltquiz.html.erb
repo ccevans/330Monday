@@ -1,0 +1,381 @@
+<div id="cltquiz">
+	<div id="sitemenu-icon" class="nodisplay">
+		<span class="line1"></span>
+		<span class="line2"></span>
+		<span class="line3"></span>
+	</div>
+	<div class="brandheader">
+
+		<div class="brandsocialbox">
+
+		</div>
+
+		<%= image_tag 'brandheader-image-quiz.png', :class => "brandheader-image" %>
+		<div class="brandheader-description">
+			<p>How much do you really know about Charlotte, NC?  Take the quick quiz and see how you do.</p>
+
+		</div>
+
+	</div>
+
+	<div class="interactsection">
+		<div class="quizbox">
+			<div class="learnbox">
+			<div class="learnquizbox">
+					<div class="quiztitle">
+						Health Insurance Quiz
+					</div>
+				<div class="learnquiz">
+			
+					<div id="learninfo">
+
+						<div id="quizstarter">
+							<p>Take our quick quiz to learn more about Obamacare and Health Insurance.  Choose True or False based on the statement provided.</p>
+
+							<div id="startquiznow" onclick="startQuiz();">Start Quiz</div>
+
+
+						</div>
+
+						<div id="quizendbox" class="nodisplay">
+							<p>Congrats on finishing the Quiz.  Enroll with JP Health today to get expert guidance and more info on Health Insurance in 2016.</p>
+
+							<div id="quizenroll">Enroll Now</div>
+
+
+						</div>
+
+						
+
+
+					</div>
+					<div id="answerbox">
+						<div id="truebox" onclick="giveTrue()" class="notactivated">
+							TRUE
+						</div>
+						<div id="falsebox" onclick="giveFalse()" class="notactivated">
+							FALSE
+						</div>
+						<div id="scorebox" class="nodisplay">
+							<div id="results"></div>
+							<div id="scoretext"></div>
+							<div id="itemnumber"></div>
+
+							<div id="next" onclick="processQuestion()">Next</div>
+							<div id="retry" onclick="retryQuiz()" class="nodisplay">Retry</div>
+						</div>
+
+						 
+
+					</div>
+
+					<div class="learnmorebox">
+						<div class="sharebox">
+							Share
+						</div>
+
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		</div>
+
+
+
+
+
+		<div class="examplepics">
+			<div class="examplepicsbox">
+				<%= image_tag 'checkoutexample.png', :class => "example-image" %>
+			</div>
+			<div class="examplepicsbox">
+				<%= image_tag 'checkoutexample.png', :class => "example-image" %>
+			</div>
+			<div class="examplepicsbox">
+				<%= image_tag 'checkoutexample.png', :class => "example-image" %>
+			</div>
+			<div class="examplepicsbox">
+				<%= image_tag 'checkoutexample.png', :class => "example-image" %>
+			</div>		
+		</div>
+
+
+
+	</div>
+
+	<div class="brandinformation">
+
+		<div class="branddescription">
+
+			330 Monday is our premier sponsor for Checkout CLT. 330monday is a interactive marketing agency with a specialty in customizing campaigns that increase customer engagement, lead generation via events and technology integration. CheckoutClt is great platform to introduce your community to hidden gems. We encourage you to submit your favorite getaway, scenic views, new business, or favorite family friendly venues. Feeling friendly, we challenge you to be creative, be generous and explore our city. 
+
+
+
+		</div>
+
+
+		<%= link_to "Checkout 330Monday", "www.330monday.com", class: "externallink" %>
+	</div>
+</div>
+
+
+
+<script>
+
+
+// Get an array of statements (images)
+var quizQuestion = [
+	{	
+		question: "/assets/jpfinancialquiz1.jpg", 
+		answer: 'true',
+		corrected: "/assets/jpfinancialquiz1-correct.jpg"
+	},
+	{	
+		question: "/assets/jpfinancialquiz2.jpg", 
+		answer: 'false',
+		corrected: "/assets/jpfinancialquiz2-correct.jpg"
+	},
+	{	
+		question: "/assets/jpfinancialquiz3.jpg", 
+		answer: 'true',
+		corrected: "/assets/jpfinancialquiz3-correct.jpg"
+	},
+	{	
+		question: "/assets/jpfinancialquiz4.jpg", 
+		answer: 'true',
+		corrected: "/assets/jpfinancialquiz4-correct.jpg"
+	},
+	{	
+		question: "/assets/jpfinancialquiz5.jpg", 
+		answer: 'false',
+		corrected: "/assets/jpfinancialquiz5-correct.jpg"
+	},
+	{	
+		question: "/assets/jpfinancialquiz6.jpg", 
+		answer: 'true',
+		corrected: "/assets/jpfinancialquiz6-correct.jpg"
+	},
+	{	
+		question: "/assets/jpfinancialquiz7.jpg", 
+		answer: 'true',
+		corrected: "/assets/jpfinancialquiz7-correct.jpg"
+	},
+	{	
+		question: "/assets/jpfinancialquiz8.jpg", 
+		answer: 'true',
+		corrected: "/assets/jpfinancialquiz8-correct.jpg"
+	},
+	{	
+		question: "/assets/jpfinancialquiz9.jpg", 
+		answer: 'true',
+		corrected: "/assets/jpfinancialquiz9-correct.jpg"
+	},
+	{	
+		question: "/assets/jpfinancialquiz10.jpg", 
+		answer: 'false',
+		corrected: "/assets/jpfinancialquiz10-correct.jpg"
+	}
+];
+var arrayImage = ["/assets/jpfinancialquiz1.jpg", "/assets/jpfinancialquiz2.jpg", "/assets/jpfinancialquiz3.jpg", "/assets/jpfinancialquiz4.jpg", "/assets/jpfinancialquiz5.jpg", "/assets/jpfinancialquiz6.jpg", "/assets/jpfinancialquiz7.jpg", "/assets/jpfinancialquiz8.jpg", "/assets/jpfinancialquiz9.jpg", "/assets/jpfinancialquiz10.jpg"];
+
+// score and initial variables
+var currentQuestion = 0;
+var itemleft = 0;
+var score = 0; 
+var clickAnswer = true;
+var scorePercentage = 100;
+var questionResult = '';
+var addImage = document.createElement("img");
+
+// To disable:    
+document.getElementById('truebox').style.pointerEvents = 'none';
+document.getElementById('falsebox').style.pointerEvents = 'none';
+
+console.log("Hope is Alive");
+
+
+function startQuiz() {
+	document.getElementById("learninfo").appendChild(addImage); 
+	addImage.className = "learnimage";
+	addImage.src = quizQuestion[currentQuestion]['question'];
+	resetBox();
+
+	$("#falsebox").removeClass("notactivated");
+	$("#truebox").removeClass("notactivated");
+	$("#quizstarter").addClass("nodisplay");
+	// To re-enable:
+	document.getElementById('truebox').style.pointerEvents = 'auto'; 
+	document.getElementById('falsebox').style.pointerEvents = 'auto'; 
+}
+
+function retryQuiz() {
+	currentQuestion = 0;
+	itemleft = 0;
+	score = 0; 
+	clickAnswer = true;
+	scorePercentage = 100;
+	questionResult = '';
+
+	document.getElementById("learninfo").appendChild(addImage); 
+	addImage.className = "learnimage";
+	addImage.src = quizQuestion[currentQuestion]['question'];
+	resetBox();
+
+	$("#falsebox").removeClass("nodisplay");
+	$("#truebox").removeClass("nodisplay");
+	$("#falsebox").removeClass("notactivated");
+	$("#truebox").removeClass("notactivated");
+	$("#quizstarter").addClass("nodisplay");
+	$(".learnimage").removeClass("nodisplay");
+	$("#itemnumber").removeClass("nodisplay");
+	$("#scorebox").removeClass("quizfinish");
+	$("#quizendbox").addClass("nodisplay");
+	$("#next").removeClass("nodisplay");
+	$("#retry").addClass("nodisplay");
+	// To re-enable:
+	document.getElementById('truebox').style.pointerEvents = 'auto'; 
+	document.getElementById('falsebox').style.pointerEvents = 'auto';
+
+
+}
+
+function endQuiz() {
+	$(".learnimage").addClass("nodisplay");
+	$("#falsebox").addClass("nodisplay");
+	$("#truebox").addClass("nodisplay");
+	$("#itemnumber").addClass("nodisplay");
+	$("#scorebox").removeClass("nodisplay");
+	$("#scorebox").addClass("quizfinish");
+	scorePercentage = Math.round((score/(currentQuestion + 1))*100);
+	document.getElementById("scoretext").textContent = scorePercentage + "%";
+	itemleft = (currentQuestion + 1);
+	document.getElementById("itemnumber").textContent = itemleft + " / 10";
+
+	$("#quizendbox").removeClass("nodisplay");
+	$("#next").addClass("nodisplay");
+	$("#retry").removeClass("nodisplay");
+
+	if (scorePercentage >= 70) {
+
+		document.getElementById("results").textContent = "Awesome! You passed the quiz.";
+
+	} else {
+
+		document.getElementById("results").textContent = "Sorry. You didn't pass. Give it another try.";
+
+	}
+
+	
+
+
+}
+
+function nextQuestion() {
+	
+	placeImage();
+	resetBox();
+
+}
+
+
+function giveTrue() {
+	clickAnswer = "true";
+	checkAnswer();
+	$("#truebox").addClass("correctBox");
+	$("#falsebox").addClass("nodisplay");
+	$("#scorebox").removeClass("nodisplay");
+	scorePercentage = Math.round((score/(currentQuestion + 1))*100);
+	document.getElementById("scoretext").textContent = scorePercentage + "%";
+	itemleft = (currentQuestion + 1);
+	document.getElementById("itemnumber").textContent = itemleft + " / 10";
+	document.getElementById("results").textContent = questionResult;
+	document.getElementById('truebox').style.pointerEvents = 'none';
+	document.getElementById('falsebox').style.pointerEvents = 'none';
+	replaceImage();
+
+
+}
+
+function giveFalse() {
+	clickAnswer = "false";
+	checkAnswer();
+	$("#falsebox").addClass("correctBox");
+	$("#truebox").addClass("nodisplay");
+	$("#scorebox").removeClass("nodisplay");
+	scorePercentage = Math.round((score/(currentQuestion + 1))*100);
+	document.getElementById("scoretext").textContent = scorePercentage + "%";
+	itemleft = (currentQuestion + 1);
+	document.getElementById("itemnumber").textContent = itemleft + " / 10";
+	document.getElementById("results").textContent = questionResult;
+	document.getElementById('truebox').style.pointerEvents = 'none';
+	document.getElementById('falsebox').style.pointerEvents = 'none';
+	replaceImage();
+}
+
+function resetBox() {
+	$("#falsebox").removeClass("correctBox");
+	$("#truebox").removeClass("correctBox");
+	$("#truebox").removeClass("nodisplay");
+	$("#falsebox").removeClass("nodisplay");
+	$("#scorebox").addClass("nodisplay");
+	document.getElementById('truebox').style.pointerEvents = 'auto';
+	document.getElementById('falsebox').style.pointerEvents = 'auto';
+}
+
+
+function checkAnswer() {
+	if (quizQuestion[currentQuestion]['answer'] == clickAnswer) {
+		if (quizQuestion[currentQuestion]['answer'] == "true") {
+				score++;
+				questionResult = "Answer is Correct! Fact is true."
+
+			} else {
+				score++;
+				questionResult = "Answer is Correct! Fact is false; view the correct fact."
+			}
+
+	} else {
+			if (quizQuestion[currentQuestion]['answer'] == "true") {
+
+				questionResult = "Answer is Incorrect! Fact is true."
+
+			} else {
+
+				questionResult = "Answer is Incorrect! Fact is false; view the correct fact."
+			}
+
+	}
+
+
+
+}
+
+function processQuestion() {
+
+         if ((currentQuestion+1) == quizQuestion.length) {
+            console.log("Quiz End");
+            endQuiz();
+         } else {
+         	currentQuestion++;
+         	console.log(currentQuestion);
+            nextQuestion();
+         }
+
+ }
+
+
+
+//place image in array to html box
+function placeImage() {
+	addImage.src = quizQuestion[currentQuestion]['question'];
+}
+
+function replaceImage() {
+	addImage.src = quizQuestion[currentQuestion]['corrected'];
+}
+
+</script>

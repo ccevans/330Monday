@@ -215,6 +215,7 @@ div.canvascontainer a#fileSelect {color: #fff; padding: 10px; margin: 0 auto;}
 
     }
 
+// checkoutclt template
 .brandheader {float: left; width: 100%; padding: 50px 15% 15px 15%; margin: 0; background-color: rgba(255,251,212,1);}
 .brandheader-image {float: left; width: 70%; margin: 25px 15%; padding: 0;}
 .brandheader-description {float: left; width: 100%; padding: 15px 10%; font-size: 24px; line-height: 26px; text-align: center; font-weight: 700; font-family: "futura-pt",sans-serif;}
@@ -244,3 +245,59 @@ div.canvascontainer a#fileSelect {color: #fff; padding: 10px; margin: 0 auto;}
 .interactsection .hiddenmeme #overwrap a#fileSelect.active:hover {color: #000; text-decoration: none;}
 .interactsection .hiddenmeme #overwrap a#fileUpdate.active {float: left; margin: 15px 10%; width: 80%; padding: 2px; font-size: 24px; background-color: rgba(255,157,41, 1); color: #fff;}
 .interactsection .hiddenmeme #overwrap a#fileUpdate.active:hover {color: #000; text-decoration: none;}
+
+
+// quiz template
+#cltquiz .brandheader {float: left; width: 100%; padding: 50px 15% 15px 15%; margin: 0; background-color: rgba(219,218,218,1);}
+#cltquiz .interactsection {float: left; width: 100%; padding: 15px 15%; margin: 0; background-color: rgba(219,218,218,1);}
+#cltquiz .brandinformation {float: left; width: 100%; padding: 25px 15%; margin: 0; background-color: rgba(219,218,218,1);}
+#cltquiz .externallink {float: left; text-align: center; clear: both; margin: 10px 30%; width: 40%; padding: 8px 12px; background-color: rgba(184,39,113, 1); color: #fff; font-size: 24px;}
+#cltquiz .externallink:hover {float: left; text-align: center; clear: both; margin: 10px 30%; width: 40%; padding: 8px 12px; background-color: rgba(184,39,113, 1); color: #000; font-size: 24px; text-decoration: none;}
+
+
+// quiz box
+#learnlayout {position: relative; float: left;  width: 100%; min-height: 100%; height: auto; margin: 0; padding: 75px 5% 25px 5%;}
+.learnbox {position: relative; float: left; text-align: left; width: 100%; margin: 0px 0; padding: 0; font-family: 'Century Gothic', Sans-Serif; font-weight: 700;}
+.learnheader {position: relative; text-align: left; width: 100%; font-size: 40px; line-height: 40px; color: #fff;}
+.smallword2 {font-size: 24px; font-weight: 400;}
+.bigword2 {font-size: 80px;}
+.learnpara {position: relative; text-align: left; color: #000; margin: 10px 0; font-size: 30px; line-height: 32px; font-weight: 400;}
+.learnlink {color: #b82771; text-decoration: underline;}
+.learnlink:hover {color: #000; text-decoration: none;}
+.learnquizbox {position: relative; height: 400px; width: 500px; margin: 0px auto 100px auto; padding: 0 0 0 0;}
+.learnquiz {position: relative; height: 400px; width: 400px; margin: 0; background-color: rgba(184,39,113,1);}
+#learninfo {position: relative; width: 100%; height: auto; margin: 0; padding: 0;}
+#answerbox {position: absolute; top: 0; right: -100px; width: 90px; height: 400px; padding: 0; margin: 0;}
+#truebox {position: relative; width: 100px; height: 195px; text-align: center; font-size: 24px; line-height: 24px; padding: 85.5px 0; color: #fff; vertical-align: center; background-color:rgba(33,111,144,1); cursor: pointer; transition: all 500ms ease 0s;}
+#falsebox {position: relative; width: 100px; height: 195px; margin-top: 10px; text-align: center; font-size: 24px; line-height: 24px; padding: 85.5px 0; color: #fff; vertical-align: center; background-color:rgba(184,39,113,1); cursor: pointer; transition: all 500ms ease 0s;}
+.learnmorebox {display: none; position: absolute; bottom: -30px; width: 100%; height: auto;}
+.sharebox {display: none; position: relative; font-size: 24px; color: #000; font-weight: 400;}
+.learncountbox {position: absolute; bottom: -30px; right: -100px; color: #e8eae9; font-size: 24px; font-style: italic; font-weight: 400;}
+.quiztitle {display: none; position: relative; font-size: 40px; color: #fff; text-align: center; width: 100%;}
+.learnimage {position: relative; width: 100%; height: auto; margin: 0; padding: 0;}
+
+#truebox:hover {opacity: .7;}
+#falsebox:hover {opacity: .7;}
+#truebox.correctBox {height: 44px; padding: 10px 0; cursor: default;}
+#falsebox.correctBox {height: 44px; padding: 10px 0; margin-top:0; cursor: default;}
+#truebox.correctBox:hover {opacity: 1;}
+#falsebox.correctBox:hover {opacity: 1;}
+#scorebox {position: relative; width: 100px; height: 346px; margin-top: 10px; color: #000; text-align: left; font-size: 18px; line-height: 20px; padding: 10px 2px; color: 000; background-color:rgba(255,255,255,1); transition: all 500ms ease 0s;}
+#scoretext {text-align: center; font-size: 36px; padding: 30px 0;}
+#itemnumber {text-align: center; padding: 10px 0; width: 100%;};
+#results {text-align: center; padding: 10px 0; width: 100%; font-weight: 400;}
+#next {position: absolute; bottom: 0; left: 0; width: 100%; font-size: 18px; line-height: 18px; text-align: center; cursor: pointer; background-color: rgba(0,0,0,1); color: #fff; padding: 10px 0;}
+
+#quizstarter {position: relative; width: 100%; height: 100%; padding: 50px 5%; background-color: rgba(184,39,113,1);}
+#quizstarter p {font-size: 18px; line-height: 20px; color: #fff; font-weight: 400;}
+#startquiznow {position: relative; cursor: pointer; margin: 50px 25%; width: 50%; padding: 10px 15px; background-color: rgba(255,255,255,1); color: #000; text-align: center; font-size: 24px; font-weight: 400;}
+#truebox.notactivated {cursor: default; width: 50px; font-size: 0px;}
+#falsebox.notactivated {cursor: default; width: 50px; font-size: 0px;}
+#truebox.notactivated:hover {opacity: 1;}
+#falsebox.notactivated:hover {opacity: 1;}
+
+#quizendbox {position: relative; width: 100%; height: 100%; padding: 50px 5%; background-color: rgba(184,39,113,1);}
+#quizendbox p {font-size: 18px; line-height: 20px; color: #fff; font-weight: 400;}
+#quizenroll {position: relative; cursor: pointer; margin: 50px 25%; width: 50%; padding: 10px 15px; background-color:rgba(0,113,152,1); color: #fff; text-align: center; font-size: 24px; font-weight: 400;}
+#retry {position: absolute; bottom: 0; left: 0; width: 100%; font-size: 18px; line-height: 18px; text-align: center; cursor: pointer; background-color: rgba(0,0,0,1); color: #fff; padding: 10px 0;}
+#scorebox.quizfinish {position: relative; width: 100px; height: 400px; margin-top: 0; color: #fff; background-color:rgba(0,113,152,1);}

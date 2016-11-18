@@ -14,6 +14,9 @@ Rails.application.routes.draw do
   get 'pages/checkoutclt'
   get 'pages/checkoutclt2'
   get 'pages/interactivecampaigns'
+  get 'pages/cltquiz'
+  get 'pages/cltcontest'
+  get 'pages/reputationmanagement'
 
     resources :posts
     resources :campaigns

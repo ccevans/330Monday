@@ -3,6 +3,58 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+//reputation management
+.firstsection {float: left; font-family: futura-pt, sans-serif; background: url('rm-background.png'); width: 100%; min-height: 800px; height: auto; padding: 0; margin: 0;}
+.firstsection h1 {float: left; width: 100%; text-align: center; margin: 100px 0 0 0; color: #fff; font-size: 48px;}
+.firstsection h2 {float: left; width: 100%; text-align: center; margin: 10px 0 0 0; color: #fff799; font-size: 20px;}
+.box1 {width: 50%; float: left; margin: 75px 0 0 0; padding: 0 5% 0 10%;}
+.box1 h1 {font-size: 56px; line-height: 60px; color: #fff; text-align: center; font-weight: 700; margin: 40px 0 0 0; padding: 0;}
+.box1 h3 {font-size: 16px; color: #fff; font-style: italic; text-align: center; margin: 10px 0; padding: 0;}
+.actionbox {float: left; width: 80%; margin: 25px 10% 15px 10%; padding: 5px; background-color: #20a286; color: #fff; text-align: center; font-size: 18px; line-height: 22px; font-weight: lighter;}
+.videobox {float: left; width: 50%; margin: 75px 0 0 0; padding: 0 10% 0 5%;}
+.actionbox:hover {background-color: #fff799; color: #000;}
+
+.secondsection {float: left; font-family: futura-pt, sans-serif; width: 100%; margin: 20px 0; background-color: #fff;}
+.secondsection ul {float: left; width: 100%; list-style-type: none; margin: 0; padding: 25px 5%;}
+.secondsection ul li {float: left; width: 23%; margin: 0 1%; height: auto;}
+
+.picbox {float: left; width: 50%; margin: 75px 0 0 0; padding: 0 5% 0 10%;}
+.picbox img {float: left; width: 100%; margin: 0; padding: 0;}
+.box2 {width: 50%; float: left; margin: 75px 0 0 0; text-align: center; padding: 15px 10% 0 5%; color: #20a286; font-size: 30px; line-height: 32px;}
+.actionbox2 {float: left; width: 80%;  margin: 25px 10% 15px 10%; padding: 10px 5px; background-color: #20a286; color: #fff; text-align: center; font-size: 18px; line-height: 22px; font-weight: 700; text-transform: uppercase;}
+.box2 h3 {font-size: 16px; color: #fff; font-style: italic; text-align: center; margin: 10px 0; padding: 0; color: #20a286;}
+.actionbox2:hover {background-color: #fff799; color: #000;}
+
+.thirdsection {float: left; font-family: futura-pt, sans-serif; width: 100%; margin: 0; padding: 50px 5% 15px 5%; background-color: #e1e1e1;}
+.thirdsection h1 {float: left; text-align: center; width: 100%; font-size: 48px; color: #000;}
+.thirdsection h2 {float: left; width: 100%; text-align: center; margin: 10px 0 0 0; color: #000; font-size: 20px;}
+.processbox {float: left; width: 31%; margin: 50px 1%; padding: 0;}
+.processbox img {float: left; width: 90%; margin: 0 5%;}
+.processbox h1 {float: left; width: 100%; text-align: center; font-size: 36px; font-weight: 700; color: #000;}
+.processbox ul {float: left; width: 100%; margin: 0; padding: 0;}
+.processbox ul li {float: left; width: 100%; margin: 5px 0; padding: 0;}
+
+.fourthsection {float: left; font-family: futura-pt, sans-serif; width: 100%; margin: 0; padding: 50px 5%; background-color: #fff799;}
+.fourthsection h1 {float: left; width: 100%; text-align: center; color: #000; font-size: 48px; margin: 25px 0; padding:0;}
+.featurebox {float: left; text-align: center; width: 33.33%; height: auto; padding: 25px 5px; color: #000;}
+.featurebox i {color: #e35d4f; font-size: 60px; text-align: center;}
+.featurebox h2 {float: left; color: #000; font-size: 24px; font-weight: 700; text-align: center; width: 100%;}
+.featurebox p {float: left; color: #000; font-size: 18px; line-height: 22px; text-align: center; width: 100%;}
+
+.fifthsection {float: left; font-family: futura-pt, sans-serif; width: 100%; margin: 0; background: url('rpbackground2.png'); background-size: auto 100%;}
+.fifthsection .headertitle {float: left; text-align: right; font-size: 56px; color: #000; margin: 10px 5px;}
+.fifthsection h1 {float: left; width: 100%; text-align: center; margin: 25px 0 0 0; color: #fff; font-size: 48px;}
+.planbox1 {float: left; width: 100%; padding: 25px 5%; background: rgba(32,162,134,.9);}
+.planbox2 {float: left; width: 100%; padding: 25px 5%; background: rgba(32,162,134,.8);}
+.planbox3 {float: left; width: 100%; padding: 25px 5%; background: rgba(32,162,134,.7);}
+.box3 {width: 50%; float: left; margin: 25px 0 0 0; text-align: center; padding: 15px 5% 0 10%; color: #fff; font-size: 18px; line-height: 22px;}
+.box4 {width: 50%; float: left; margin: 25px 0 0 0; text-align: center; padding: 15px 10% 0 5%; color: #fff;}
+.pricing {float: left; width: 100%; text-align: center; font-size: 16px; line-height: 16px; color: #fff;}
+.bigfont {font-size: 64px; line-height: 64px; color: #fff;}
+.actionbox3 {float: left; width: 70%; margin: 25px 15% 15px 15%; padding: 5px; background-color: #fff; color: #000; text-align: center; font-size: 24px; line-height: 24px; font-weight: lighter;}
+.actionbox3:hover {background-color: #fff799; color: #000;}
+.boldline {float: left; width: 80%; margin: 25px 10%; color: #fff; height: 25px;}
+
 //home page
 .bscontainer-fluid {margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px; background-color: #fff; font-family: "proxima-nova",sans-serif;}
 .bsrow {margin-left: -15px; margin-right: -15px;}

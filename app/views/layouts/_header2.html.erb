@@ -1,0 +1,25 @@
+<nav id="330header" class="navbar navbar-default">
+
+          <%= link_to root_path, class: "navbar-brand" do %>
+            <%= image_tag '330monday-logo2.png', :class => "logo-head2" %>
+        
+      <% end %>
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <% if false %>
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li><%= link_to 'Play', pages_interact_path %></li>
+        <li>
+          <%= link_to 'About Us', pages_about_us_path %>
+        </li>
+
+         <li><%= link_to 'Contact', pages_about_us_path(:anchor => "contact1") %></li>
+      </ul>
+      <% end %>
+    </div><!-- /.navbar-collapse -->
+
+</nav>

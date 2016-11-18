@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Monday330</title>
+  <title>330Monday</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -44,10 +44,9 @@
 </head>
 <body>
 
+       <% if current_page?(pages_checkoutclt_path) || current_page?(pages_checkoutclt2_path) || current_page?(pages_cltquiz_path) || current_page?(pages_cltcontest_path) %>
 
-       <% if current_page?(pages_checkoutclt_path) %>
-        
-        <% elsif current_page?(pages_checkoutclt2_path) %>
+       <% elsif current_page?(pages_reputationmanagement_path) %>
 
         <% else %>
             <%= render 'layouts/header' %>
