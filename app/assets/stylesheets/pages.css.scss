@@ -12,9 +12,18 @@
 .box1 h3 {font-size: 16px; color: #fff; font-style: italic; text-align: center; margin: 10px 0; padding: 0;}
 .box1 h3 a {color: #fff;}
 .box1 h3 a:hover {color: #f0c514; text-decoration: none;}
+
+.tempbox {width: 100%; float: left; margin: 75px 0 0 0; padding: 0 5% 0 5%;}
+.tempbox h1 {font-size: 56px; line-height: 60px; color: #fff; text-align: center; font-weight: 700; margin: 40px 0 0 0; padding: 0;}
+.tempbox h3 {font-size: 16px; color: #fff; font-style: italic; text-align: center; margin: 10px 0; padding: 0;}
+.tempbox h3 a {color: #fff;}
+.tempbox h3 a:hover {color: #f0c514; text-decoration: none;}
+
 .actionbox {float: left; width: 80%; margin: 25px 10% 15px 10%; padding: 5px; background-color: #20a286; color: #fff; text-align: center; font-size: 18px; line-height: 22px; font-weight: lighter;}
+.actionbox4 {float: left; width: 50%; margin: 25px 25% 15px 25%; padding: 5px; background-color: #20a286; color: #fff; text-align: center; font-size: 18px; line-height: 22px; font-weight: lighter;}
 .videobox {float: left; width: 50%; margin: 75px 0 0 0; padding: 0 10% 0 5%;}
 .actionbox:hover {background-color: #fff799; color: #000;}
+.actionbox4:hover {background-color: #fff799; color: #000;}
 
 .secondsection {float: left; font-family: futura-pt, sans-serif; width: 100%; margin: 20px 0; background-color: #fff;}
 .secondsection ul {float: left; width: 100%; list-style-type: none; margin: 0; padding: 25px 5%;}
@@ -53,7 +62,7 @@
 .box4 {width: 50%; float: left; margin: 25px 0 0 0; text-align: center; padding: 15px 10% 0 5%; color: #fff;}
 .boldline {float: left; width: 80%; margin: 25px 10%; color: #fff; height: 25px;}
 
-.sixthsection {float: left; font-family: futura-pt, sans-serif; width: 100%; margin: 0; padding: 50px 5%; background-color: #fff;}
+.sixthsection {float: left; font-family: futura-pt, sans-serif; width: 100%; margin: 0; padding: 100px 5%; background-color: #fff;}
 .sixthsection h1 {float: left; width: 100%; text-align: center; margin: 25px 0; color: #000; font-size: 36px;}
 .tablebox {float: left; width: 100%; margin: 0; padding: 0;}
 .tablecolumn {float: left; width: 24%; margin: 0 .5%; padding: 20px 2%; border: 2px solid #d3d3d3; text-align: center;}
