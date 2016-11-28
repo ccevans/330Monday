@@ -89,7 +89,7 @@
 .contactbox {float: left; font-family: futura-pt, sans-serif; width: 100%; margin: 0; padding: 50px 5%; background-color: #fff;}
 .contactbox h1 {float: left; width: 100%; text-align: left; margin: 25px 0; color: #000; font-size: 36px;}
 .contactbox ul {float: left; width: 100%; margin: 0; padding: 0; list-style-type: none;}
-.contactbox ul li {float: left; width: 100%; margin: 3px 0; padding: 0; font-size: 14px; line-height: 14px;}
+.contactbox ul li {float: left; width: 100%; margin: 3px 0; padding: 0; font-size: 18px; line-height: 18px;}
 
 //home page
 .bscontainer-fluid {margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px; background-color: #fff; font-family: "proxima-nova",sans-serif;}
@@ -242,8 +242,8 @@ img#arrowpartner {height: 4rem; position: relative; right: 105px; top: 120px; ve
 /// mobile 
 @media screen and (max-width: 640px){
 	//reputation management
-	.firstsection {float: left; font-family: futura-pt, sans-serif; background: url('rm-background.png'); width: 100%; min-height: 800px; height: auto; padding: 0; margin: 0;}
-	.firstsection h1 {float: left; width: 100%; text-align: center; margin: 100px 0 0 0; color: #fff; font-size: 48px;}
+	.firstsection {float: left; font-family: futura-pt, sans-serif; background: url('rm-background-mobile.png'); width: 100%; min-height: 600px; height: auto; padding: 0; margin: 0;}
+	.firstsection h1 {float: left; width: 100%; text-align: center; margin: 50px 0 0 0; color: #fff; font-size: 36px;}
 	.firstsection h2 {float: left; width: 100%; text-align: center; margin: 10px 0 0 0; color: #fff799; font-size: 20px;}
 	.box1 {width: 50%; float: left; margin: 75px 0 0 0; padding: 0 5% 0 10%;}
 	.box1 h1 {font-size: 56px; line-height: 60px; color: #fff; text-align: center; font-weight: 700; margin: 40px 0 0 0; padding: 0;}
@@ -251,14 +251,14 @@ img#arrowpartner {height: 4rem; position: relative; right: 105px; top: 120px; ve
 	.box1 h3 a {color: #fff;}
 	.box1 h3 a:hover {color: #f0c514; text-decoration: none;}
 
-	.tempbox {width: 100%; float: left; margin: 75px 0 0 0; padding: 0 5% 0 5%;}
-	.tempbox h1 {font-size: 56px; line-height: 60px; color: #fff; text-align: center; font-weight: 700; margin: 40px 0 0 0; padding: 0;}
+	.tempbox {width: 100%; float: left; margin: 50px 0 0 0; padding: 0 5% 0 5%;}
+	.tempbox h1 {font-size: 48px; line-height: 52px; color: #fff; text-align: center; font-weight: 700; margin: 20px 0 0 0; padding: 0;}
 	.tempbox h3 {font-size: 16px; color: #fff; font-style: italic; text-align: center; margin: 10px 0; padding: 0;}
 	.tempbox h3 a {color: #fff;}
 	.tempbox h3 a:hover {color: #f0c514; text-decoration: none;}
 
 	.actionbox {float: left; width: 80%; margin: 25px 10% 15px 10%; padding: 5px; background-color: #20a286; color: #fff; text-align: center; font-size: 18px; line-height: 22px; font-weight: lighter;}
-	.actionbox4 {float: left; width: 50%; margin: 25px 25% 15px 25%; padding: 5px; background-color: #20a286; color: #fff; text-align: center; font-size: 18px; line-height: 22px; font-weight: lighter;}
+	.actionbox4 {float: left; width: 80%; margin: 25px 10% 15px 10%; padding: 5px; background-color: #20a286; color: #fff; text-align: center; font-size: 18px; line-height: 22px; font-weight: lighter;}
 	.videobox {float: left; width: 50%; margin: 75px 0 0 0; padding: 0 10% 0 5%;}
 	.actionbox:hover {background-color: #fff799; color: #000;}
 	.actionbox4:hover {background-color: #fff799; color: #000;}
@@ -267,9 +267,9 @@ img#arrowpartner {height: 4rem; position: relative; right: 105px; top: 120px; ve
 	.secondsection ul {float: left; width: 100%; list-style-type: none; margin: 0; padding: 25px 5%;}
 	.secondsection ul li {float: left; width: 23%; margin: 0 1%; height: auto;}
 
-	.picbox {float: left; width: 50%; margin: 75px 0 0 0; padding: 0 5% 0 10%;}
+	.picbox {float: left; width: 100%; margin: 25px 0 0 0; padding: 0 5% 0 5%;}
 	.picbox img {float: left; width: 100%; margin: 0; padding: 0;}
-	.box2 {width: 50%; float: left; margin: 75px 0 0 0; text-align: center; padding: 15px 10% 0 5%; color: #20a286; font-size: 30px; line-height: 32px;}
+	.box2 {width: 100%; float: left; margin: 15px 0 0 0; text-align: center; padding: 15px 5% 0 5%; color: #20a286; font-size: 30px; line-height: 32px;}
 	.actionbox2 {float: left; width: 80%;  margin: 25px 10% 15px 10%; padding: 10px 5px; background-color: #20a286; color: #fff; text-align: center; font-size: 18px; line-height: 22px; font-weight: 700; text-transform: uppercase;}
 	.box2 h3 {font-size: 16px; font-style: italic; text-align: center; margin: 10px 0; padding: 0; color: #20a286;}
 	.box2 h3 a {color: #20a286;}
@@ -277,16 +277,16 @@ img#arrowpartner {height: 4rem; position: relative; right: 105px; top: 120px; ve
 	.actionbox2:hover {background-color: #fff799; color: #000;}
 
 	.thirdsection {float: left; font-family: futura-pt, sans-serif; width: 100%; margin: 0; padding: 50px 5% 15px 5%; background-color: #e1e1e1;}
-	.thirdsection h1 {float: left; text-align: center; width: 100%; font-size: 48px; color: #000;}
+	.thirdsection h1 {float: left; text-align: center; width: 100%; font-size: 36px; color: #000;}
 	.thirdsection h2 {float: left; width: 100%; text-align: center; margin: 10px 0 0 0; color: #000; font-size: 20px;}
-	.processbox {float: left; width: 31%; margin: 50px 1%; padding: 0;}
+	.processbox {float: left; width: 96%; margin: 10px 2%; padding: 0;}
 	.processbox img {float: left; width: 90%; margin: 0 5%;}
 	.processbox h1 {float: left; width: 100%; text-align: center; font-size: 36px; font-weight: 700; color: #000;}
 	.processbox ul {float: left; width: 100%; margin: 0; padding: 0;}
 	.processbox ul li {float: left; width: 100%; margin: 5px 0; padding: 0;}
 
 	.fourthsection {float: left; font-family: futura-pt, sans-serif; width: 100%; margin: 0; padding: 50px 5%; background-color: #fff799;}
-	.fourthsection h1 {float: left; width: 100%; text-align: center; color: #000; font-size: 48px; margin: 25px 0; padding:0;}
+	.fourthsection h1 {float: left; width: 100%; text-align: center; color: #000; font-size: 36px; margin: 15px 0; padding:0;}
 	.featurebox {float: left; text-align: center; width: 50%; height: auto; padding: 15px 5px; color: #000;}
 	.featurebox i {color: #e35d4f; font-size: 60px; text-align: center;}
 	.featurebox h2 {float: left; color: #000; font-size: 24px; font-weight: 700; text-align: center; width: 100%;}
@@ -300,10 +300,10 @@ img#arrowpartner {height: 4rem; position: relative; right: 105px; top: 120px; ve
 	.box4 {width: 50%; float: left; margin: 25px 0 0 0; text-align: center; padding: 15px 10% 0 5%; color: #fff;}
 	.boldline {float: left; width: 80%; margin: 25px 10%; color: #fff; height: 25px;}
 
-	.sixthsection {float: left; font-family: futura-pt, sans-serif; width: 100%; margin: 0; padding: 100px 5%; background-color: #fff;}
+	.sixthsection {float: left; font-family: futura-pt, sans-serif; width: 100%; margin: 0; padding: 50px 5%; background-color: #fff;}
 	.sixthsection h1 {float: left; width: 100%; text-align: center; margin: 25px 0; color: #000; font-size: 36px;}
 	.tablebox {float: left; width: 100%; margin: 0; padding: 0;}
-	.tablecolumn {float: left; width: 96%; margin: 0 2%; padding: 20px 2%; border: 2px solid #d3d3d3; text-align: center;}
+	.tablecolumn {float: left; width: 96%; margin: 5px 2%; padding: 20px 2%; border: 2px solid #d3d3d3; text-align: center;}
 	.tablecolumn h1 {float: left; text-align: center; width: 100%; font-size: 24px; color: #000;}
 	.plancontent {float: left; font-size: 14px; line-height: 16px; color: #a3a3a3; padding: 10px 0;}
 	.pricing {float: left; width: 100%; text-align: center; font-size: 16px; line-height: 16px; color: #d3d3d3; margin: 15px 0;}
@@ -324,10 +324,10 @@ img#arrowpartner {height: 4rem; position: relative; right: 105px; top: 120px; ve
 
 	.whitespace {color: #fff;}
 
-	.contactbox {float: left; font-family: futura-pt, sans-serif; width: 100%; margin: 0; padding: 50px 5%; background-color: #fff;}
+	.contactbox {float: left; font-family: futura-pt, sans-serif; width: 100%; margin: 0; padding: 25px 5%; background-color: #fff;}
 	.contactbox h1 {float: left; width: 100%; text-align: left; margin: 25px 0; color: #000; font-size: 36px;}
 	.contactbox ul {float: left; width: 100%; margin: 0; padding: 0; list-style-type: none;}
-	.contactbox ul li {float: left; width: 100%; margin: 3px 0; padding: 0; font-size: 14px; line-height: 14px;}
+	.contactbox ul li {float: left; width: 100%; margin: 3px 0; padding: 0; font-size: 18px; line-height: 18px;}
 
     //home page
     .bscontainer-fluid {margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px; background-color: #fff; font-family: "proxima-nova",sans-serif;}
