@@ -83,6 +83,7 @@
 .navlist ul li {float: left; padding: 0 15px;}
 .navlist ul li a {color: #fff; font-weight: 700;}
 .navlist ul li a:hover {color: #f0c514; text-decoration: none;}
+.navlistmobile {float: right; display: none;}
 
 .whitespace {color: #fff;}
 
@@ -316,11 +317,14 @@ img#arrowpartner {height: 4rem; position: relative; right: 105px; top: 120px; ve
 	.tablecolumn:hover {box-shadow: 2px 2px 2px #d3d3d3;}
 
 	.topnavheader {float: left; width: 100%; margin: 0; padding: 0; font-family: futura-pt, sans-serif; font-weight: 300; font-size: 20px; line-height: 20px; color: #fff;}
-	.navlist {float: right;}
+	.navlist {float: right; display: none;}
 	.navlist ul {list-style-type: none; width: auto; margin: 25px 25px 0 0; padding: 0;}
 	.navlist ul li {float: left; padding: 0 15px;}
 	.navlist ul li a {color: #fff; font-weight: 700;}
 	.navlist ul li a:hover {color: #f0c514; text-decoration: none;}
+	.navlistmobile {float: right; display: inline; font-size: 16px; line-height: 16px;}
+	.navlistmobile ul {list-style-type: none; width: auto; margin: 5px 5px 0 0; padding: 0;}
+	.navlistmobile ul li {float: left; padding: 0 15px;}
 
 	.whitespace {color: #fff;}
 
