@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  root 'pages#home'
+  get 'pages/home'
 
   get 'pages/about_us'
   get 'pages/admin'
@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get 'pages/interactivecampaigns'
   get 'pages/cltquiz'
   get 'pages/cltcontest'
+  root 'pages#reputationmanagement'
   get 'pages/reputationmanagement'
 
     resources :posts

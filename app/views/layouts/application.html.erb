@@ -46,10 +46,10 @@
 
        <% if current_page?(pages_checkoutclt_path) || current_page?(pages_checkoutclt2_path) || current_page?(pages_cltquiz_path) || current_page?(pages_cltcontest_path) %>
 
-       <% elsif current_page?(pages_reputationmanagement_path) %>
-
+       <% elsif current_page?(pages_home_path) %>
+              <%= render 'layouts/header' %>
         <% else %>
-            <%= render 'layouts/header' %>
+            
         <% end %>
 
 
