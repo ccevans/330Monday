@@ -16,8 +16,9 @@ Rails.application.routes.draw do
   get 'pages/interactivecampaigns'
   get 'pages/cltquiz'
   get 'pages/cltcontest'
-  root 'pages#reputationmanagement'
+  root 'pages#newhome'
   get 'pages/reputationmanagement'
+  get 'pages/newhome'
 
     resources :posts
     resources :campaigns

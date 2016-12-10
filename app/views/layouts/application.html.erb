@@ -46,8 +46,8 @@
 
        <% if current_page?(pages_checkoutclt_path) || current_page?(pages_checkoutclt2_path) || current_page?(pages_cltquiz_path) || current_page?(pages_cltcontest_path) %>
 
-       <% elsif current_page?(pages_home_path) %>
-              <%= render 'layouts/header' %>
+       <% elsif current_page?(pages_home_path) || current_page?(pages_newhome_path) %>
+              <%= render 'layouts/newheader' %>
         <% else %>
             
         <% end %>
